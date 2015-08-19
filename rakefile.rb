@@ -14,6 +14,8 @@ task :install_theme, [:theme_folder] do |t, args|
         }
 
     sh "mv readme.md readme.md.bck"
+    sh "mv CNAME CNAME.bck"
     sh "cp -f -v -R #{src_path}/* ./"
     sh "mv readme.md.bck readme.md"
+    sh "mv CNAME.bck CNAME"
 end
