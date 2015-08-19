@@ -1,25 +1,61 @@
-name: Tdd Apps Blog
-description: ideas about anything
-meta_description: "Tdd Apps Blog, Ideas about many anything"
+# Site settings
+title:       Tdd Apps Blog
+email:       tddappsblog@cash-productions.com
+author:      Tdd Apps
+description: "Ideas about many things"
+baseurl:     ""
+url:         "/"
 
-aboutPage: true
+# Google analytics
+google_analytics: UA-66099838-1
 
-markdown: kramdown
-highlighter: pygments
+# Optional features
+animated:           false
+show_related_posts: true
+show_post_footers:  true
+show_social_icons:  true
 
-paginate: 20
-baseurl: /
-domain_name: 'http://tddapps.com'
-google_analytics: 'UA-66099838-1'
-disqus: false
-disqus_shortname: 'your-disqus-shortname'
+# Disqus post comments
+# (leave blank to disable Disqus)
+disqus_shortname:
 
-# Details for the RSS feed generator
-url:            'http://tddapps.com'
-author:         'Tdd Apps'
-authorTwitter:  'tddapps'
+# Social icons
+github_username: tddapps
+bitbucket_username:
+stackoverflow_id:
+twitter_username: tddapps
+google_plus_id:
+linkedin_username:
+angellist_username:
+medium_id:
+bitcoin_url:
+paypal_url:
+flattr_button:
 
-permalink:       /:year/:title/
+# Post sharing icons
+show_sharing_icons: true
+share_text: 'Share this post!'
+# Change to 'true' to enable individual icons
+share_facebook: true
+share_twitter: true
+share_googleplus: false
+share_linkedin: false
+share_digg: false
+share_tumblr: false
+share_reddit: true
+share_stumbleupon: false
+share_hackernews: true
+
+# Build settings
+markdown:     kramdown
+redcarpet:
+  extensions: ['smart', 'tables', 'with_toc_data']
+permalink:    pretty
+paginate:     4
+sass:
+  compressed: true
+gems:
+  - jekyll-sitemap
 
 defaults:
     -
