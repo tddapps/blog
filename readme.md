@@ -6,4 +6,4 @@
 
 ##Deployment
 
-`git push origin gh-pages`
+`rake deploy`
