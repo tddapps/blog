@@ -2,11 +2,14 @@ I worked in a place with a horrible Git[^git_succintly] repository. This repo wa
 
 
 ##How is the working copy doing
+
     git status
+
 Displays the current branch and the list of modified files in the working copy. Once it displays `nothing to commit, working directory clean` you're good to start working.
 
 
 ##Cleanup everything
+
     git checkout -- . && git clean -f && git status
   
 1. `git checkout -- .` discards all the pending changes in the working copy. It makes no effect on untracked files.
@@ -15,6 +18,7 @@ Displays the current branch and the list of modified files in the working copy. 
 
 
 ##Create a new branch
+
     git checkout master && git pull && git branch my_new_branch && git checkout my_new_branch
 
 1. `git checkout master` switches to the master branch.
@@ -24,7 +28,9 @@ Displays the current branch and the list of modified files in the working copy. 
 
 
 ##Inspect pending changes
+
     git diff
+
 Displays the changes detail in a diff format, except for staged changes and untracked files. Although it is very fast, `git diff` becomes almost useless for large changesets. On the other hand, the majority of GUI tools come preloaded with excellent diff capabilities. [^gui_tool]
 
 
@@ -38,7 +44,9 @@ A commit is a unique changeset. [^small_commits]
 3. `git push origin my_new_branch` pushes `my_new_branch` to the remote tracking branch `origin/my_new_branch` in the remote repository. While it is not required to push every commit right away, doing so protects against losing work in case of hardware failure.
 
 ###Commit only the Javascript changes
+
     git add *.js
+
 Sometimes it is necessary to commit only certain files. In those scenarios the `git add` command can be used with wildcards or specific filenames. Then the previous example becomes:
 
     git add *.js && git commit -m "committing only javascript changes" && git push origin my_new_branch
@@ -61,17 +69,23 @@ Sometimes Git will complain in the middle of the operation and you'll be left wi
     git checkout master && git pull && git checkout my_new_branch && git merge master
 
 ###Rebase from master
+
     git pull --rebase origin master
+
 Rebasing is an alternative to merging. It keeps the history cleaner. However, since rebase rewrites the commits history, it is not recommended for pushed commits. [^git_rebase]
 
 
 ##Solve the conflicts
+
     git mergetool
+ 
  Launches the configured merge tool once per conflicted file. [^merge_tools]
 
 
 ##Leave what you're doing to do something else
+
     git stash -u && git status
+
 1. `git stash -u` creates a stash with all the pending changes, including untracked files. [^git_stash_help]
 2. `git status` at this point should say that everything is clean. Failures need to be resolved on a per case basis.
 
@@ -79,7 +93,9 @@ Afterwards, it is safe to do any other operation.
 
 
 ##Return to the previous state
+
     git stash pop
+
 Stashes behave as a stack. `git stash pop` will pop the latest stash into the working copy. In a similar way `git stash apply` will peek the latest stash into the working copy without changing the stack. At this point the working copy should be in the same state as it was before.
 
 
@@ -87,6 +103,7 @@ Stashes behave as a stack. `git stash pop` will pop the latest stash into the wo
 Avoid history modification when possible. [^rewrite_history]
 
 ###Something is wrong with the last commit
+
     git reset --soft HEAD~1 && git reset
 
 1. `git reset --soft HEAD~1` removes the last commit from the history. Its changes are put back into the staging area.
@@ -98,6 +115,8 @@ Afterwards, make the necessary edits and commit again. Editing pushed commits ca
 ##What broke the project
 When things break out of magic, use `git bisect` to pinpoint the exact commit where the issue started. `git bisect` is such a useful tool that merits a blogpost just for itself. In the meantime, [read this](http://webchick.net/node/99) to learn more about it.
 
+
+---
 
 [^git_succintly]: This guide is far from being a Git reference. The avid reader will enjoy [Git Succintly](https://www.syncfusion.com/resources/techportal/ebooks/git). It is a hundred pages book with the basic concepts of Git.
 
