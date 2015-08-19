@@ -1,3 +1,3 @@
 task :deploy do
-    git push origin gh-pages
+    sh "git push origin gh-pages"
 end
