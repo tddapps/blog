@@ -4,6 +4,6 @@
 
 `jekyll serve` Loads the page locally on http://localhost:4000/
 
-#Deployment
+##Deployment
 
-Just push your changes to `gh-pages`
+`git push origin gh-pages`
