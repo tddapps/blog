@@ -1,7 +1,9 @@
 ---
-layout: page
 title: About
-permalink: /about/
+permalink: about/
+profile: true
 ---
 
-Find us on Twitter [@tddapps](https://twitter.com/tddapps) 
+Find us on Twitter [@tddapps](https://twitter.com/tddapps)
+
+{% include footer.html %}

@@ -1,11 +1,42 @@
-# Site settings
-title: Tdd Apps Blog
-description: >
-  ideas about many things
-baseurl: ""
-url: "http://tddapps.com"
-twitter_username: tddapps
-github_username: tddapps
+name: Tdd Apps Blog
+description: ideas about anything
+meta_description: "Tdd Apps Blog, Ideas about many anything"
 
-# Build settings
+aboutPage: true
+
 markdown: kramdown
+highlighter: pygments
+
+paginate: 20
+baseurl: /
+domain_name: 'http://tddapps.com'
+google_analytics: 'UA-66099838-1'
+disqus: false
+disqus_shortname: 'your-disqus-shortname'
+
+# Details for the RSS feed generator
+url:            'http://tddapps.com'
+author:         'Tdd Apps'
+authorTwitter:  'tddapps'
+
+permalink:       /:year/:title/
+
+defaults:
+    -
+        scope:
+            path: ""
+            type: pages
+        values:
+            layout: default
+    -
+        scope:
+            path: ""
+            type: posts
+        values:
+            layout: post
+    -
+        scope:
+            path: ""
+            type: drafts
+        values:
+            layout: post
