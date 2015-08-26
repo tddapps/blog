@@ -2,21 +2,33 @@ The following code snippets illustrate how the usage of the `var` keyword can sh
 
 ##Simple class hierarchy
 
-    class Animal {}
-    class Dog : Animal {}
-    class Cat : Animal {}
+{% highlight csharp %}
+
+class Animal {}
+class Dog : Animal {}
+class Cat : Animal {}
+
+{% endhighlight %}
 
 ##Code without using `var`
 
-    Animal arr = new Dog[3];
-    arr[0] = new Cat();
+{% highlight csharp %}
+
+Animal arr = new Dog[3];
+arr[0] = new Cat();
+
+{% endhighlight %}
 
 The code will compile successfully. However, at runtime it will blow up pretty bad. There is no way to fit a `Cat` into a `Dog`.
 
 ##Code using `var`
 
-    var arr = new Dog[3];
-    arr[0] = new Cat();
+{% highlight csharp %}
+
+var arr = new Dog[3];
+arr[0] = new Cat();
+
+{% endhighlight %}
 
 The code will not even compile. The compiler infers `arr` to be an array of Dogs. It prevents Cats from being inserted into the array. 
 
