@@ -1,0 +1,14 @@
+a.brand, a.brand:hover, a.brand:visited,
+.social-links a, .social-links a:hover, .social-links a:visited {
+    color: #333;
+    text-decoration: none;
+    font-size: larger;
+}
+
+.social-links a, .social-links a:visited {
+    opacity: 0.8;
+}
+
+.social-links a:hover {
+    opacity: 1.0;
+}
