@@ -63,13 +63,13 @@ defaults:
             path: ""
             type: pages
         values:
-            layout: default
+            layout: bootstrap
     -
         scope:
             path: ""
             type: posts
         values:
-            layout: post
+            layout: post-bootstrap
     -
         scope:
             path: ""

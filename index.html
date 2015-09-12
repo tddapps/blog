@@ -1,15 +1,16 @@
 ---
-layout: default
+layout: bootstrap
 ---
 
-<div class="home">
-
-  <div class="posts">
+  <ul class="posts">
     {% for post in paginator.posts %}
-      <div class="post py3">
-        <p class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</p>
-        <a href="{{ post.url | prepend: site.baseurl }}" class="post-link"><h3 class="h1 post-title">{{ post.title }}</h3></a>
-        <p class="post-summary">
+      <li>
+        <h1>
+          <a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+        </h1>
+        <small>{{ post.date | date: "%b %-d, %Y" }}</small>
+
+        <p>
           {% if post.summary %}
             {{ post.summary }}
           {% else %}
@@ -17,9 +18,29 @@ layout: default
           {% endif %}
         </p>
         <a href="{{ post.url | prepend: site.baseurl }}" class="post-link">Read More...</a>
-      </div>
-    {% endfor %}
-  </div>
 
-  {% include pagination.html %}
-</div>
+      </li>
+    {% endfor %}
+  </ul>
+
+  <ul class="pager">
+    <li>
+      {% if paginator.previous_page %}
+        {% if paginator.page == 2 %}
+          <a href="{{ site.baseurl }}/">Newer</a>
+        {% else %}
+          <a href="{{ site.baseurl }}/page{{paginator.previous_page}}/">Newer</a>
+        {% endif %}
+      {% else %}
+        <span class="disabled">Newer</span>
+      {% endif %}
+    </li>
+    <li>
+      {% if paginator.next_page %}
+        <a href="{{ site.baseurl }}/page{{paginator.next_page}}/">Older</a>
+      {% else %}
+        <span class="disabled">Older</span>
+      {% endif %}
+    </li>
+  </ul>
+

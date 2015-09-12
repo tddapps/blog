@@ -24,7 +24,7 @@
 
 <body>
     <div class="container">
-        <div class="header clearfix">
+        <div class="header">
             <h1>
               <a class="brand" href="{{ site.url }}"> 
                 {{ site.title }}
@@ -42,11 +42,8 @@
             {% endif %}
         </div>
 
-        <div class="main-content">
-            {{ content }}
-        </div>
+        {{ content }}
 
-        {% include footer.html %}
     </div>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
