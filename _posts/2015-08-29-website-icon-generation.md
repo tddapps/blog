@@ -17,7 +17,6 @@ Fortunately, there are tools to automate the Favicon creation process. The follo
 4. The generated icons are compressed in a zip file. Extract them into your website folder.
 5. Paste the [generated code](/images/fav-icon/generated-code.png) inside the `<head>` of the website. [^sample_commit]
 
----
 
 [^favicon_history]: Avid readers can go to [Inventing Favicon.ico](https://ruthlessray.wordpress.com/2013/09/02/inventing-favicon-ico/) and [Favicon on Wikipedia](https://en.m.wikipedia.org/wiki/Favicon) to learn more about the favicon history.
 [^the_icon_mess]: Favicon's blog [extensive article](https://realfavicongenerator.net/blog/favicon-why-youre-doing-it-wrong/) covering the subject.
