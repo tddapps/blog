@@ -4,7 +4,8 @@ email:       tddappsblog@cash-productions.com
 author:      Tdd Apps
 description: "Ideas about many things"
 baseurl:     ""
-url:         "http://tddapps.com"
+url:         "https://tddapps.com"
+enforce_ssl: tddapps.com
 
 # Google analytics
 google_analytics: UA-66099838-1
