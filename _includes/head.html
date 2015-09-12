@@ -21,7 +21,7 @@
     {% endif %}
 
 
-    {% include open_graph.html %}
+    {% include head-open-graph.html %}
 
     <!-- Twitter Card -->
     <meta name="twitter:card" content="summary" />
@@ -32,6 +32,6 @@
     <meta name="twitter:description" content="{% if page.summary %}{{ page.summary }}{% else %}{{ site.description }}{% endif %}" />
     <meta name="twitter:url" content="{{ site.url }}{{ page.url }}" />
 
-    {% include icons.html %}
-    {% include google_analytics.html %}
+    {% include head-icons.html %}
+    {% include head-google-analytics.html %}
 </head>
