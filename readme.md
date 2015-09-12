@@ -11,3 +11,9 @@
 ###Changing Theme
 
 `rake install_theme[~/Downloads/pixyll/]`
+
+###Post Publish Checklist
+1. Proofread
+3. Run me-analyzer
+4. Check spelling
+5. Check links
