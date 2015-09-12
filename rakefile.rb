@@ -1,4 +1,5 @@
 task :deploy do
+    sh "git rebase origin/gh-pages"
     sh "git push origin gh-pages"
 end
 
