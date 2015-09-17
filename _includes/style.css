@@ -43,3 +43,7 @@ ul.posts > li{
 article .footnotes:before {
     margin-top: 6em;
 }
+
+article img {
+    max-width: 100%;
+}
