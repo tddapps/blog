@@ -95,7 +95,7 @@ Blogs need posts to be real blogs. [*citation_needed*] Our blog comes with some 
 Jekyll transforms every file from the `_posts` folder into a blog post. When a new file is created the corresponding post appears. In the same way, when a file gets deleted its post disappears. [^jekyll_posts]
 
 **First Post**: The first post will start with a new file in the `_posts` folder named `2015-08-30-dogs-who-code.md`.  
-![First Post](/images/blog-setup/first-post.png)
+![First Post](/images/blog-setup/first-post.png)  
 Edit the file with your [favorite text editor](http://www.sublimetext.com/) and add the following text to it.
 
     ---
