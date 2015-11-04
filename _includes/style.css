@@ -1,6 +1,12 @@
-p, li {
+p,
+li,
+article table {
     font-size: 20px;
     line-height: 1.5;
+}
+
+article p {
+    margin-bottom: 1.5em;
 }
 
 a.brand, a.brand:hover, a.brand:visited,
@@ -46,4 +52,30 @@ article .footnotes:before {
 
 article img {
     max-width: 100%;
+}
+
+article table {
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+
+article td {
+    padding-left: 1em;
+    padding-right: 1em;
+    padding-top: 0.15em;
+    padding-bottom: 0.15em;
+}
+
+article th {
+    text-align: center;
+}
+
+article td,
+article th {
+    border: solid 1px;
+    border-color: #cccccc;
+}
+
+article tr:nth-child(even) {
+    background: #EEEEEE;
 }
