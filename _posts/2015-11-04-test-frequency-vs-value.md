@@ -17,7 +17,7 @@ Manual processes are unreliable and error prone. Aim to reduce them as much as p
 
 Not all the tests need to run with the same frequency. While it is relatively easy to configure unit tests to run for every commit it may be very difficult and costly to run seven hours worth of automated UI tests for every commit. However, it is much better to run the seven hours worth of automated UI tests overnight than once every week.
 
-Some Api integration tests may need to be run on a regular schedule to guarantee the stability of the system and catch errors early. As usual reducing the feeedback loop is fundamental. It is definitely better to alert your partner of a breaking change the day they introduced it than two weeks after in a hurry before a release. Always try to have these integration tests running as often as possible.
+Some Api integration tests may need to be run on a regular schedule to guarantee the stability of the system and catch errors early. As usual reducing the feedback loop is fundamental. It is definitely better to alert your partner of a breaking change the day they introduced it than two weeks after in a hurry before a release. Always try to have these integration tests running as often as possible.
 
 ##Summary
 Automate manual processes. Run automated tests as often as possible.
