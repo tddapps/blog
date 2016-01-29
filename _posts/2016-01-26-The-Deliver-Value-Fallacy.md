@@ -9,7 +9,7 @@ The term Deliver Value is widely [*ab*]used. It can be a wildcard to avoid follo
 > an act or instance of using or expending something carelessly, extravagantly, or to no purpose.
 
 ##A tale of two companies
-*GreatShoes, LLC.* and *YouSail, Inc.* are two different companies in the same position: **Online sales are low**. This is how they plan to solve their problem. [^fake_names]
+*YouSail, Inc.* and *GreatShoes, LLC.* are two different companies in the same position: **Online sales are low**. This is how they plan to solve their problem. [^fake_names]
 
 ##YouSail, Inc.
 *YouSail, Inc.* rents luxury yachts. The executive team reasons that since they're not a technology company there's not a clear need for a technology team. [^phoenix_project] They strongly believe in paying specialized vendors for their expertise rather than having to deal with more employees. Their online sales have been down for the last six months.
