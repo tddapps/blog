@@ -40,6 +40,8 @@ Sometimes it can be very hard to condone the actions behind *YouSail, Inc.*. Yes
 
 Delivering value does not mean cutting corners. On the contrary, Delivering Value is about delivering just enough functionality just in time to meet the business needs, while maintaining high engineering standards that will allow the product to adapt as needed.
 
+*Vist [Part 3](https://tddapps.com/2016/01/29/waste-prevention/?source=part2) of this series to learn how to Prevent Waste.*
+
 
 [^the_lean_startup]: In his book [The Lean Startup](http://amzn.to/1KaRSBC), [Eric Ries](https://twitter.com/ericries) details the need for lean development practices in startups as well as in well-established companies.
 
