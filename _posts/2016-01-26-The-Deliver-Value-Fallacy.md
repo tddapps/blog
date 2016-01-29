@@ -28,11 +28,13 @@ The term Deliver Value is widely [*ab*]used. It can be a wildcard to avoid follo
 **Request Denied**: Business owners think the whole incremental approach would add a lot of overhead. Plus they want their CMS from day one. They don't understand why a CMS is harder to test nor to maintain in the long run. The proposal is unacceptable. They *graciously* ask the development team to build everything at once in three months.
 
 ##Company tally
+
+
 |                           | YouSail, Inc.                   | GreatShoes, LLC.             |
 |---------------------------|:-------------------------------:|:----------------------------:|
 | Reaction Time             | Six Months                      | One Year                     |
 | Decision Time             | One Week                        | Multiple Weeks               |
-| Root Cause </br> Analysis | Data Driven. </br> Payment Flow | No Data. </br> Entire Design |
+| Root Cause Analysis       | Data Driven. Payment Flow       | No Data. Entire Design       |
 | Time to Feedback          | After Every Single Page         | After project completion     |
 | Projected Completion      | Six Months                      | Three months                 |
 
