@@ -20,3 +20,8 @@ task :install_theme, [:theme_folder] do |t, args|
     sh "mv readme.md.bck readme.md"
     sh "mv CNAME.bck CNAME"
 end
+
+task :setup do
+    sh "sudo gem install jekyll"
+    sh "sudo gem install jekyll-paginate"
+end
