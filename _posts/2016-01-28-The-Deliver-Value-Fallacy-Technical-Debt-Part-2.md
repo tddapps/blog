@@ -2,6 +2,7 @@
 title: "The Deliver Value Fallacy: Technical Debt (Part 2)"
 ---
 
+
 The term Deliver Value is widely [*ab*]used. It is regularly used as an excuse to avoid following engineering best practices. In this second installment I plan to illustrate some of the common misconceptions associated with Delivering Value and Technical Debt.
 
 *Please head to the [first post](https://tddapps.com/2016/01/26/The-Deliver-Value-Fallacy/?source=part2) to learn about Delivering Waste.*

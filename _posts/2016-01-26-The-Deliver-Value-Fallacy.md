@@ -48,6 +48,8 @@ Notice how the projected completion date is closer for *GreatShoes, LLC.* -half 
 
 After a simple analysis it becomes clear that the team from Argentina is delivering more value to the business. Simply because they are building the correct product. They are solving a clear and measurable business problem. On the other hand the second team is building waste. They are making decisions based on intuition as opposed to measurable metrics.
 
+*Vist [Part 2](https://tddapps.com/2016/01/28/The-Deliver-Value-Fallacy-Technical-Debt-Part-2/?source=part1) of this series to learn Delivering Value and Technical Debt.*
+
 
 [^the_lean_startup]: In his book [The Lean Startup](http://amzn.to/1KaRSBC), [Eric Ries](https://twitter.com/ericries) details the need for lean development practices in startups as well as in well-established companies.
 
