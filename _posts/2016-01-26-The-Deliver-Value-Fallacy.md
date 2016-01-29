@@ -1,4 +1,12 @@
-The term Deliver Value is widely [*ab*]used. It can be a wildcard to avoid following engineering best practices or build utterly complex solutions that solve no real business problem. I plan to illustrate some of the common misconceptions associated with Delivering Value.
+---
+title: "The Deliver Value Phallacy: Waste (Part 1)"
+---
+
+
+The term Deliver Value is widely [*ab*]used. It can be a wildcard to avoid following engineering best practices or build utterly complex solutions that solve no real business problem. In this multi-part article I plan to illustrate some of the common misconceptions associated with Delivering Value. The series will start with delivering waste.
+
+##Waste
+> an act or instance of using or expending something carelessly, extravagantly, or to no purpose.
 
 ##A tale of two companies
 *GreatShoes, LLC.* and *YouSail, Inc.* are two different companies in the same position: **Online sales are low**. This is how they plan to solve their problem. [^fake_names]
@@ -19,37 +27,25 @@ The term Deliver Value is widely [*ab*]used. It can be a wildcard to avoid follo
 
 **Request Denied**: Business owners think the whole incremental approach would add a lot of overhead. Plus they want their CMS from day one. They don't understand why a CMS is harder to test nor to maintain in the long run. The proposal is unacceptable. They *graciously* ask the development team to build everything at once in three months.
 
-##Company tally  
-
+##Company tally
 |                           | YouSail, Inc.                   | GreatShoes, LLC.             |
 |---------------------------|:-------------------------------:|:----------------------------:|
 | Reaction Time             | Six Months                      | One Year                     |
 | Decision Time             | One Week                        | Multiple Weeks               |
-| Root Cause Analysis       | Data Driven. Payment Flow       | No Data. Entire Design       |
+| Root Cause </br> Analysis | Data Driven. </br> Payment Flow | No Data. </br> Entire Design |
 | Time to Feedback          | After Every Single Page         | After project completion     |
 | Projected Completion      | Six Months                      | Three months                 |
 
-
-##Delivering Value
-> Which of the two teams is delivering more value to the business?
-
-After a simple analysis it becomes clear that the team from Argentina is delivering more value to the business. Simply because they are building the correct product. They are solving a clear and measurable business problem. The second team is building waste. They are building the wrong product.
-
-##Deadlines
-Notice how the projected completion date is closer for *GreatShoes, LLC.* -half of *YouSail, Inc.*'s-.  They are going to have an entire new website in three months. And yet it is all going to waste because they don't know that they're losing sales because of the website, or because they need a mobile app, or because the competition has better prices. They simply don't know.
+Notice how the projected completion date is closer for *GreatShoes, LLC.* -half of *YouSail, Inc.*'s-.  They are going to have an entire new website in three months. And yet it is all going to waste because they don't know that they're losing sales because of the website, or because they need a mobile app, or because the competition has better prices. They simply don't know. Moreover, there are no clear plans to incorporate performance feedback loops that can help steer the project based on customer needs.
 
 *YouSail, Inc.* is happy to spend six months in rebuilding just a single portion of their entire site. The cost is hefty but they know that every step they make in that direction will be validated with an increase in sales. Moreover, the risk is low. If the project cost gets too high or the business needs to focus on another direction, they can still benefit from whatever new pages they got time to build.
 
-##Technical Debt
-The cultural differences between the two companies clearly impact their performance. The well-qualified team behind *GreatShoes, LLC.* has built a highly-maintainable product. The initial engineering plan would rebuild the entire site -on top of the existing one- in the same time that it would take *YouSail, Inc.* to get a single portion of their website rebuilt. The good engineering principles applied over the years empower the business to quickly adapt and react. Moreover, this is a professional team that understands risks and proposes an adequate plan to minimize them.
+##Delivering Value
 
-Delivering value does not mean cutting corners. On the contrary, Delivering Value is about delivering just enough functionality just in time to meet the business needs, while maintaining high engineering standards that will allow the product to adapt as needed.
+> Which of the two teams is delivering more value to the business?
 
-Technical Debt is simply that: **Debt**. It needs to be paid off or will eventually bring businesses down to a halt. If the executive team behind *YouSail, Inc.* would regularly spend more time and energy on their website they'd be able to replace the entire Payment Flow in under a month.
+After a simple analysis it becomes clear that the team from Argentina is delivering more value to the business. Simply because they are building the correct product. They are solving a clear and measurable business problem. On the other hand the second team is building waste. They are making decisions based on intuition as opposed to measurable metrics.
 
-##Summary
-The term Delivering Value is widely misused. Sometimes it is given as an excuse to cut corners and create technical debt. Building the wrong product is the ultimate form of waste. [^the_lean_startup] Businesses should incorporate and measure customer feedback 
-frequently during their products lifecycle to stay relevant.
 
 [^the_lean_startup]: In his book [The Lean Startup](http://amzn.to/1KaRSBC), [Eric Ries](https://twitter.com/ericries) details the need for lean development practices in startups as well as in well-established companies.
 
