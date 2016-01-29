@@ -1,5 +1,5 @@
 ---
-title: "The Deliver Value Phallacy: Waste (Part 1)"
+title: "The Deliver Value Fallacy: Waste (Part 1)"
 ---
 
 
