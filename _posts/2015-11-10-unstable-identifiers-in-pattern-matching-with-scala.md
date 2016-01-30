@@ -3,40 +3,48 @@
 ##Operations
 The following case classes define typical mathematical operations.  
 
-    abstract class Token
-    case class TNum(n: Double) extends Token
-    case class TOpenP() extends Token
-    case class TCloseP() extends Token
-    case class TSum() extends Token
-    case class TDiff() extends Token
-    case class TMult() extends Token
-    case class TDiv() extends Token
-    case class TNeg() extends Token
+{% highlight scala %}
+abstract class Token
+case class TNum(n: Double) extends Token
+case class TOpenP() extends Token
+case class TCloseP() extends Token
+case class TSum() extends Token
+case class TDiff() extends Token
+case class TMult() extends Token
+case class TDiv() extends Token
+case class TNeg() extends Token
+{% endhighlight %}
 
 ##Priorities
 `priorities` is a constant list of tuples with the priority for each math operation.  
 
-    val priorities = List(
-        (0, TSum()),
-        (0, TDiff()),
-        (1, TMult()),
-        (1, TDiv()),
-        (1, TNeg()),
-        (3, TOpenP())
-    )
+{% highlight scala %}
+val priorities = List(
+    (0, TSum()),
+    (0, TDiff()),
+    (1, TMult()),
+    (1, TDiv()),
+    (1, TNeg()),
+    (3, TOpenP())
+)
+{% endhighlight %}
 
 ##Multiplication Priority should be 1
 The following snipet finds the priority of multiplication.  
 
-    priorities.collectFirst({ case (x, TMult()) => x }).get
+{% highlight scala %}
+priorities.collectFirst({ case (x, TMult()) => x }).get
+{% endhighlight %}
 
 The result is 1. `collectFirst` is finding the first tuple from `priorities` whose second value is `TMult()` and then returning the tuple's first value which is the priority.
 
 ##Multiplication Priority should *ALWAYS* be 1
 Now let's define a constant with the operation value instead of hardcoding it into the pattern matching construct. The result should still be 1 because all we did was extract a variable.  
 
-    val op: Token = TMult()
-    priorities.collectFirst({ case (x, op) => x }).get
+{% highlight scala %}
+val op: Token = TMult()
+priorities.collectFirst({ case (x, op) => x }).get
+{% endhighlight %}
 
 However, the result is now 0.  
 ![Why!!!](/images/stable-identifiers/y-u-no-guy.jpg)  
@@ -45,23 +53,28 @@ The problem with this code is that `op` is not a [stable identifier](http://www.
 ##No outside variables in pattern matching
 The following code overcomes the need for making `op` a stable identifier by simply not using it inside of a pattern matching construct.  
 
-    priorities.collectFirst({ case (x, y) if y == op => x }).get
-
+{% highlight scala %}
+priorities.collectFirst({ case (x, y) if y == op => x }).get
+{% endhighlight %}
 
 The result is now 1 as it should be. However, does this mean that whenever I need to check the value of an external variable in a pattern matching construct I need to resort to this? Surely the language designers behind Scala thought of a better solution to this mess.
 
 ##Backticks to the rescue
 Using `op` enclosed in backticks does not create a new variable that shadows the existing one. It creates a stable identifier instead.  
 
-    priorities.collectFirst({ case (x, `op`) => x }).get
+{% highlight scala %}
+priorities.collectFirst({ case (x, `op`) => x }).get
+{% endhighlight %}
 
 While the result is still 1, the code is much cleaner now.
 
 ##Backticks are ugly
 Not everybody likes backticks in their pattern matching statements. Fortunately, Scala is very similar to Ruby in the sense that the same result can be achieved through different ways. The language creators came up with an uppercasing convention: if the variable name starts with a capital letter, then it is a stable identifier.
 
-    val Op: Token = TMult()
-    priorities.collectFirst({ case (x, Op) => x }).get
+{% highlight scala %}
+val Op: Token = TMult()
+priorities.collectFirst({ case (x, Op) => x }).get
+{% endhighlight %}
 
 The result remains 1 without using any backticks.
 
