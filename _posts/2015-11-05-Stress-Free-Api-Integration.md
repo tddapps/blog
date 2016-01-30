@@ -1,3 +1,7 @@
+---
+title: Stress free Api Integration
+---
+
 Many products start as self-contained boxes of code. Eventually, third-party products need to be integrated: a payment processor, a shipping distributor, an advertisement provider, etc. All of the sudden, what used to be a stable self-contained box becomes a network of dependencies between different entities distributed across the globe where every single link is vital to the business' success. API providers have their own business goals and follow their own timelines. They are not responsible for the success of your business. Moreover, with very little effort they can destabilize your product and cause significant business damage. Product stability is ultimately the responsibility of API consumers. The following are recommendations to maintain successful and stress-free API integrations. They are lessons learned after many years of painful integrations.
 
 **TL;DR**: API integrations can be streamlined with the creation of a few environments where automated tests are run. Jump to the end to see the proposed design.

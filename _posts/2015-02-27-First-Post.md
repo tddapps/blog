@@ -1,4 +1,5 @@
 ---
+title: First Post
 related_posts: "Git Workflow"
 ---
 

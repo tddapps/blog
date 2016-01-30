@@ -1,3 +1,8 @@
+---
+title: Test Frequency vs Value
+---
+
+
 There are many different ways of testing the code. Some companies have a QA team that manually verifies the functionality while others have automated test suites. Other places have a hybrid of QA and automated test suites. Moreover, there are companies with no formal testing procedure, and others that test their parts of their code in production. 
 
 As a general rule tests should run as often as possible. They reduce the developers' feedback loop. It is easier to remember what changed one minute ago than four days ago. The following is my **Execution Frequency** vs. **Value** table. It should provide some guidelines on what direction to take while scheduling test runs.

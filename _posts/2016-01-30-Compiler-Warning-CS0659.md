@@ -1,3 +1,7 @@
+---
+title: Compiler Warning CS0659
+---
+
 The majority of C# developers have found [Compiler Warning CS0659](https://msdn.microsoft.com/en-us/library/xxhbfytk.aspx) at some point of their careers. Ignoring this warning can produce unexpected program behavior. The following is summary of the impact this warning can have on a codebase and how to prevent it.
 
 **TL;DR: Override `GetHashCode` whenever `Equals` is overridden**

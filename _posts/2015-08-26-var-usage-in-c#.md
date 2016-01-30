@@ -1,3 +1,7 @@
+---
+title: "Var usage in C#"
+---
+
 The following code snippets illustrate how the usage of the `var` keyword can shorten the feedback loop and prevent errors.
 
 ##Simple class hierarchy

@@ -1,3 +1,7 @@
+---
+title: Git Workflow
+---
+
 I worked in a place with a horrible Git[^git_succintly] repository. This repo was so slow that `git status` usually took more than two seconds. Deprived of a fast GUI tool, the command line became the tool of choice. These are my most frequently used commands.
 
 

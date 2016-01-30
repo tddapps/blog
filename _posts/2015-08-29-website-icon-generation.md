@@ -1,3 +1,8 @@
+---
+title: Website Icon Generation
+---
+
+
 Websites have icons. More specifically, they are called Favicon. In their beginnings Favicons were simple. Nowadays, they are very hard to manage without automation.  
 ![Favicons](/images/fav-icon/address-bar.png)
 

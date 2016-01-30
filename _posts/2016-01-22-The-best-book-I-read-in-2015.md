@@ -1,3 +1,7 @@
+---
+title: The best book I read in 2015
+---
+
 [The Lean Startup](http://amzn.to/1KaRSBC) -by Eric Ries- diametrically changed many of the notions I had about how software projects should be carried on.
 
 It helped me understand what being agile truly means. True agility means going full cycle -from idea to the customers- in two weeks or a month instead of the infamous timeline nonsense. Agile teams control their deployment and technology stack.
