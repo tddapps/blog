@@ -147,7 +147,6 @@ Afterwards, make the necessary edits and commit again. Editing pushed commits ca
 When things break out of magic, use `git bisect` to pinpoint the exact commit where the issue started. `git bisect` is such a useful tool that merits a blogpost just for itself. In the meantime, [read this](http://webchick.net/node/99) to learn more about it.
 
 
-
 [^git_succintly]: This guide is far from being a Git reference. The avid reader will enjoy [Git Succintly](https://www.syncfusion.com/resources/techportal/ebooks/git). It is a hundred pages book with the basic concepts of Git.
 
 [^gui_tool]: [Git Extensions](https://code.google.com/p/gitextensions/) for Windows and [SourceTree](https://www.sourcetreeapp.com/) for Mac.
