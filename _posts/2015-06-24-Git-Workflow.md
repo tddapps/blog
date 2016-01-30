@@ -7,15 +7,19 @@ I worked in a place with a horrible Git[^git_succintly] repository. This repo wa
 
 ##How is the working copy doing
 
-    git status
+{% highlight sh %}
+git status
+{% endhighlight %}
 
 Displays the current branch and the list of modified files in the working copy. Once it displays `nothing to commit, working directory clean` you're good to start working.
 
 
 ##Cleanup everything
 
-    git checkout -- . && git clean -f && git status
-  
+{% highlight sh %}
+git checkout -- . && git clean -f && git status
+{% endhighlight %}
+
 1. `git checkout -- .` discards all the pending changes in the working copy. It makes no effect on untracked files.
 2. `git clean -f` deletes all untracked files from the working copy.
 3. `git status` at this point should say that everything is clean. Failures need to be resolved on a per case basis.
@@ -23,7 +27,9 @@ Displays the current branch and the list of modified files in the working copy. 
 
 ##Create a new branch
 
-    git checkout master && git pull && git branch my_new_branch && git checkout my_new_branch
+{% highlight sh %}
+git checkout master && git pull && git branch my_new_branch && git checkout my_new_branch
+{% endhighlight %}
 
 1. `git checkout master` switches to the master branch.
 2. `git pull` gets master's latest version.
@@ -33,7 +39,9 @@ Displays the current branch and the list of modified files in the working copy. 
 
 ##Inspect pending changes
 
-    git diff
+{% highlight sh %}
+git diff
+{% endhighlight %}
 
 Displays the changes detail in a diff format, except for staged changes and untracked files. Although it is very fast, `git diff` becomes almost useless for large changesets. On the other hand, the majority of GUI tools come preloaded with excellent diff capabilities. [^gui_tool]
 
@@ -41,7 +49,9 @@ Displays the changes detail in a diff format, except for staged changes and untr
 ##Commit everything
 A commit is a unique changeset. [^small_commits]
 
-    git add -A && git commit -m "committing all the files" && git push origin my_new_branch
+{% highlight sh %}
+git add -A && git commit -m "committing all the files" && git push origin my_new_branch
+{% endhighlight %}
 
 1. `git add -A` stages all the modified and new files. The Staging Area is a snapshot of what will get committed. Staged changes will not be affected by working directory changes.
 2. `git commit -m "committing all the files"` creates a new commit with the staged files. This new commit has the message `committing all the files`.
@@ -49,12 +59,15 @@ A commit is a unique changeset. [^small_commits]
 
 ###Commit only the Javascript changes
 
-    git add *.js
+{% highlight sh %}
+git add *.js
+{% endhighlight %}
 
 Sometimes it is necessary to commit only certain files. In those scenarios the `git add` command can be used with wildcards or specific filenames. Then the previous example becomes:
 
-    git add *.js && git commit -m "committing only javascript changes" && git push origin my_new_branch
-
+{% highlight sh %}
+git add *.js && git commit -m "committing only javascript changes" && git push origin my_new_branch
+{% endhighlight %}
 
 ##Display the history
 The commits history can be displayed from the command line. [^git_log] However, GUI tools truly excel for this task.
@@ -63,32 +76,42 @@ The commits history can be displayed from the command line. [^git_log] However, 
 ##Merge from the latest master
 It is a good practice to sync branches frequently [*citation needed*].
 
-    git fetch && git merge origin/master
+{% highlight sh %}
+git fetch && git merge origin/master
+{% endhighlight %}
 
 1. `git fetch` downloads the commits from remote branches but it doesn't merge them.
 2. `git merge origin/master` merges the remote master into the current branch. [^git_fetch_workflow]
 
 Sometimes Git will complain in the middle of the operation and you'll be left with a big mess. The following command is equivalent, more resilient, and definitely slower.
 
-    git checkout master && git pull && git checkout my_new_branch && git merge master
+{% highlight sh %}
+git checkout master && git pull && git checkout my_new_branch && git merge master
+{% endhighlight %}
 
 ###Rebase from master
 
-    git pull --rebase origin master
+{% highlight sh %}
+git pull --rebase origin master
+{% endhighlight %}
 
 Rebasing is an alternative to merging. It keeps the history cleaner. However, since rebase rewrites the commits history, it is not recommended for pushed commits. [^git_rebase]
 
 
 ##Solve the conflicts
 
-    git mergetool
- 
- Launches the configured merge tool once per conflicted file. [^merge_tools]
+{% highlight sh %}
+git mergetool
+{% endhighlight %}
+
+Launches the configured merge tool once per conflicted file. [^merge_tools]
 
 
 ##Leave what you're doing to do something else
 
-    git stash -u && git status
+{% highlight sh %}
+git stash -u && git status
+{% endhighlight %}
 
 1. `git stash -u` creates a stash with all the pending changes, including untracked files. [^git_stash_help]
 2. `git status` at this point should say that everything is clean. Failures need to be resolved on a per case basis.
@@ -98,7 +121,9 @@ Afterwards, it is safe to do any other operation.
 
 ##Return to the previous state
 
-    git stash pop
+{% highlight sh %}
+git stash pop
+{% endhighlight %}
 
 Stashes behave as a stack. `git stash pop` will pop the latest stash into the working copy. In a similar way `git stash apply` will peek the latest stash into the working copy without changing the stack. At this point the working copy should be in the same state as it was before.
 
@@ -108,7 +133,9 @@ Avoid history modification when possible. [^rewrite_history]
 
 ###Something is wrong with the last commit
 
-    git reset --soft HEAD~1 && git reset
+{% highlight sh %}
+git reset --soft HEAD~1 && git reset
+{% endhighlight %}
 
 1. `git reset --soft HEAD~1` removes the last commit from the history. Its changes are put back into the staging area.
 2. `git reset` unstages the staged changes and puts them back into the working copy.

@@ -43,39 +43,54 @@ Some changes need to be made for GitHub Pages to serve our website with a custom
 
 3- Clone the [repository that was already hosted in GitHub Pages](https://github.com/codingdogg/codingdogg.github.io) into a new folder. In the following command replace `https://github.com/codingdogg/codingdogg.github.io.git` with the clone url from your repository. Also make sure to replace the folder `codingdog.org` with your domain name. 
 
-    git clone https://github.com/codingdogg/codingdogg.github.io.git codingdog.org
+
+{% highlight sh %}
+git clone https://github.com/codingdogg/codingdogg.github.io.git codingdog.org
+{% endhighlight %}
 
 4- Open the new folder in the command line.
-    
-    cd codingdog.org
+
+{% highlight sh %}
+cd codingdog.org
+{% endhighlight %}
 
 5- Remove the existing remote for the repository.
 
-    git remote remove origin
-   
+{% highlight sh %}
+git remote remove origin
+{% endhighlight %}
+
 Git remotes are the mechanism to track were the code is going to go when pushed. [^git_remotes] The existing remote needs to be deleted so new changes won't go into the old repository. 
 
 6- Add the new remote for the repository. Make sure to replace everything after `git remote add origin` with the [clone url for the new repository](/images/gh-pages/new-repository-clone-url.png).
 
-    git remote add origin https://github.com/codingdogg/codingdog.org.git
+{% highlight sh %}
+git remote add origin https://github.com/codingdogg/codingdog.org.git
+{% endhighlight %}
 
 From now on, changes to the local repository will be pushed into the newly created GitHub repository.
 
 7- Rename the `master` branch to `gh-pages`.
 
-    git branch -m master gh-pages
+{% highlight sh %}
+git branch -m master gh-pages
+{% endhighlight %}
 
 GitHub Pages require custom websites to use a `gh-pages` branch. Changes that are not in that branch will be ignored.
 
 8- Create a `CNAME` file. Make sure you replace `codingdog.org` with your domain name. 
 
-    echo codingdog.org > CNAME
+{% highlight sh %}
+echo codingdog.org > CNAME
+{% endhighlight %}
 
 GitHub Pages require websites with custom domains to have a `CNAME` file with the associated domain. [^cname_help]
 
 9- Publish. The source code that resides on GitHub is ultimately what the readers will see. The mechanism to upload our local changes to GitHub is called pushing. The following command can be executed to publish our local changes.
 
-    git add -A && git commit -m "publishing" && git push -u origin gh-pages
+{% highlight sh %}
+git add -A && git commit -m "publishing" && git push -u origin gh-pages
+{% endhighlight %}
 
 **Success** The website is published with a custom domain. It can be accessed through `https://codingdog.org`, `https://www.codingdog.org`, `http://codingdog.org` and `http://www.codingdog.org`. 
 

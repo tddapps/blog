@@ -56,21 +56,29 @@ Blogs can be edited in private before being published. An infinity of changes ca
 
 4- Clone the repository. The clone command creates a new folder named after the repository. Make sure to replace everything after `git clone` with the clone url from the previous step.  
 
-    git clone https://github.com/codingdogg/codingdogg.github.io.git
+{% highlight sh %}
+git clone https://github.com/codingdogg/codingdogg.github.io.git
+{% endhighlight %}
 
 5- Open the blog folder in the command line.
 
-    cd codingdogg.github.io
+{% highlight sh %}
+cd codingdogg.github.io
+{% endhighlight %}
 
 The remaining commands will be executed from this folder. [^cd_command]
 
 6- Install prerequisites. This blog requires Jekyll to run. The following command installs Jekyll and makes it available to all users. The installation prompts for your password because it needs [elevated privileges](https://en.wikipedia.org/wiki/Sudo). [^other_installation_methods] Unfortunately, installing Jekyll on Windows [requires many more steps](https://jekyllrb.com/docs/windows/).
 
-    sudo gem install jekyll jekyll-sitemap
+{% highlight sh %}
+sudo gem install jekyll jekyll-sitemap
+{% endhighlight %}
 
 7- Launch the blog.
 
-    jekyll serve
+{% highlight sh %}
+jekyll serve
+{% endhighlight %}
 
 ![Jekyll Serve](/images/blog-setup/jekyll-serve-2.png)  
 The command output indicates that the blog is running on `http://127.0.0.1:4000/`.
@@ -102,12 +110,15 @@ Jekyll transforms every file from the `_posts` folder into a blog post. When a n
 ![First Post](/images/blog-setup/first-post.png)  
 Edit the file with your [favorite text editor](http://www.sublimetext.com/) and add the following text to it.
 
-    ---
-    layout: post
-    ---
-    
-    Dogs can code sometimes.
-  
+{% highlight markdown %}
+---
+layout: post
+---
+
+Dogs can code sometimes.
+
+{% endhighlight %}
+
 ![First Post](/images/blog-setup/new-post-created.png)
 
 **Metadata**: Posts should start with a section enclosed by `---` called [YAML Front Matter](http://jekyllrb.com/docs/frontmatter/). The Front Matter defines the post metadata. Metadata includes: title, url, categories, date, even user-defined pieces of information. [^metadata_components] We specified the post to use the `post` layout. Jekyll layouts are styles that will be commonly applied to all the files that use them. They are stored  in the `_layouts` folder.  
@@ -120,18 +131,24 @@ Edit the file with your [favorite text editor](http://www.sublimetext.com/) and 
 The final result of any website is to get published so the entire world can see it.
 
 **CNAME**: The source code repository contains a `CNAME` file. For the moment we just need to delete it. [^cname_file]
-    
-    rm CNAME > /dev/null 2>&1
+
+{% highlight sh %}
+rm CNAME > /dev/null 2>&1
+{% endhighlight %}
 
 Windows users should run the following command instead.
 
-    del CNAME
+{% highlight sh %}
+del CNAME
+{% endhighlight %}
 
 This is a one time only operation. There is no need to delete this file for subsequent publishes.
 
 **Publish**: GitHub has a copy of the blog's source code. This code that resides in GitHub is ultimately what the readers will see. The mechanism to upload local changes to GitHub is called pushing. The following command creates a commit and then pushes it to the remote repository. [^git_workflow]
 
+{% highlight sh %}
     git add -A && git commit -m "publishing" && git push
+{% endhighlight %}
 
 **Success**: The blog is now available at [`http://codingdogg.github.io/`](http://codingdogg.github.io/).
 
