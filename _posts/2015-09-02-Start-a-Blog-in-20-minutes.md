@@ -110,7 +110,7 @@ Jekyll transforms every file from the `_posts` folder into a blog post. When a n
 ![First Post](/images/blog-setup/first-post.png)  
 Edit the file with your [favorite text editor](http://www.sublimetext.com/) and add the following text to it.
 
-{% highlight markdown %}
+{% highlight md %}
 ---
 layout: post
 ---
