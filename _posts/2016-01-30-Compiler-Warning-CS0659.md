@@ -102,7 +102,7 @@ public class Dog
     
     public override int GetHashCode()
     {
-        return this.Name.GetHashCode();
+            return this.Name.GetHashCode() ^ this.Weight.GetHashCode();
     }
 }
 {% endhighlight %}
@@ -118,11 +118,12 @@ var fido = new Dog { Name = "Fido", Weight = 12 };
 Console.WriteLine(dogShelter.ContainsKey(fido));
 {% endhighlight %}
 
-*[Github Commit d1762078ff99cf9a84b80d1b8337b3a8a253dfe8](https://github.com/camilin87/CS0659/commit/d1762078ff99cf9a84b80d1b8337b3a8a253dfe8) contains the sample source code up to this point*
+*[Github Commit 83bd25574a7c0a3d4aad80576713f010371f0fbb](https://github.com/camilin87/CS0659/commit/83bd25574a7c0a3d4aad80576713f010371f0fbb) contains the sample source code up to this point*
 
 ##In a nutshell
-`Object.GetHashCode` is as important as `Object.Equals` for equality matters. Never override one without the other.
+`Object.GetHashCode` is as important as `Object.Equals` for equality matters. Never override one without the other. [^dotnet_equality]
 
+[^dotnet_equality]: [The Right Way to do Equality in C#](http://www.aaronstannard.com/overriding-equality-in-dotnet/)
 
 [^object_equals]: [Object.Equals Method (Object)](https://msdn.microsoft.com/en-us/library/bsc2ak47(v=vs.110).aspx#)
 
