@@ -1,3 +1,7 @@
+task :dev do
+    sh "jekyll serve --config _config.yml,_config-dev.yml"
+end
+
 task :deploy do
     sh "git rebase origin/gh-pages"
     sh "git push origin gh-pages"

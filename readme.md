@@ -6,7 +6,7 @@
 
 ##Development
 
-`jekyll serve` Loads the page locally on http://localhost:4000/
+`rake dev` Loads the page locally on http://localhost:4000/
 
 ###Changing Theme
 
