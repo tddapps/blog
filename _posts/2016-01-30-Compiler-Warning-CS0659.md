@@ -65,7 +65,7 @@ Once we compile the code we get the following warning.
 [Compiler Warning (level 3) CS0659](https://msdn.microsoft.com/en-us/library/xxhbfytk.aspx) is straightforward and direct to the point: If you override `Equals` you need to override `GetHashCode`.
 
 ##The Problem
-This is not one of those warnings that can safely be ignored. [^warning_levels] It will come back to bite you in the ass. Let's consider the following usages of the `Dog` class.
+This is not one of those warnings that can safely be ignored. [^warning_levels] It will come back to bite you. Let's consider the following usages of the `Dog` class.
 
 {% highlight csharp %}
 var dogShelter = new Dictionary<Dog, int>{
@@ -102,7 +102,10 @@ public class Dog
     
     public override int GetHashCode()
     {
-            return this.Name.GetHashCode() ^ this.Weight.GetHashCode();
+        unchecked
+        {
+            return (Weight * 397) ^ (Name != null ? Name.GetHashCode() : 0);
+        }
     }
 }
 {% endhighlight %}
@@ -118,7 +121,7 @@ var fido = new Dog { Name = "Fido", Weight = 12 };
 Console.WriteLine(dogShelter.ContainsKey(fido));
 {% endhighlight %}
 
-*[Github Commit 83bd25574a7c0a3d4aad80576713f010371f0fbb](https://github.com/camilin87/CS0659/commit/83bd25574a7c0a3d4aad80576713f010371f0fbb) contains the sample source code up to this point*
+*[Github Commit 98c9adc1fff2aee2362fd494f3a43cdb7f4d3d8a](https://github.com/camilin87/CS0659/commit/98c9adc1fff2aee2362fd494f3a43cdb7f4d3d8a) contains the sample source code up to this point*
 
 ##In a nutshell
 `Object.GetHashCode` is as important as `Object.Equals` for equality matters. Never override one without the other. [^dotnet_equality]
