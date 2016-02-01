@@ -124,7 +124,73 @@ Console.WriteLine(dogShelter.ContainsKey(fido));
 *[Github Commit 98c9adc1fff2aee2362fd494f3a43cdb7f4d3d8a](https://github.com/camilin87/CS0659/commit/98c9adc1fff2aee2362fd494f3a43cdb7f4d3d8a) contains the sample source code up to this point*
 
 ##In a nutshell
-`Object.GetHashCode` is as important as `Object.Equals` for equality matters. Never override one without the other. [^dotnet_equality]
+`Object.GetHashCode` is as important as `Object.Equals` for equality matters. Never override one without the other.  
+
+##Update: Equality is Hard [^dotnet_equality]
+Since `Dog` is a mutable object `GetHashCode` will return different values when either of its properties change making it impossible to be found in dictionaries. Down the rabbit hole we go. To overcome this issue we have to make its properties readonly.
+
+{% highlight csharp %}
+public class Dog
+{
+    public int Weight { get; }
+    public string Name { get; }
+
+    public Dog(string name, int weight)
+    {
+        this.Name = name;
+        this.Weight = weight;
+    }
+
+    public override bool Equals(object obj)
+    {
+        var that = (Dog)obj;
+        return this.Weight == that.Weight && this.Name == that.Name;
+    }
+
+    public override int GetHashCode()
+    {
+        unchecked
+        {
+            return (Weight * 397) ^ (Name != null ? Name.GetHashCode() : 0);
+        }
+    }
+}
+{% endhighlight %}
+
+Now our Program looks as follows:
+
+{% highlight csharp %}
+var dogShelter = new Dictionary<Dog, int>{
+    {new Dog("Fido", 12), 100},
+    {new Dog("Pete", 5), 10}
+};
+var fido = new Dog("Fido", 12);
+
+Console.WriteLine(dogShelter.ContainsKey(fido));
+{% endhighlight %}
+
+*[Github Commit dffbd97927070b05c623192a788a33b97e7101c7](https://github.com/camilin87/CS0659/commit/dffbd97927070b05c623192a788a33b97e7101c7) contains the sample source code up to this point*
+
+###Value Types to the Rescue
+An easier way to get rid of all of this Equality nonsense would be to make `Dog` a value type. That way we'd get equality for free.
+
+{% highlight csharp %}
+public struct Dog
+{
+    public int Weight { get; }
+    public string Name { get; }
+
+    public Dog(string name, int weight)
+    {
+        this.Name = name;
+        this.Weight = weight;
+    }
+}
+{% endhighlight %}
+
+*[Github Commit b756e87a63abec9ea8c069bc5d9c09b2a2376311](https://github.com/camilin87/CS0659/commit/b756e87a63abec9ea8c069bc5d9c09b2a2376311) contains the sample source code up to this point*
+
+
 
 [^dotnet_equality]: [The Right Way to do Equality in C#](http://www.aaronstannard.com/overriding-equality-in-dotnet/)
 
