@@ -19,7 +19,7 @@ class Cat : Animal {}
 
 {% highlight csharp %}
 
-Animal arr = new Dog[3];
+Animal[] arr = new Dog[3];
 arr[0] = new Cat();
 
 {% endhighlight %}
