@@ -4,7 +4,7 @@ title: "Var usage in C#"
 
 The following code snippets illustrate how the usage of the `var` keyword can shorten the feedback loop and prevent errors.
 
-##Simple class hierarchy
+## Simple class hierarchy
 
 {% highlight csharp %}
 
@@ -14,7 +14,7 @@ class Cat : Animal {}
 
 {% endhighlight %}
 
-##Code without using `var`
+## Code without using `var`
 
 {% highlight csharp %}
 
@@ -25,7 +25,7 @@ arr[0] = new Cat();
 
 The code will compile successfully. However, at runtime it will blow up pretty bad. There is no way to fit a `Cat` into a `Dog`.
 
-##Code using `var`
+## Code using `var`
 
 {% highlight csharp %}
 
@@ -36,7 +36,7 @@ arr[0] = new Cat();
 
 The code will not even compile. The compiler infers `arr` to be an array of Dogs. It prevents Cats from being inserted into the array. 
 
-#Summary
+## Summary
 
 In both cases the code fails. However, the usage of `var` allows some errors to be catched during compilation. Errors are preferably catched as early as possible.
 

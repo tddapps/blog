@@ -5,20 +5,20 @@ title: "The Deliver Value Fallacy: Waste (Part 1)"
 
 The term Deliver Value is widely [*ab*]used. It can be a wildcard to avoid following engineering best practices or build utterly complex solutions that solve no real business problem. In this multi-part article I plan to illustrate some of the common misconceptions associated with Delivering Value. The series will start with delivering waste.
 
-##Waste
+## Waste
 > an act or instance of using or expending something carelessly, extravagantly, or to no purpose.
 
-##A tale of two companies
+## A tale of two companies
 *YouSail, Inc.* and *GreatShoes, LLC.* are two different companies in the same position: **Online sales are low**. This is how they plan to solve their problem. [^fake_names]
 
-##YouSail, Inc.
+## YouSail, Inc.
 *YouSail, Inc.* rents luxury yachts. The executive team reasons that since they're not a technology company there's not a clear need for a technology team. [^phoenix_project] They strongly believe in paying specialized vendors for their expertise rather than having to deal with more employees. Their online sales have been down for the last six months.
 
 **The Website**: The company's website has always been outsourced. Countless contracting companies have worked on it over the years. It is a tree branch waiting to fall made out of stitched pieces. The fact that it works is a great indicator of how good technology has become over the last years. In spite of not owning the website development, *YouSail, Inc.* has a strong hold over important business metrics, backed up by lots of analytics.
 
 **The redesign**: A quick analysis of the metrics indicate that traffic is up. More people are starting reservations. Nevertheless, they're abandoning the rental during the payment flow. A plan to redesign just the payment section of the website is kicked off in under a week. The redesign project will work on a single page at a time. Moreover, the two versions of the page will be simultaneously served to validate that the new website is working better than the old one. All of this development work will be contracted out to a development agency from Argentina. The projected completion date is six months.
 
-##GreatShoes, LLC.
+## GreatShoes, LLC.
 *GreatShoes, LLC.* sells shoes online. They pride themselves in being agile and Deliver Value frequently. The technology department is the second largest department in the company with dozens of well-qualified highly-trained technology professionals. The CEO can often be heard saying: *"nowadays, every company is a technology company"*. And he's right to say so because most of the company's income comes through sales made directly to customers from their website. Unfortunately, sales have been on a steady decline for over a year.
 
 **The redesign**: The business owners think sales are down because the website does not look chic enough. Finally, after several weeks of approval meetings and budget lobbying they kick off a plan to redesign the entire website. Besides, they think that they need a CMS. How is a CMS going to help with the sales? They reason that by changing the content frequently customers should be more engaged. They ask their development team to come up with a plan.
@@ -27,7 +27,7 @@ The term Deliver Value is widely [*ab*]used. It can be a wildcard to avoid follo
 
 **Request Denied**: Business owners think the whole incremental approach would add a lot of overhead. Plus they want their CMS from day one. They don't understand why a CMS is harder to test nor to maintain in the long run. The proposal is unacceptable. They *graciously* ask the development team to build everything at once in three months.
 
-##Company tally
+## Company tally
 
 
 |                           | YouSail, Inc.                   | GreatShoes, LLC.             |
@@ -42,7 +42,7 @@ Notice how the projected completion date is closer for *GreatShoes, LLC.* -half 
 
 *YouSail, Inc.* is happy to spend six months in rebuilding just a single portion of their entire site. The cost is hefty but they know that every step they make in that direction will be validated with an increase in sales. Moreover, the risk is low. If the project cost gets too high or the business needs to focus on another direction, they can still benefit from whatever new pages they got time to build.
 
-##Delivering Value
+## Delivering Value
 
 > Which of the two teams is delivering more value to the business?
 

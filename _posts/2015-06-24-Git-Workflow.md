@@ -5,7 +5,7 @@ title: Git Workflow
 I worked in a place with a horrible Git[^git_succintly] repository. This repo was so slow that `git status` usually took more than two seconds. Deprived of a fast GUI tool, the command line became the tool of choice. These are my most frequently used commands.
 
 
-##How is the working copy doing
+## How is the working copy doing
 
 {% highlight sh %}
 git status
@@ -14,7 +14,7 @@ git status
 Displays the current branch and the list of modified files in the working copy. Once it displays `nothing to commit, working directory clean` you're good to start working.
 
 
-##Cleanup everything
+## Cleanup everything
 
 {% highlight sh %}
 git checkout -- . && git clean -f && git status
@@ -25,7 +25,7 @@ git checkout -- . && git clean -f && git status
 3. `git status` at this point should say that everything is clean. Failures need to be resolved on a per case basis.
 
 
-##Create a new branch
+## Create a new branch
 
 {% highlight sh %}
 git checkout master && git pull && git branch my_new_branch && git checkout my_new_branch
@@ -37,7 +37,7 @@ git checkout master && git pull && git branch my_new_branch && git checkout my_n
 4. `git checkout my_new_branch` starts using the newly created branch. Upcoming changes will go into `my_new_branch`.
 
 
-##Inspect pending changes
+## Inspect pending changes
 
 {% highlight sh %}
 git diff
@@ -46,7 +46,7 @@ git diff
 Displays the changes detail in a diff format, except for staged changes and untracked files. Although it is very fast, `git diff` becomes almost useless for large changesets. On the other hand, the majority of GUI tools come preloaded with excellent diff capabilities. [^gui_tool]
 
 
-##Commit everything
+## Commit everything
 A commit is a unique changeset. [^small_commits]
 
 {% highlight sh %}
@@ -57,7 +57,7 @@ git add -A && git commit -m "committing all the files" && git push origin my_new
 2. `git commit -m "committing all the files"` creates a new commit with the staged files. This new commit has the message `committing all the files`.
 3. `git push origin my_new_branch` pushes `my_new_branch` to the remote tracking branch `origin/my_new_branch` in the remote repository. While it is not required to push every commit right away, doing so protects against losing work in case of hardware failure.
 
-###Commit only the Javascript changes
+### Commit only the Javascript changes
 
 {% highlight sh %}
 git add *.js
@@ -69,11 +69,11 @@ Sometimes it is necessary to commit only certain files. In those scenarios the `
 git add *.js && git commit -m "committing only javascript changes" && git push origin my_new_branch
 {% endhighlight %}
 
-##Display the history
+## Display the history
 The commits history can be displayed from the command line. [^git_log] However, GUI tools truly excel for this task.
 
 
-##Merge from the latest master
+## Merge from the latest master
 It is a good practice to sync branches frequently [*citation needed*].
 
 {% highlight sh %}
@@ -89,7 +89,7 @@ Sometimes Git will complain in the middle of the operation and you'll be left wi
 git checkout master && git pull && git checkout my_new_branch && git merge master
 {% endhighlight %}
 
-###Rebase from master
+### Rebase from master
 
 {% highlight sh %}
 git pull --rebase origin master
@@ -98,7 +98,7 @@ git pull --rebase origin master
 Rebasing is an alternative to merging. It keeps the history cleaner. However, since rebase rewrites the commits history, it is not recommended for pushed commits. [^git_rebase]
 
 
-##Solve the conflicts
+## Solve the conflicts
 
 {% highlight sh %}
 git mergetool
@@ -107,7 +107,7 @@ git mergetool
 Launches the configured merge tool once per conflicted file. [^merge_tools]
 
 
-##Leave what you're doing to do something else
+## Leave what you're doing to do something else
 
 {% highlight sh %}
 git stash -u && git status
@@ -119,7 +119,7 @@ git stash -u && git status
 Afterwards, it is safe to do any other operation.
 
 
-##Return to the previous state
+## Return to the previous state
 
 {% highlight sh %}
 git stash pop
@@ -128,10 +128,10 @@ git stash pop
 Stashes behave as a stack. `git stash pop` will pop the latest stash into the working copy. In a similar way `git stash apply` will peek the latest stash into the working copy without changing the stack. At this point the working copy should be in the same state as it was before.
 
 
-##Rewrite the history
+## Rewrite the history
 Avoid history modification when possible. [^rewrite_history]
 
-###Something is wrong with the last commit
+### Something is wrong with the last commit
 
 {% highlight sh %}
 git reset --soft HEAD~1 && git reset
@@ -143,7 +143,7 @@ git reset --soft HEAD~1 && git reset
 Afterwards, make the necessary edits and commit again. Editing pushed commits can cause serious issues. It is safer to create a new commit to correct the problem.
 
 
-##What broke the project
+## What broke the project
 When things break out of magic, use `git bisect` to pinpoint the exact commit where the issue started. `git bisect` is such a useful tool that merits a blogpost just for itself. In the meantime, [read this](http://webchick.net/node/99) to learn more about it.
 
 

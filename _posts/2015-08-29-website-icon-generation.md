@@ -6,13 +6,13 @@ title: Website Icon Generation
 Websites have icons. More specifically, they are called Favicon. In their beginnings Favicons were simple. Nowadays, they are very hard to manage without automation.  
 ![Favicons](/images/fav-icon/address-bar.png)
 
-##Beginnings
+## Beginnings
 Initially, website owners only had to create a single image and reference it on the website. [^favicon_history]
 
-##The Mess
+## The Mess
 Nowadays, websites need to have at least a dozen different versions of the same icon. Almost of all these have different sizes. Some of them cannot have transparencies while others can. [^the_icon_mess]
 
-##Automation to the rescue
+## Automation to the rescue
 Fortunately, there are tools to automate the Favicon creation process. The following is a walkthrough of [favicon-generator.org](http://www.favicon-generator.org/).
 
 1. Open [http://www.favicon-generator.org/](http://www.favicon-generator.org/)

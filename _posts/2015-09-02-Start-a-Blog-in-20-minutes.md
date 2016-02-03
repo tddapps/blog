@@ -5,7 +5,7 @@ title: Start a Blog in 20 minutes
 Creating a blog can be a daunting task. Bloggers need to answer questions such as: How will it look like? Where will new posts be written? Where will it be published? How much will it cost? This guide describes how to start a free blog on GitHub Pages. The source code [is available on GitHub](https://github.com/codingdogg/codingdogg.github.io/).
 
 
-##Blog Building Blocks
+## Blog Building Blocks
 Websites are complex pieces of technology. They are mostly composed of multiple layers of software ranging from low-level network package transmission to high level presentation styling. [Blogs](https://en.wikipedia.org/wiki/Blog) are only a special case of website.
 
 **Content**: The most important component of a blog. Blogs are read mainly because of the quality of the posts. The blog posts from this guide will be written using [MarkDown](https://help.github.com/articles/markdown-basics/).
@@ -19,9 +19,9 @@ Websites are complex pieces of technology. They are mostly composed of multiple 
 [GitHub](https://github.com) is a web-based source code repository hosting platform. They have a variety of free and paid services. One of these free services is [GitHub Pages](https://pages.github.com/). It provides all the infrastructure to quickly bootstrap a static site. A GitHub account is required to use GitHub Pages. GitHub accounts must be unique. [`codingdogg`](https://github.com/codingdogg) will be the account for this guide.
 
 
-##Bootstraping the Blog
+## Bootstraping the Blog
 
-###Selecting a Theme
+### Selecting a Theme
 Blogs need great content to be relevant. However, a nice visual style can do no harm. Themes are the foundation of a blog's visual style. They are the fastest mechanism to come up with a nice and consistent presentation. This blog will start off an existing theme from the [Jekyll themes website](http://jekyllthemes.org/). [^start_from_scratch]
 
 1- Open `http://jekyllthemes.org/`
@@ -31,7 +31,7 @@ Blogs need great content to be relevant. However, a nice visual style can do no 
 3- Click the `Homepage` button. It will display the [GitHub repository](https://github.com/johnotander/pixyll) for the theme. Repositories are buckets where the source code is stored. They belong to a GitHub account and their names do not have to be unique. In this case the repository name is `pixyll` and it belongs to the account `johnotander`.
 
 
-###Creating the source code repository
+### Creating the source code repository
 Websites are made out of source code. Every element that can be seen on the screen: images, text, links, is built with source code. Since blogs are only a special case of website they need source code too. Our blog's source code will not be written from scratch. On the contrary, most of the theme's source code will be reused. Code reusability is a very common practice that allows to build new products based on existing products built before.
 
 1- Click the [`Fork` button on the top right corner](/images/blog-setup/pixyll-repository-fork-small.png). Forks are repositories created as exact copies of other repositories. The new fork name is `pixyll` and it belongs to the `codingdogg` GitHub account.  However, repository names need to follow certain guidelines in order to be published on GitHub pages.
@@ -44,7 +44,7 @@ From now on the blog repository will be `codingdogg.github.io`. Make sure your r
 ![Repository Renamed](/images/blog-setup/repository-renamed2.png)  
 
 
-###Previewing the blog
+### Previewing the blog
 Blogs can be edited in private before being published. An infinity of changes can be made from the authors computers before the content is ready for primetime. The first step to preview and edit the blog is to download its source code from the GitHub servers. This process is called cloning.
 
 1- Make sure [Git](https://git-scm.com/) and [Ruby](https://www.ruby-lang.org) are installed. [^prerequisites_installation]
@@ -86,7 +86,7 @@ The command output indicates that the blog is running on `http://127.0.0.1:4000/
 8- Open `http://127.0.0.1:4000/` in a web browser. [At this point the blog is fully functional](/images/blog-setup/pixyll-running.png). It even has some sample content.
 
 
-##Modifying the content
+## Modifying the content
 A blog with default content can be very boring. Fortunately, [Jekyll](http://jekyllrb.com/) is a highly customizable tool that provides great freedom. This blog has the typical [folder structure](http://jekyllrb.com/docs/structure/) of a Jekyll blog.  
 ![Blog Folder Structure](/images/blog-setup/blog-folder-structure.png)
 
@@ -101,7 +101,7 @@ A blog with default content can be very boring. Fortunately, [Jekyll](http://jek
 **Footer**: The content for the footer can be found in `_includes\footer.html`. This is how the footer looks like after some minor tweaks.
 ![Modified Footer](/images/blog-setup/modified-footer.png)
 
-###Writing posts
+### Writing posts
 Blogs need posts to be real blogs. [*citation_needed*] Our blog comes with some posts by default.  
 ![Posts folder](/images/blog-setup/posts-folder.png)  
 Jekyll transforms every file from the `_posts` folder into a blog post. When a new file is created the corresponding post appears. In the same way, when a file gets deleted its post disappears. [^jekyll_posts]
@@ -127,7 +127,7 @@ Dogs can code sometimes.
 **Content**: The content of the post comes after the YAML Front Matter. Posts are written using the [MarkDown](https://help.github.com/articles/markdown-basics/) language. Writing MarkDown is very similar to writing plain text and way easier than writing HTML. Entire blogs can be published with very little knowledge of it. [^why_markdown]
 
 
-##Publishing the Blog
+## Publishing the Blog
 The final result of any website is to get published so the entire world can see it.
 
 **CNAME**: The source code repository contains a `CNAME` file. For the moment we just need to delete it. [^cname_file]

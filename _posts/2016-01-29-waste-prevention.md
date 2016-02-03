@@ -6,17 +6,17 @@ Waste is the enemy of value. It is usually manifested as building the wrong prod
 
 *This is the third article of the Deliver Value Fallacy series. [Part 1](https://tddapps.com/2016/01/26/The-Deliver-Value-Fallacy/source=part3) covers Delivering Waste and [Part 2](https://tddapps.com/2016/01/28/The-Deliver-Value-Fallacy-Technical-Debt-Part-2/source=part3) covers Technical Debt.*
 
-##Data Driven
+## Data Driven
 Aim to back every decision with data. While not always possible, most of the times it is possible. Engineers are as responsible for the company as everybody else. Always -*politely*- question business decisions made out of sheer inspiration. Be ready to educate and share how data driven decisions help the business while intuition can be wrong and costly.
 
-##Simplify. Simplify. Simplify
+## Simplify. Simplify. Simplify
 Engineers have a tendency to overthink problems. Ask business owners questions about their decision drivers. Learn the business needs. With the clarity these provide you can simplify design aspects that are not really needed.
 
-##Examples
+## Examples
 The following are real world scenarios I've been exposed to recently. [^obfuscation] They illustrate how the waste prevention measures can be applied to achieve optimal results that help the business move faster in the correct direction.
 
 
-###Example 1: The CMS
+### Example 1: The CMS
 ![CMS Testing](/images/waste-prevention/cms-testing.jpg)  
 **The business**: Rebuild the website using the company's CMS.  
 **Engineers**: Why do you need a CMS? CMS'es are hard to test, their upgrades are very costly, they impose a great burden on the infrastructure, and they're very hard to move away from.  
@@ -31,7 +31,7 @@ The following are real world scenarios I've been exposed to recently. [^obfuscat
 **The business**: Mutters, ineligible.  
 
 
-###Example 2: Database all the things
+### Example 2: Database all the things
 ![Database all the things](/images/waste-prevention/database-all-the-things.jpg)  
 **The business**: We need to start paying attention to the customer's date of birth (DOB). Let's save it in the database and create some Crystal Reports off from it.  
 **Engineers**: Whoa! Hold your horses. A database field? What is it for? Why do you need this new information?  
@@ -46,7 +46,7 @@ The following are real world scenarios I've been exposed to recently. [^obfuscat
 **The business**: Mutters, ineligible.  
 
 
-###Example 3: Architectural decisions
+### Example 3: Architectural decisions
 ![Architectural Diagram](/images/waste-prevention/architectural-diagram.jpg)  
 **Happy Trigger**: Let's have an architectural discussion to make sure that all our web apps can be loaded as angular modules.  
 **Senior Engineer**: There's something I don't understand. You want to create a single web app that would be the entry point to all of the other web apps?  
@@ -63,7 +63,7 @@ The following are real world scenarios I've been exposed to recently. [^obfuscat
 **Happy Trigger**: Mutters, ineligible.  
 
 
-##Foreword
+## Foreword
 That's it, no magic bullet. Data Driven Decisions and Simplification are simple concepts that will save countless hours and headaches. Do you have to always push back on everything? For God's sake no. However, keep an open eye for situations that can create waste.
 
 [^obfuscation]: The details are obfuscated to protect the innocent.

@@ -7,17 +7,17 @@ The term Deliver Value is widely [*ab*]used. It is regularly used as an excuse t
 
 *Please head to the [first post](https://tddapps.com/2016/01/26/The-Deliver-Value-Fallacy/?source=part2) to learn about Delivering Waste.*
 
-##Debt
+## Debt
 > something, typically money, that is owed or due.
 
-##A tale of two companies
+## A tale of two companies
 *YouSail, Inc.* and *GreatShoes, LLC.* are two different companies in the same position: **Online sales are low**. [^fake_names]
 
 In a nutshell *YouSail, Inc.* is big on outsourcing but relies heavily on business metrics while *GreatShoes, LLC.* has a strong engineering culture that gets usually overruled by intuition and lack of data. Both of the companies devise relatively different plans to address their website issues.
 
 The following is a summary of the website redesign roadmap each company plans to implement. *Full details behind the decision processes and company cultures can be found in the [Part 1](https://tddapps.com/2016/01/26/The-Deliver-Value-Fallacy/?source=part2) of this series.*
 
-##Company tally
+## Company tally
 
 
 |                           | YouSail, Inc.                   | GreatShoes, LLC.             |
@@ -28,7 +28,7 @@ The following is a summary of the website redesign roadmap each company plans to
 | Time to Feedback          | After Every Single Page         | After project completion     |
 | Projected Completion      | Six Months                      | Three months                 |
 
-##Delivering Value
+## Delivering Value
 
 > Which of the two teams is delivering more value to the business?
 

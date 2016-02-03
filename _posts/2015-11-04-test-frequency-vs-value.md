@@ -24,5 +24,5 @@ Not all the tests need to run with the same frequency. While it is relatively ea
 
 Some Api integration tests may need to be run on a regular schedule to guarantee the stability of the system and catch errors early. As usual reducing the feedback loop is fundamental. It is definitely better to alert your partner of a breaking change the day they introduced it than two weeks after in a hurry before a release. Always try to have these integration tests running as often as possible.
 
-##Summary
+## Summary
 Automate manual processes. Run automated tests as often as possible.

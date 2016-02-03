@@ -4,18 +4,18 @@ title: Custom Domain on Github Pages
 
 Hosting a website in [GitHub Pages](https://pages.github.com/) can be very convenient. However, a `github.io` subdomain may not be the best name for a website. In spite of being free, this infrastructure is deeply tied to GitHub Pages. If GitHub decides to discontinue GitHub Pages the website cannot be moved elsewhere because all of the outside links will be pointing to a `github.io` url. A more resilient approach is to use a custom domain. With a custom domain, our hosting provider can be easily replaced while the content can still be accessed from the same urls. The source code [is available on GitHub](https://github.com/codingdogg/codingdog.org).
 
-##Requirements
+## Requirements
 - Make sure [Git](https://git-scm.com/) is installed. [^prerequisites_installation]
 - A Domain Name. Go to your favorite [registrar](https://en.wikipedia.org/wiki/Domain_name_registrar) and buy a domain. We will use `codingdog.org`.
 - A website hosted on GitHub pages. This guide will start off [codingdogg.github.io](http://codingdogg.github.io/)
 
-##Setup CloudFlare
+## Setup CloudFlare
 [CloudFlare](https://www.cloudflare.com/) is a service that speeds up websites. It acts as a [CDN](https://en.wikipedia.org/wiki/Content_delivery_network) for [static content](https://en.wikipedia.org/wiki/Static_web_page). CloudFlare also protects against Denial of Service ([DDoS](https://en.wikipedia.org/wiki/Denial-of-service_attack)) attacks. It can serve a cached version of your website in case it goes down. [^how_does_cloudflare_work] Follow the next steps to configure your domain with CloudFlare. [^cloudflare]
 
 - [Step 2: Create a CloudFlare account and add a website](https://support.cloudflare.com/hc/en-us/articles/201720164)
 - [Step 3: Change your domain name servers to CloudFlare](https://support.cloudflare.com/hc/en-us/articles/205195708)
 
-###SSL
+### SSL
 [SSL](https://en.wikipedia.org/wiki/Transport_Layer_Security) is an important security feature. In the past few years [Internet giants](https://google.com) have started a campaing to promote the adoption of SSL through the web. Moreover, [SSL is known to increase website rankings on search engines](http://googleonlinesecurity.blogspot.com/2014/08/https-as-ranking-signal_6.html). CloudFlare provides free SSL support.
 
 1- Click [`Page Rules`](/images/gh-pages/cloudflare-page-rules.png) on the CloudFlare navigation bar.
@@ -25,16 +25,16 @@ Hosting a website in [GitHub Pages](https://pages.github.com/) can be very conve
 
 3- Make sure `Flexible` SSL is selected in the [CloudFlare `Crypto` settings](/images/gh-pages/cloudflare-flexible-ssl.png)
 
-##Configure the DNS
+## Configure the DNS
 [DNS](https://en.wikipedia.org/wiki/Domain_Name_System) is the system the Internet uses to resolve addresses. A translation tool that given a name (`codingdog.org`) returns the address where it can be found (`192.30.252.153`). Websites hosted on GitHub Pages must be configured so they can only be found on [specific Internet addresses](https://help.github.com/articles/setting-up-a-custom-domain-with-github-pages/).
 
 Using your [DNS](https://en.wikipedia.org/wiki/Domain_Name_System) configuration tool, create a couple of `A` records pointing `@` to `192.30.252.153` and `192.30.252.154`. `@` is a shortcut for the domain name. The created `A` records are configuring `codingdog.org` to be found at the GitHub Pages servers. DNS changes may take up to a couple of days to reflect.
 
-###`www` subdomain
+### `www` subdomain
 Many websites were initially known for their `www` subdomain: `www.google.com`, `www.facebook.com`, etc. Nowadays, the `www` subdomain is not as important as it was initially. However, it is a good practice to keep it working. If somebody types `www.codingdog.org` we don't want to display an error page. Add a `CNAME` record pointing `www` to `@` to make the website accessible through the `www` subdomain.  
 ![www subdomain](/images/gh-pages/www-subdomain.png)
 
-##GitHub Pages custom domain setup
+## GitHub Pages custom domain setup
 Some changes need to be made for GitHub Pages to serve our website with a custom domain.[^github_pages_custom_domain]
 
 1- [Create a new GitHub repository and name it after your domain](/images/gh-pages/new-repository-creation.png). The repository for this guide will be [`codingdog.org`](https://github.com/codingdogg/codingdog.org). GitHub displays [a code import page](/images/gh-pages/new-repository-created.png) once the repository is created.
