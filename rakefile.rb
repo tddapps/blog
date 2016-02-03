@@ -1,5 +1,7 @@
 task :dev do
-    sh "jekyll serve --config _config.yml,_config-dev.yml"
+    sh "bundle update"
+    sh "bundle exec jekyll build --config _config.yml,_config-dev.yml"
+    sh "bundle exec jekyll serve --config _config.yml,_config-dev.yml"
 end
 
 task :deploy do
@@ -26,6 +28,6 @@ task :install_theme, [:theme_folder] do |t, args|
 end
 
 task :setup do
-    sh "sudo gem install jekyll"
-    sh "sudo gem install jekyll-paginate"
+    sh "gem install bundler"
+    sh "bundle install"
 end

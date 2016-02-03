@@ -57,6 +57,7 @@ paginate:     10
 sass:
   compressed: true
 gems:
+  - jekyll-coffeescript
   - jekyll-sitemap
   - jekyll-paginate
 
