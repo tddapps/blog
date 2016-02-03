@@ -1,15 +1,8 @@
----
-title: General POS design considerations
----
-
-
 For the first years of my career I built a few Point of Sale (POS) systems using C# and WPF. All of these systems had the same working principle: the software was installed in a remote terminal that customers would use to make transactions. They also shared the same pain points such as updates, database migrations, and physical devices reliability. The following are lessons learned from painstaking experiences and a few nights without sleep. The earlier in the project these get incorporated the more stable the overall system will be.
 
 **TL;DR: Building a POS system is hard. Brace yourself.** 
 
-
 ##Support
-
 Distributed systems are very hard to manage. [*citation_needed*] The better your support tools are the more stable your system will be. [^zapier_support] Invest time building support tools rather than fire-fighting outages.  
 
 ###Comprehensive and detailed transactional logging  
