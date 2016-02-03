@@ -7,7 +7,9 @@ For the first years of my career I built a few Point of Sale (POS) systems using
 
 **TL;DR: Building a POS system is hard. Brace yourself.** 
 
-##Support  
+
+##Support
+
 Distributed systems are very hard to manage. [*citation_needed*] The better your support tools are the more stable your system will be. [^zapier_support] Invest time building support tools rather than fire-fighting outages.  
 
 ###Comprehensive and detailed transactional logging  
