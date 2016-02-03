@@ -61,6 +61,12 @@ gems:
   - jekyll-sitemap
   - jekyll-paginate
 
+github: [metadata]
+kramdown:
+   input: GFM
+   hard_wrap: false
+
+
 defaults:
     -
         scope:
