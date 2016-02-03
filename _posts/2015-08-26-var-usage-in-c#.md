@@ -1,5 +1,6 @@
 ---
 title: "Var usage in C#"
+permalink: /2015/08/26/var-usage-in-c%23/
 ---
 
 The following code snippets illustrate how the usage of the `var` keyword can shorten the feedback loop and prevent errors.
