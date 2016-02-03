@@ -1,5 +1,4 @@
 task :dev do
-    sh "bundle update"
     sh "bundle exec jekyll serve --config _config.yml,_config-dev.yml"
 end
 
@@ -29,4 +28,5 @@ end
 task :setup do
     sh "gem install bundler"
     sh "bundle install"
+    sh "bundle update"
 end
