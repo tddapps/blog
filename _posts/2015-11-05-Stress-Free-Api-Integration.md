@@ -24,7 +24,7 @@ Development tests are run against the API Sandbox. It is also used as the templa
 
 Once development is complete. The code is promoted to Production to start consuming the Production API.  
 ![Production Consumes the API](/images/api-integration/5-production-consumes-api.png)  
-At this point there should be no surprises in Production because all the tests passed against the API Sandbox. The better the API Sandbox is the seamless this process will be. [How often should the tests run?](https://tddapps.com/2015/11/04/test-frequency-vs-value/)
+At this point there should be no surprises in Production because all the tests passed against the API Sandbox. The better the API Sandbox is the seamless this process will be. [How often should the tests run?](/2015/11/04/test-frequency-vs-value/)
 
 ### Oreo Break
 These API Integrations seem to be a lot of work they surely take tons of time. Are they really needed? Why can't we just develop everything we need in-house?  

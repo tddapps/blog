@@ -4,7 +4,7 @@ title: Waste Prevention
 
 Waste is the enemy of value. It is usually manifested as building the wrong product. The following are two waste prevention techniques I've learned during my years as an engineer.
 
-*This is the third article of the Deliver Value Fallacy series. [Part 1](https://tddapps.com/2016/01/26/The-Deliver-Value-Fallacy?source=part3) covers Delivering Waste and [Part 2](https://tddapps.com/2016/01/28/The-Deliver-Value-Fallacy-Technical-Debt-Part-2?source=part3) covers Technical Debt.*
+*This is the third article of the Deliver Value Fallacy series. [Part 1](/2016/01/26/The-Deliver-Value-Fallacy?source=part3) covers Delivering Waste and [Part 2](/2016/01/28/The-Deliver-Value-Fallacy-Technical-Debt-Part-2?source=part3) covers Technical Debt.*
 
 ## Data Driven
 Aim to back every decision with data. While not always possible, most of the times it is possible. Engineers are as responsible for the company as everybody else. Always -*politely*- question business decisions made out of sheer inspiration. Be ready to educate and share how data driven decisions help the business while intuition can be wrong and costly.

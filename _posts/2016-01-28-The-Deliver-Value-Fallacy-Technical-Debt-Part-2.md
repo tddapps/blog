@@ -5,7 +5,7 @@ title: "The Deliver Value Fallacy: Technical Debt (Part 2)"
 
 The term Deliver Value is widely [*ab*]used. It is regularly used as an excuse to avoid following engineering best practices. In this second installment I plan to illustrate some of the common misconceptions associated with Delivering Value and Technical Debt.
 
-*Please head to the [first post](https://tddapps.com/2016/01/26/The-Deliver-Value-Fallacy/?source=part2) to learn about Delivering Waste.*
+*Please head to the [first post](/2016/01/26/The-Deliver-Value-Fallacy/?source=part2) to learn about Delivering Waste.*
 
 ## Debt
 > something, typically money, that is owed or due.
@@ -15,7 +15,7 @@ The term Deliver Value is widely [*ab*]used. It is regularly used as an excuse t
 
 In a nutshell *YouSail, Inc.* is big on outsourcing but relies heavily on business metrics while *GreatShoes, LLC.* has a strong engineering culture that gets usually overruled by intuition and lack of data. Both of the companies devise relatively different plans to address their website issues.
 
-The following is a summary of the website redesign roadmap each company plans to implement. *Full details behind the decision processes and company cultures can be found in the [Part 1](https://tddapps.com/2016/01/26/The-Deliver-Value-Fallacy/?source=part2) of this series.*
+The following is a summary of the website redesign roadmap each company plans to implement. *Full details behind the decision processes and company cultures can be found in the [Part 1](/2016/01/26/The-Deliver-Value-Fallacy/?source=part2) of this series.*
 
 ## Company tally
 
@@ -40,7 +40,7 @@ Sometimes it can be very hard to condone the actions behind *YouSail, Inc.*. Yes
 
 Delivering value does not mean cutting corners. On the contrary, Delivering Value is about delivering just enough functionality just in time to meet the business needs, while maintaining high engineering standards that will allow the product to adapt as needed.
 
-*Vist [Part 3](https://tddapps.com/2016/01/29/waste-prevention/?source=part2) of this series to learn how to Prevent Waste.*
+*Visit [Part 3](/2016/01/29/waste-prevention/?source=part2) of this series to learn how to Prevent Waste.*
 
 
 [^the_lean_startup]: In his book [The Lean Startup](http://amzn.to/1KaRSBC), [Eric Ries](https://twitter.com/ericries) details the need for lean development practices in startups as well as in well-established companies.
