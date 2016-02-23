@@ -77,7 +77,7 @@ Console.WriteLine(dogShelter.ContainsKey(fido));
 {% endhighlight %}
 
 The code from above prints `False` because `fido` cannot be found in `dogShelter`.  
-![There comes the bite in the ass](http://i.giphy.com/vdLRwjtIZ7g3K.gif)
+![There comes the bite in the ass](https://i.giphy.com/vdLRwjtIZ7g3K.gif)
 
 ### Why?
 Overriding `Equals` is not enough. The `GetHashCode` method provides a numeric value for quick equality checks such as those used in collections like `Dictionary` and `HashTable`. [^gethashcode]
