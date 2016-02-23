@@ -6,7 +6,7 @@ There are many factors to consider while changing jobs. Jobs are where we spent 
 
 
 ## What makes you happy at work?
-Dig down into your inner self and try to answer this question as honestly as possible. Think of the three most important factors.[^why_three] Don't have share them with anybody. Just make sure to understand what those are.
+Dig down into your inner self and try to answer this question as honestly as possible. Think of the three most important factors.[^why_three] Don't share them with anybody. Just make sure to understand what those are.
 
 **Why is this important?**: Having your personal motivators clearly defined will help you make the right compromises when looking for a job. I have worked with at least a dozen individuals who have consciously taken uncommon directions with their careers: four hours daily commutes, unemployment to work on personal projects, major pay cuts to be closer to home, promotion rejection to dodge responsibility, remain significantly underpaid in spite of a thriving job market. When questioned about these career choices, they all strongly believe it is the best decision for them.
 
