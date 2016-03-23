@@ -4,22 +4,23 @@ layout: bootstrap
 
   <ul class="posts">
     {% for post in paginator.posts %}
-      <li>
-        <h1>
-          <a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-        </h1>
-        <small>{{ post.date | date: "%b %-d, %Y" }}</small>
+      {% if post.draft != true %}
+        <li>
+          <h1>
+            <a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+          </h1>
+          <small>{{ post.date | date: "%b %-d, %Y" }}</small>
 
-        <p>
-          {% if post.summary %}
-            {{ post.summary }}
-          {% else %}
-            {{ post.excerpt }}
-          {% endif %}
-        </p>
-        <a href="{{ post.url | prepend: site.baseurl }}" class="post-link">Read More...</a>
-
-      </li>
+          <p>
+            {% if post.summary %}
+              {{ post.summary }}
+            {% else %}
+              {{ post.excerpt }}
+            {% endif %}
+          </p>
+          <a href="{{ post.url | prepend: site.baseurl }}" class="post-link">Read More...</a>
+        </li>
+      {% endif %}
     {% endfor %}
   </ul>
 
