@@ -5,24 +5,7 @@ layout: bootstrap
 <article>
 
     {% if page.draft == true %}
-        <style type="text/css">
-            .alert-fixed {
-                position:fixed; 
-                top: 0px; 
-                left: 0px; 
-                width: 100%;
-                z-index:9999; 
-                border-radius:0px;
-            }
-
-            .header{
-                margin-top: 80px;
-            }
-        </style>
-        <div class="alert alert-warning alert-dismissible alert-fixed" role="alert">
-            <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-            <strong>Preview Content:</strong> It may contain errors. The final version will be available in this same url without this warning.
-        </div>
+        {% include preview-advisory.html %}
     {% endif %}
 
     {% assign minutes = content | number_of_words | divided_by: 180 %}
