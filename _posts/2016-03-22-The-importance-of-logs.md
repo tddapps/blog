@@ -1,6 +1,5 @@
 ---
 title: The Importance of Logs
-draft: true
 ---
 
 
