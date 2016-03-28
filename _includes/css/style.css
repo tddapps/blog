@@ -17,6 +17,10 @@ a.brand, a.brand:hover, a.brand:visited,
     text-decoration: none;
 }
 
+.posts-archive h2 a {
+    font-size: smaller;
+}
+
 a.brand, .social-links a{
     font-size: larger;
 }
