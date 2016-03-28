@@ -11,7 +11,8 @@ article p {
 
 a.brand, a.brand:hover, a.brand:visited,
 .social-links a, .social-links a:hover, .social-links a:visited,
-.posts h1 a, .posts h1 a:hover, .posts h1 a:visited{
+.posts h1 a, .posts h1 a:hover, .posts h1 a:visited,
+.posts-archive h2 a, .posts-archive h2 a:hover, .posts-archive h2 a:visited {
     color: #333;
     text-decoration: none;
 }
@@ -28,11 +29,13 @@ a.brand, .social-links a{
     opacity: 1.0;
 }
 
-ul.posts {
+ul.posts,
+ul.posts-archive {
     padding: 0;
 }
 
-ul.posts > li{
+ul.posts > li,
+ul.posts-archive > li {
     list-style: none;
 }
 

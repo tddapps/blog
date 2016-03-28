@@ -1,9 +1,10 @@
 ---
 layout: bootstrap
 ---
+  {% assign maxposts = 5 %}
 
   <ul class="posts">
-    {% for post in paginator.posts %}
+    {% for post in site.posts limit: maxposts %}
       {% if post.draft != true %}
         <li>
           <h1>
@@ -24,24 +25,24 @@ layout: bootstrap
     {% endfor %}
   </ul>
 
-  <ul class="pager">
-    <li>
-      {% if paginator.previous_page %}
-        {% if paginator.page == 2 %}
-          <a href="{{ site.baseurl }}/">Newer</a>
-        {% else %}
-          <a href="{{ site.baseurl }}/page{{paginator.previous_page}}/">Newer</a>
-        {% endif %}
+  <h1>Archive</h1>
+  <ul class="posts-archive">
+    {% for post in site.posts offset: maxposts %}
+      {% assign loopindex = forloop.index | modulo: 2 %}
+      {% if loopindex == 1 %}
+        <li class="col-md-6">
+          <h2>
+            <a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+          </h2>
+          <small>{{ post.date | date: "%b %-d, %Y" }}</small>
+        </li>
       {% else %}
-        <span class="disabled">Newer</span>
+        <li class="col-md-6">
+          <h2>
+            <a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+          </h2>
+          <small>{{ post.date | date: "%b %-d, %Y" }}</small>
+        </li>
       {% endif %}
-    </li>
-    <li>
-      {% if paginator.next_page %}
-        <a href="{{ site.baseurl }}/page{{paginator.next_page}}/">Older</a>
-      {% else %}
-        <span class="disabled">Older</span>
-      {% endif %}
-    </li>
+    {% endfor %}
   </ul>
-
