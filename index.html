@@ -1,10 +1,10 @@
 ---
 layout: bootstrap
 ---
-  {% assign maxposts = 5 %}
+  {% assign max_detailed_posts = 5 %}
 
   <ul class="posts">
-    {% for post in site.posts limit: maxposts %}
+    {% for post in site.posts limit: max_detailed_posts %}
       {% if post.draft != true %}
         <li>
           <h1>
@@ -27,21 +27,19 @@ layout: bootstrap
 
   <h1>Archive</h1>
   <ul class="posts-archive">
-    {% for post in site.posts offset: maxposts %}
+    {% for post in site.posts offset: max_detailed_posts %}
       {% assign loopindex = forloop.index | modulo: 2 %}
       {% if loopindex == 1 %}
         <li class="col-md-6">
           <h2>
             <a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
           </h2>
-          <small>{{ post.date | date: "%b %-d, %Y" }}</small>
         </li>
       {% else %}
         <li class="col-md-6">
           <h2>
             <a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
           </h2>
-          <small>{{ post.date | date: "%b %-d, %Y" }}</small>
         </li>
       {% endif %}
     {% endfor %}
