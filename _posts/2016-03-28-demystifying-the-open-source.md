@@ -1,6 +1,5 @@
 ---
 title: Demystifying the Open Source
-draft: true
 ---
 
 A lot has been said about open source technologies. Many [Fortune 500 businesses run open source software](http://fortune.com/2010/08/16/how-corporate-america-went-open-source/). However, many misconceptions about the open source still lurk around the enterprise world. This is my best attempt to debunk them.
@@ -20,7 +19,6 @@ That being said, having the ability of inspecting a library's source before usin
 Want to learn more? Read [this](http://www.dwheeler.com/secure-programs/Secure-Programs-HOWTO/open-source-security.html), [this](https://en.wikipedia.org/wiki/Open-source_software_security) and [this](https://www.ibm.com/developerworks/mydeveloperworks/blogs/6e6f6d1b-95c3-46df-8a26-b7efd8ee4b57/entry/is_open_source_software_less_secure230?lang=en).  
 
 ## Myth: Open Source is not production ready  
-![How absurd](https://i.giphy.com/Hhbea19lrGa9G.gif)  
 This has been the hardest myth to debunk because of its absurdity.  
 
 Seventy-eight percent of respondents to the [Ninth Annual Future of Open Source Survey of 2015](https://www.blackducksoftware.com/future-of-open-source) determined that their companies run part or all of its operations on open source software. It doesn't get more production ready than that.  
