@@ -39,7 +39,7 @@ ul.posts-archive {
 }
 
 ul.posts > li,
-ul.posts-archive > li {
+ul.posts-archive li {
     list-style: none;
 }
 
