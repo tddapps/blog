@@ -30,29 +30,10 @@ layout: bootstrap
   <h1>Archive</h1>
   <ul class="posts-archive">
     {% for post in site.posts offset: max_detailed_posts %}
-      {% assign loopindex = forloop.index | modulo: 3 %}
-      {% if loopindex == 0 %}
-        <li class="col-md-4">
-          <h2>
-            <a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-          </h2>
-        </li>
-      {% endif %}
-
-      {% if loopindex == 1 %}
-        <li class="col-md-4">
-          <h2>
-            <a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-          </h2>
-        </li>
-      {% endif %}
-
-      {% if loopindex == 2 %}
-        <li class="col-md-4">
-          <h2>
-            <a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-          </h2>
-        </li>
-      {% endif %}
+      <li class="col-md-4">
+        <h2>
+          <a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+        </h2>
+      </li>
     {% endfor %}
   </ul>
