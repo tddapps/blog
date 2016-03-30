@@ -12,13 +12,15 @@ layout: bootstrap
           </h1>
           <small>{{ post.date | date: "%b %-d, %Y" }}</small>
 
-          <p>
-            {% if post.summary %}
-              {{ post.summary }}
-            {% else %}
-              {{ post.excerpt }}
-            {% endif %}
-          </p>
+          {% if post.title_only != true %}
+            <p>
+              {% if post.summary %}
+                {{ post.summary }}
+              {% else %}
+                {{ post.excerpt }}
+              {% endif %}
+            </p>
+          {% endif %}
           <a href="{{ post.url | prepend: site.baseurl }}" class="post-link">Read More...</a>
         </li>
       {% endif %}
