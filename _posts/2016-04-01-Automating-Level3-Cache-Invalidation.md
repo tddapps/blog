@@ -1,6 +1,5 @@
 ---
 title: Automating Level3 Cache Invalidation
-draft: true
 ---
 
 One of the companies I've worked for uses [Level3](http://www.level3.com/) as their CDN. As part of the release process for one of the products we had to manually clear the CDN cache. This was a manual multi-step process that more often than not was forgotten. Automation to the rescue.  
