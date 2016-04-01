@@ -2,7 +2,7 @@
 title: Automating Level3 Cache Invalidation
 ---
 
-One of the companies I've worked for uses [Level3](http://www.level3.com/) as their CDN. As part of the release process for one of the products we had to manually clear the CDN cache. This was a manual multi-step process that more often than not was forgotten. Automation to the rescue.  
+One of the companies I've worked for uses [Level3](http://www.level3.com/) as their CDN. As part of the release process for one of the products we had to manually clear the CDN cache. This was a manual multi-step process that -more often than not- was forgotten. Automation to the rescue.  
 
 ## The API  
 Fortunately, [Level3](http://www.level3.com/) has a [REST API](https://mediaportal.level3.com/webhelp/help/MediaPortalHelp_Left.htm#CSHID=API%2FAPI_KeysTop.htm|StartTopic=Content%2FAPI%2FAPI_KeysTop.htm|SkinName=NewSkin1) with all sort of capabilities. They even provide some [Sample Code](https://mediaportal.level3.com/webhelp/help/Content/API/API_SampleCode.htm) in a variety of languages. One of this samples is a [full-blown debugging tool](https://mediaportal.level3.com/webhelp/help/Content/API/API_Debugger.htm).  
