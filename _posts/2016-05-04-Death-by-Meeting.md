@@ -1,8 +1,6 @@
 ---
 title: Death by Meeting
-draft: true
 ---
-
 
 Like [other Patrick Lencioni books](http://amzn.to/1T2ppr0) [Death by Meeting](http://amzn.to/23qr2hT) is very enjoyable and easy to read. The book is targeted at making your meetings more effective rather than abolishing them altogether.  
 
