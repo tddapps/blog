@@ -26,7 +26,7 @@ Given the complexity of scheduling a node cron job, the best way I could find to
 
 
 ## How to use it?  
-1. Create your own [Dockerfile](https://docs.docker.com/engine/reference/builder/) based off the `camilin87/node-cron` image.
+1. Create your own [Dockerfile](https://docs.docker.com/engine/reference/builder/) based off the [`camilin87/node-cron`](https://hub.docker.com/r/camilin87/node-cron/) image.
 2. Make sure to copy your code into `/usr/src/app`. You should have a [`package.json`](https://docs.npmjs.com/getting-started/using-a-package.json) file with a `start` script. The image will run [`npm start`](https://docs.npmjs.com/cli/start) from `/usr/src/app`.
 3. Specify the `TASK_SCHEDULE` environment variable. It can be done in the Dockerfile or in the `docker run` command.
 
@@ -40,7 +40,7 @@ COPY . /usr/src/app
 ```
 
 ## How does it work?  
-Our base image is nothing more than a Dockerfile and a couple of shell scripts. [Its source code its free](https://github.com/camilin87/node-cron) and [here's a sample application](https://github.com/camilin87/learn-docker) that uses it. If you feel that something can be improved please create a pull request. Let's deconstruct the base image step by step.  
+Our base image is nothing more than a Dockerfile and a couple of shell scripts. [Its source code is free](https://github.com/camilin87/node-cron) and [here's a sample application](https://github.com/camilin87/learn-docker) that uses it. If you feel that something can be improved please create a pull request. Let's deconstruct the base image step by step.  
 
 ### [Dockerfile](https://github.com/camilin87/node-cron/blob/master/Dockerfile)  
 ```sh
@@ -104,7 +104,7 @@ The file `./templates/crontab` contains the initial template of our [cron](https
 - **Schedule**: The schedule is missing from this configuration template because it will be determined when the image runs the `CMD`. That way it can be configurable.
 
 ### [templates/setupCron.sh](https://github.com/camilin87/node-cron/blob/master/templates/setupCron.sh)  
-The most important file of our image. `./templates/setupCron.sh` is the command that will be executed when our image runs. It will be responsible for making the container environment variables visible to the cron job, and several other useful tasks.  
+The most important file of our image. `./templates/setupCron.sh` is the command that will be executed when our image runs. It will be responsible for making the container environment variables visible to the cron job.  
 
 ```bash
 #!/bin/bash
@@ -126,5 +126,6 @@ cron && tail -f /var/log/cron.log                                            # r
 ```
 
 ### Why so complicated?  
-The biggest hurdle I had to overcome was making the environment variables visible to the cron job. [Since cron knows nothing about the running shell](http://unix.stackexchange.com/a/27291/134094) the best way I could find was to include them in the crontab file.  
-The other caveat was that none of this could be done in the Dockerfile because the most of environment variables are being set when the image is run. The substitution had to be done at runtime. Thus the need for a big shell script.  
+The biggest hurdle was making the environment variables visible to the cron job. [Since cron knows nothing about the running shell](http://unix.stackexchange.com/a/27291/134094) the best way I could find was to include them in the crontab file.  
+
+The other caveat was that none of this variable replacing magic could be done in the Dockerfile. Why? Because most of the environment variables are being set only when the image is run. The substitution had to be done at runtime. Thus the need for a big shell script.  
