@@ -72,7 +72,7 @@ RUN chmod 0644 /etc/cron.d/my-cron-job             # give permissions to the cro
 RUN touch /var/log/cron.log                        # the logs from our job
                                                    # this line creates the log file preemptively
 
-COPY ./templates/setupCron.sh > /tmp/setupCron.sh  # to execute our cronjob we must run multiple commands
+COPY ./templates/setupCron.sh /tmp/setupCron.sh    # to execute our cronjob we must run multiple commands
                                                    # it is not possible to do it directly from the Dockerfile
                                                    #
                                                    # the file ./templates/setupCron.sh will be
