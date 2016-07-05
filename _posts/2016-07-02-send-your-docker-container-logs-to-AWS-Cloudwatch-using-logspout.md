@@ -17,8 +17,6 @@ docker run -h $(hostname) \
     -e "AWS_ACCESS_KEY_ID=xxxxxxxxxxxxxxxx" \
     -e "AWS_SECRET_ACCESS_KEY=xxxxxxxxxxxxxxxxxxxxxx" \
     -e "LOGSPOUT=ignore" \
-    -e "LOGSPOUT_GROUP=sample-docker-logs" \
-    -e "LOGSPOUT_STREAM=other" \
     --volume=/var/run/docker.sock:/tmp/docker.sock --name=logspout \
     --rm -it mdsol/logspout 'cloudwatch://us-east-1?DEBUG=1&NOEC2'
 ```
@@ -29,17 +27,17 @@ docker run -h $(hostname) \
 
 ```sh
 docker run \
-  -e "LOGSPOUT_STREAM=sample-logs" \
+  -e "LOGSPOUT_GROUP=sample-docker-logs" \
   ubuntu bash -c \
   'for i in {1..10}; do echo "Hi, the date is $(date)" ; sleep 1; done'
 ```
 
-*What is this?*: Start a container that will log the date ten times and send its logs to the `sample-logs` stream.  
+*What is this?*: Start a container that will log the current date ten times and send its logs to the `sample-docker-logs` log group.  
 
 ## Step 4: Review the logs  
 
 1- Open the CloudWatch [`sample-docker-logs` group](https://console.aws.amazon.com/cloudwatch/home?#logStream:group=sample-docker-logs)  
-2- Open the [`sample-logs` stream](https://console.aws.amazon.com/cloudwatch/home?#logEvent:group=sample-docker-logs;stream=sample-logs)  
+2- Click `Search Events` ![Search Events](/images/aws-docker-logs/search-events.png)  
 
 Your should be able to see your logs  
 ![Container logs](/images/aws-docker-logs/logs-uploaded.png)  
@@ -61,8 +59,6 @@ logspout:
     - AWS_ACCESS_KEY_ID=xxxxxxxxxxxxxxxx
     - AWS_SECRET_ACCESS_KEY=xxxxxxxxxxxxxxxxxxxxxx
     - LOGSPOUT=ignore
-    - LOGSPOUT_GROUP=sample-docker-logs
-    - LOGSPOUT_STREAM=other
   command: 'cloudwatch://us-east-1?DEBUG=1&NOEC2'
 ```
 
@@ -75,7 +71,7 @@ helloworld:
   image: ubuntu
   target_num_containers: 1
   environment:
-    - LOGSPOUT_STREAM=sample-logs
+    - LOGSPOUT_GROUP=sample-docker-logs
   command: bash -c 'for i in {1..10}; do echo "Hi, the date is $(date)" ; sleep 1; done'
 ```
 
