@@ -3,9 +3,9 @@ draft: true
 title: Send your Docker container logs to AWS Cloudwatch using logspout
 ---
 
-As a general rule Docker containers print to the `STDOUT` anything that should be logged. This simple approach is nothing but powerful and extensive. [Logspout](https://github.com/gliderlabs/logspout) is a lightweight container that forwards the logs of other containers running on the same server. It is built in an extensible way with support for multiple log destinations. This guide will show how to configure [Logspout-Cloudwatch](https://github.com/mdsol/logspout-cloudwatch) to forward our logs to [AWS CloudWatch](https://aws.amazon.com/cloudwatch/).  
+As a general rule Docker containers print to the `STDOUT` anything that should be logged. This simple approach is nothing but powerful and extensive. [Logspout](https://github.com/gliderlabs/logspout) is a lightweight container that forwards the logs of other containers running on the same server. It is built in an extensible way with support for multiple log destinations. This guide will show how to configure [Logspout-Cloudwatch](https://github.com/mdsol/logspout-cloudwatch) to forward our logs to [AWS CloudWatch](https://aws.amazon.com/cloudwatch/).[^why_cloudwatch]  
 
-*The instructions of this guide are based on [Docker 1.9](https://docs.docker.com/v1.9/engine/reference/logging/overview/).*
+*The instructions of this guide are based on [Docker 1.9](https://docs.docker.com/v1.9/engine/reference/logging/overview/).*  
 
 ## Step 1: Configure [AWS Cloudwatch](https://aws.amazon.com/cloudwatch/)  
 We need an `Access Key Id` and a `Secret Access Key` that can forward logs to Cloudwatch. Here's how to [configure AWS Cloudwatch for Log Forwarders](https://www.tddapps.com/2016/07/01/configure-AWS-cloudwatch-for-log-forwarders/).  
@@ -78,3 +78,5 @@ helloworld:
     - LOGSPOUT_STREAM=sample-logs
   command: bash -c 'for i in {1..10}; do echo "Hi, the date is $(date)" ; sleep 1; done'
 ```
+
+[^why_cloudwatch]: *Why Cloudwatch?* Cloudwatch has excellent support for [alerts](https://blog.opsgenie.com/2014/08/how-to-use-cloudwatch-to-generate-alerts-from-logs) and [autoscaling](http://techblog.netflix.com/2012/01/auto-scaling-in-amazon-cloud.html).  
