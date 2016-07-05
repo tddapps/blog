@@ -1,5 +1,4 @@
 ---
-draft: true
 title: "Configure AWS Cloudwatch for Log Forwarders"
 ---
 

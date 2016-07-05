@@ -1,5 +1,4 @@
 ---
-draft: true
 title: Send your Docker container logs to AWS using the log-driver
 ---
 
