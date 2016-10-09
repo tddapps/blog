@@ -3,19 +3,19 @@ title: I built my own AWS Cloudwatch log forwarder as an npm package
 draft: true
 ---
 
-[AWS Cloudwatch](https://aws.amazon.com/cloudwatch/) is an outstanding monitoring platform. It is extremely configurable with support to many log sources and custom alarms based on metrics. On top of that AWS Cloudwatch prices are competitive to say the least. Unfortunately, monitoring resources outside of AWS [is not straightforward](http://docs.aws.amazon.com/AmazonCloudWatch/latest/logs/QuickStartEC2Instance.html). To solve this problem I created my own [`AWS Cloudwatch logs forwarder`](https://www.npmjs.com/package/aws-cloudwatch-forwarder) as a non-obtrusive `npm` package.  
+[AWS Cloudwatch](https://aws.amazon.com/cloudwatch/) is an outstanding monitoring platform. With competitive prices, it is extremely configurable and extensible. Unfortunately, monitoring resources outside of AWS [is not straightforward](http://docs.aws.amazon.com/AmazonCloudWatch/latest/logs/QuickStartEC2Instance.html). To solve this problem I created my own [`Cloudwatch log forwarder`](https://www.npmjs.com/package/aws-cloudwatch-forwarder) as a non-intrusive `npm` package.  
 
-## Existing Cloudwatch log forwarding tools   
+## What's wrong with the existing log forwarding tools?  
 
-Amazon provides a [CloudWatch Logs Agent](http://docs.aws.amazon.com/AmazonCloudWatch/latest/logs/AgentReference.html) off the batch. This agent must be installed as a service. While this is easy on EC2 instances, it is impossible to do in shared environments such as [Heroku](https://www.heroku.com/).  
+Amazon provides a [CloudWatch Logs Agent](http://docs.aws.amazon.com/AmazonCloudWatch/latest/logs/AgentReference.html) off the batch. This agent must be installed as a service running on a server. While this is easy on EC2 instances, it is impossible to do in shared environments such as [Heroku](https://www.heroku.com/).  
 
-For those whom the forwarder is not good enough. Amazon built the [CloudWatch Logs API](http://docs.aws.amazon.com/AmazonCloudWatchLogs/latest/APIReference/Welcome.html). Their development team was nice enough to provide SDKs in several programming languages. While these SDKs are relatively simple to use, they still need a fair understanding of the API.  
+Fortunately, Amazon built the [CloudWatch Logs API](http://docs.aws.amazon.com/AmazonCloudWatchLogs/latest/APIReference/Welcome.html) for developers to interact with the system. The development team was nice enough to provide SDKs in multiple languages. While these SDKs are relatively simple to use, they still require a fair amount of work and understanding of the API.  
 
-Other developers built [their own forwarding tools](https://www.npmjs.com/search?q=cloudwatch) based on the Cloudwatch SDK. Unfortunately, they all share the same problem. The application code would have to change to explicitly log to Cloudwatch. Moreover, the majority of the javascript tools can only be used from other javascript applications.  
+Other developers built [their own forwarding tools](https://www.npmjs.com/search?q=cloudwatch) based on the Cloudwatch SDKs. Unfortunately, they all share the same problem. The application code would have to change to **explicitly** log to Cloudwatch. Moreover, the majority of the javascript tools can only be used from other javascript applications.  
 
-## Why I built the [`aws-cloudwatch-forwarder`](https://www.npmjs.com/package/aws-cloudwatch-forwarder)  
+## Why I built the [`aws-cloudwatch-forwarder`](https://www.npmjs.com/package/aws-cloudwatch-forwarder)?  
 
-- **It can be used outside of AWS**: It will forward logs from anywhere as long as the firewall rules don't block it.  
+- **It can be used outside of AWS**:  The [`aws-cloudwatch-forwarder`](https://www.npmjs.com/package/aws-cloudwatch-forwarder) will process logs from anywhere.  
 
 - **It doesn't need an agent installation**: Built as a regular `npm` package, it can be used as a standalone tool such as `echo` or `grep`. Yes, you can use it to send your [Heroku](https://www.heroku.com/) logs to [AWS Cloudwatch](https://aws.amazon.com/cloudwatch/).  
 
@@ -24,7 +24,7 @@ Other developers built [their own forwarding tools](https://www.npmjs.com/search
     aws-cloudwatch-forwarder 'echo "sample application"'
     ```
 
-## How do I use it  
+## How do I use it?  
 
 Visit the [`aws-cloudwatch-forwarder` `npm` page](https://www.npmjs.com/package/aws-cloudwatch-forwarder) for the latest documentation.  
 
