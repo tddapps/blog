@@ -11,7 +11,7 @@ Amazon provides a [CloudWatch Logs Agent](http://docs.aws.amazon.com/AmazonCloud
 
 Fortunately, Amazon built the [CloudWatch Logs API](http://docs.aws.amazon.com/AmazonCloudWatchLogs/latest/APIReference/Welcome.html) for developers to interact with the system. The development team was nice enough to provide SDKs in multiple languages. While these SDKs are relatively simple to use, they still require a fair amount of work and understanding of the API.  
 
-Other developers built [their own forwarding tools](https://www.npmjs.com/search?q=cloudwatch) based on the Cloudwatch SDKs. Unfortunately, they all share the same problem. The application code would have to change to **explicitly** log to Cloudwatch. Moreover, the majority of the javascript tools can only be used from other javascript applications.  
+Third-party developers built [their own forwarding tools](https://www.npmjs.com/search?q=cloudwatch) based on the Cloudwatch SDKs. However, they all share the same problem. The application code would have to change to **explicitly** log to Cloudwatch. Moreover, the majority of the javascript tools can only be used from other javascript applications.  
 
 ## Why I built the [`aws-cloudwatch-forwarder`](https://www.npmjs.com/package/aws-cloudwatch-forwarder)?  
 
