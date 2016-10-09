@@ -20,7 +20,7 @@ Other developers built [their own forwarding tools](https://www.npmjs.com/search
 - **It doesn't need an agent installation**: Built as a regular `npm` package, it can be used as a standalone tool such as `echo` or `grep`. Yes, you can use it to send your [Heroku](https://www.heroku.com/) logs to [AWS Cloudwatch](https://aws.amazon.com/cloudwatch/).  
 
 - **No need to change any existing code**: It can be used with existing applications. Even if they're not built with javascript.  
-    ```sh
+    ```
     aws-cloudwatch-forwarder 'echo "sample application"'
     ```
 
