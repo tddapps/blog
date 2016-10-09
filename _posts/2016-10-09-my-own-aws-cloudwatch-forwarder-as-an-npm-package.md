@@ -7,11 +7,11 @@ draft: true
 
 ## Existing Cloudwatch log forwarding tools   
 
-Amazon provides a [CloudWatch Logs Agent](http://docs.aws.amazon.com/AmazonCloudWatch/latest/logs/AgentReference.html) off the batch. Unfortunately, this agent must be installed as a service running on a server. While this is easy on EC2 instances, it is practically impossible to do in other more ephemeral environments such as [Heroku](https://www.heroku.com/).  
+Amazon provides a [CloudWatch Logs Agent](http://docs.aws.amazon.com/AmazonCloudWatch/latest/logs/AgentReference.html) off the batch. This agent must be installed as a service. While this is easy on EC2 instances, it is impossible to do in shared environments such as [Heroku](https://www.heroku.com/).  
 
-Fortunately, Amazon built the [CloudWatch Logs API](http://docs.aws.amazon.com/AmazonCloudWatchLogs/latest/APIReference/Welcome.html) for developers to interact with the system. The development team was nice enough to provide SDKs in several programming languages. While these SDKs are relatively simple to use, they still require a certain amount of work and understanding of the API.  
+For those whom the forwarder is not good enough. Amazon built the [CloudWatch Logs API](http://docs.aws.amazon.com/AmazonCloudWatchLogs/latest/APIReference/Welcome.html). Their development team was nice enough to provide SDKs in several programming languages. While these SDKs are relatively simple to use, they still need a fair understanding of the API.  
 
-To overcome these issues other developers built [their own forwarding tools](https://www.npmjs.com/search?q=cloudwatch) based on the Cloudwatch SDK. Unfortunately, they all share the same problem. The application code would have to change to explicitly log to Cloudwatch. Moreover, the majority of the javascript tools can only be used from other javascript applications.  
+Other developers built [their own forwarding tools](https://www.npmjs.com/search?q=cloudwatch) based on the Cloudwatch SDK. Unfortunately, they all share the same problem. The application code would have to change to explicitly log to Cloudwatch. Moreover, the majority of the javascript tools can only be used from other javascript applications.  
 
 ## Why I built the [`aws-cloudwatch-forwarder`](https://www.npmjs.com/package/aws-cloudwatch-forwarder)  
 
