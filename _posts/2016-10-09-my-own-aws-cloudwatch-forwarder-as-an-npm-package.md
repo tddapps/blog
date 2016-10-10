@@ -1,6 +1,5 @@
 ---
 title: I built my own AWS Cloudwatch log forwarder as an npm package
-draft: true
 ---
 
 [AWS Cloudwatch](https://aws.amazon.com/cloudwatch/) is an outstanding monitoring platform. With competitive prices, it is extremely configurable and extensible. Unfortunately, monitoring resources outside of AWS [is not straightforward](http://docs.aws.amazon.com/AmazonCloudWatch/latest/logs/QuickStartEC2Instance.html). To solve this problem I created my own [`Cloudwatch log forwarder`](https://www.npmjs.com/package/aws-cloudwatch-forwarder) as a non-intrusive `npm` package.  
