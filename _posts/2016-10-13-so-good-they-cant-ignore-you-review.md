@@ -1,6 +1,5 @@
 ---
 title: "Book Review: So good they can't ignore you"
-draft: true
 ---
 
 Do you feel stuck in your job? Do you feel you don't like any profession? You have no idea what to study? [So good they can't ignore you](http://amzn.to/2en85eW) is the right book for you. It is a data driven book about real life examples of successful, and not so successful individuals. [So good they can't ignore you](http://amzn.to/2en85eW) revolves around the idea that following your passion won't get you anywhere. Instead it proposes to look at your job with a craftsman's mindset until you become so good they can't ignore you.  
