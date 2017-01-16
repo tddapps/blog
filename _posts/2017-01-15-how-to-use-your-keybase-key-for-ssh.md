@@ -60,7 +60,7 @@ gpg -q --allow-secret-key-import --import keybase.private.key
 gpg --list-keys | grep '^pub\s*.*\/*.\s.*' | grep -oEi '\/(.*)\s' | cut -c 2- | awk '{$1=$1};1' > hash.key
 
 echo "Generating RSA keys..."
-# Generate the RSA private key using the Keybase hash
+# Generate the RSA private key using the hexadecimal hash
 # The private key will be saved in the id_rsa file
 gpg --export-options export-reset-subkey-passwd,export-minimal,no-export-attributes --export-secret-keys --no-armor `cat hash.key` | openpgp2ssh `cat hash.key` > id_rsa
 # Secure the private RSA key  
