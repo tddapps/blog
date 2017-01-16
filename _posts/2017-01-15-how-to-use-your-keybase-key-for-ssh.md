@@ -19,9 +19,7 @@ These RSA keys need to be backed up and shared across different computers. While
 2. Install [Git](https://git-scm.com/book/en/v1/Getting-Started-Installing-Git), [Keybase](https://keybase.io/download), [GnuPg](https://www.gnupg.org/download/index.html) and [MonkeySphere](http://web.monkeysphere.info/download/).  
 *[Homebrew](http://brew.sh/) users can run the following command*  
 
-```bash
-    brew install git keybase gpg monkeysphere
-```
+        brew install git keybase gpg monkeysphere
 
 ## **TL;DR;** Run the following command  
 
