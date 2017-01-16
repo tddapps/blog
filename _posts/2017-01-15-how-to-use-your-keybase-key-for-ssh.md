@@ -1,21 +1,20 @@
 ---
 title: How to use your Keybase key for ssh  
-excerpt_separator: <!--more-->
-draft: true
+draft: false
 ---
 
-Manually managing usernames and passwords for [ssh](https://en.wikipedia.org/wiki/Secure_Shell) into servers can be a difficult task. All those different passwords need to be backed up, synchronized across multiple computers, and typed every single time. Although password managers mitigate the credentials problem there's a better mechanism to [remote into boxes without typing passwords](http://www.rebol.com/docs/ssh-auto-login.html). The process involves generating a public and a private [RSA](https://en.wikipedia.org/wiki/RSA_(cryptosystem)) key files.  
+Extracting an [RSA](https://en.wikipedia.org/wiki/RSA_(cryptosystem)) key out of [Keybase](https://keybase.io/) is not straightforward for security beginners. These are the steps I took to automate the process.  
+
+## The problem  
+
+Manually managing usernames and passwords for [ssh](https://en.wikipedia.org/wiki/Secure_Shell) into servers can be a difficult task. All those different passwords need to be backed up, synchronized across multiple computers, and typed every single time. Although password managers mitigate the credentials problem there's a better mechanism to [remote into boxes without typing passwords](http://www.rebol.com/docs/ssh-auto-login.html). The process involves generating public and private [RSA](https://en.wikipedia.org/wiki/RSA_(cryptosystem)) key files.  
 
 These RSA keys need to be properly backed up and shared across different computers. While some use [Dropbox](https://db.tt/mawxtzeB) to keep their keys synchronized others use [Keybase](https://keybase.io/). It is an online service to securely store [PGP](https://en.wikipedia.org/wiki/Pretty_Good_Privacy) keys and map them to public identities such as Twitter accounts and domain registrations.  
-
-The following are the steps I took to generate `RSA` keys out of my [Keybase](https://keybase.io/) `PGP` keys.  
-
-<!--more-->
 
 ## Prerequisites  
 
 1. Have a [Keybase](https://keybase.io/) account.  
-*The service is not entirely open to the public yet but I may be able to get you an invitation.*  
+*The service is not entirely open to the public yet but I may be able to get you an invitation*  
 
 2. Install [Git](https://git-scm.com/book/en/v1/Getting-Started-Installing-Git), [Keybase](https://keybase.io/download), [GnuPg](https://www.gnupg.org/download/index.html) and [MonkeySphere](http://web.monkeysphere.info/download/).  
 *[Homebrew](http://brew.sh/) users can simply run the following command*  
