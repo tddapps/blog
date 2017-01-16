@@ -63,9 +63,9 @@ echo "Generating RSA keys..."
 # Generate the RSA private key using the hexadecimal hash
 # The private key will be saved in the id_rsa file
 gpg --export-options export-reset-subkey-passwd,export-minimal,no-export-attributes --export-secret-keys --no-armor `cat hash.key` | openpgp2ssh `cat hash.key` > id_rsa
-# Secure the private RSA key  
+# Secure the private RSA key file  
 chmod 400 id_rsa
-# Generate the public RSA key  
+# Generate the public RSA key file  
 ssh-keygen -y -f id_rsa > id_rsa.pub
 
 echo "Cleaning up..."
