@@ -1,6 +1,5 @@
 ---
 title: How to use your Keybase key for ssh  
-draft: false
 ---
 
 Extracting an [RSA](https://en.wikipedia.org/wiki/RSA_(cryptosystem)) key out of [Keybase](https://keybase.io/) is not straightforward for security beginners. These are the steps I took to automate the process.  
@@ -14,7 +13,6 @@ These RSA keys need to be backed up and shared across different computers. While
 ## Prerequisites  
 
 1. Have a [Keybase](https://keybase.io/) account.  
-*The service is not entirely open to the public yet but I may be able to get you an invitation*  
 
 2. Install [Git](https://git-scm.com/book/en/v1/Getting-Started-Installing-Git), [Keybase](https://keybase.io/download), [GnuPg](https://www.gnupg.org/download/index.html) and [MonkeySphere](http://web.monkeysphere.info/download/).  
 *[Homebrew](http://brew.sh/) users can run the following command*  
