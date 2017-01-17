@@ -1,9 +1,8 @@
 ---
 title: CoreOS baremetal server installation
-draft: true
 ---
 
-[CoreOS](https://coreos.com/) is a lightweight Linux distribution designed specifically to run containers. Unfortunately its installation on baremetal servers is not as streamlined as [other Linux distributions](https://www.ubuntu.com/download/desktop/install-ubuntu-desktop). These are the steps I took to install CoreOS on a couple of physical machines at home.  
+[CoreOS](https://coreos.com/) is a lightweight Linux distribution designed specifically to run containers. Unfortunately its installation on baremetal servers is not as streamlined as [other Linux distributions](https://www.ubuntu.com/download/desktop/install-ubuntu-desktop). These are the steps I took to install CoreOS on a couple of physical machines.  
 
 ## Prerequisites  
 
