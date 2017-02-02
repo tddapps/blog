@@ -8,8 +8,8 @@ url:         "https://www.tddapps.com"
 
 # Google analytics
 google_analytics: UA-66099838-1
-optimizely_experiment: 3551900135
-hotjar_id: 82678
+optimizely_experiment: 0000000000
+hotjar_id: 00000
 
 # Optional features
 animated:           false
