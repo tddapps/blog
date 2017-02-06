@@ -1,3 +1,3 @@
-{% if site.optimizely_experiment %}
+{% if site.optimizely_experiment != 0000000000 %}
     <script src="//cdn.optimizely.com/js/{{site.optimizely_experiment}}.js"></script>
 {% endif %}
