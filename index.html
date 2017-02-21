@@ -27,6 +27,10 @@ layout: bootstrap
     {% endfor %}
   </ul>
 
+  {% if site.show_email_signup %}
+    {% include signup_form.html %}
+  {% endif %}
+
   <h1>Archive</h1>
   <ul class="posts-archive">
     {% for post in site.posts offset: max_detailed_posts %}
