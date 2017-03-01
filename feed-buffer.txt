@@ -1,0 +1,10 @@
+---
+layout: null
+---
+{% 
+for post in site.posts limit: 50
+    if post.draft != true
+%}
+{{ post.title | xml_escape }}
+{{ post.url | prepend: site.baseurl | prepend: site.url }}
+{% endfor %}
