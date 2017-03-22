@@ -44,7 +44,7 @@ Your should be able to see your logs
 ### Bonus: [Docker Cloud](https://cloud.docker.com/) configuration  
 [Docker Cloud](https://cloud.docker.com/) is a SaaS tool run by Docker to manage and automate container deployments. It is very powerful and yet simple to use. [More info here](https://www.docker.com/products/docker-cloud).  
 
-1- [Create and Start `logging` Stack](https://cloud.docker.com/_/stack/wizard)  
+1- Create and Start a `logging` Stack  
 
 ```yml
 logspout:

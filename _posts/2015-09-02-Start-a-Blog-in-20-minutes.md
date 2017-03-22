@@ -10,7 +10,7 @@ Websites are complex pieces of technology. They are mostly composed of multiple 
 
 **Content**: The most important component of a blog. Blogs are read mainly because of the quality of the posts. The blog posts from this guide will be written using [MarkDown](https://help.github.com/articles/markdown-basics/).
 
-**Blogging Engine**: The software that transforms the content into a nice HTML page that can be read in a [web browser](http://www.google.com/chrome/). Blogging engines are also responsible for applying a consistent style through the entire site. There are many flavors of blogging engines that range from [self-made](http://www.marco.org/secondcrack) to [cloud based](https://www.tumblr.com/).
+**Blogging Engine**: The software that transforms the content into a nice HTML page that can be read in a [web browser](http://www.google.com/chrome/). Blogging engines are also responsible for applying a consistent style through the entire site. There are many flavors of blogging engines that range from [self-made](https://github.com/marcoarment/secondcrack) to [cloud based](https://www.tumblr.com/).
 
 [Jekyll](http://jekyllrb.com/) will be the blogging engine of choice. It is a lightweight static site generator with great templating capabilities. Jekyll also happens to be the engine that [powers GitHub Pages](https://help.github.com/articles/using-jekyll-with-pages/).
 

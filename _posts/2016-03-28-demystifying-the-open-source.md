@@ -30,7 +30,7 @@ If anything open source drives innovation even faster.
 Containers have proven to be the de facto standard for deployments. The open source community has been running containers for years. However, Windows based enterprises have had to wait several years for Microsoft to provide container support.  
 
 ### Example 2: Your CMS in the Cloud  
-Many enterprises are migrating their platforms to the cloud. [Umbraco](http://umbraco.com) users can [seamlessly host their existing websites on Azure with very little effort](http://umbraco.com/azure). [WordPress](https://wordpress.com/) has had [PaaS support](https://wpengine.com/) for ages. I wish the same could be said of [other proprietary CMS](http://www.sitecoreonazure.net/).  
+Many enterprises are migrating their platforms to the cloud. [Umbraco](http://umbraco.com) users can [seamlessly host their existing websites on Azure with very little effort](https://azure.microsoft.com/en-us/blog/scalable-umbraco-cms-solution-for-azure-web-apps/). [WordPress](https://wordpress.com/) has had [PaaS support](https://wpengine.com/) for ages. I wish the same could be said of [other proprietary CMS](http://www.sitecoreonazure.net/).  
 
 ## Myth: Open Source is not a viable business model  
 These are just a few out of many successful companies that have been built on open source software:  
