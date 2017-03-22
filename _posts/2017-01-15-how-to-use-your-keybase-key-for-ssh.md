@@ -71,6 +71,18 @@ rm *.key
 echo "Success"
 ```
 
+### Bonus: Replace the default ssh key  
+
+```bash
+# Delete any pre-existing key  
+rm -f ~/.ssh/id_rsa.pub
+rm -f ~/.ssh/id_rsa
+
+# Create symbolic links to the default  
+ln -s id_rsa.pub ~/.ssh/id_rsa.pub
+ln -s id_rsa ~/.ssh/id_rsa
+```
+
 ## Want to know more?  
 - [Security basics with GPG, OpenSSH, OpenSSL and Keybase](http://www.integralist.co.uk/posts/security-basics.html#7.3)  
 - [Convert keys between GnuPG, OpenSsh and OpenSSL](http://sysmic.org/dotclear/index.php?post/2010/03/24/Convert-keys-betweens-GnuPG%2C-OpenSsh-and-OpenSSL)  
