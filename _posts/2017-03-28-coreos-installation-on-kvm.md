@@ -33,7 +33,6 @@ This command creates a CoreOS virtual machine named `vm1` in the `~/vms` folder.
 ruby vm_task.rb CoreOsVmCreationTask         \
     --path ~/vms/ --name vm1                 \
     --cpu 2 --ram 4096 --hdd 7 --br br0      \
-    --mac "54:00:00:00:00:01"                \
     --img ~/coreos_production_qemu_image.img \
     --key ~/.ssh/id_rsa.pub
 ```
@@ -43,7 +42,6 @@ ruby vm_task.rb CoreOsVmCreationTask         \
 
 ### [kvm-automation](https://github.com/camilin87/kvm-automation) caveats  
 - Supports only CoreOS and Ubuntu  
-- Designed to use exclusively bridge network adapters  
+- Designed to use exclusively bridge network adapters using DHCP  
 - Does not allow guest customization through the [`cloud-config.yml`](https://coreos.com/os/docs/latest/cloud-config.html)  
-- If a mac address is not specified it will use the same default every time  
 - Deletes pre-existing machines with the specified name  
