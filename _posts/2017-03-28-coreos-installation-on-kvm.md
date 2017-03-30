@@ -9,20 +9,15 @@ title: CoreOS installation on KVM
 - [RSA key](https://www.tddapps.com/2017/01/15/how-to-use-your-keybase-key-for-ssh/)  
 - [KVM](https://www.cyberciti.biz/faq/installing-kvm-on-ubuntu-16-04-lts-server/)  
 - [Git](https://www.tddapps.com/2015/06/24/Git-Workflow/)  
+- [Wget](https://www.gnu.org/software/wget/)  
+- [bzip2](http://www.bzip.org/)  
 - [Ruby](https://www.ruby-lang.org/en/)  
-    ```bash
-    sudo apt-get install ruby -y
-    ```
 
-- [Stable CoreOS QEMU Image](https://coreos.com/os/docs/latest/booting-with-qemu.html)  
-    ```bash
-    wget https://stable.release.core-os.net/amd64-usr/current/coreos_production_qemu_image.img.bz2 && bzip2 -d coreos_production_qemu_image.img.bz2
-    ```
+## Installation  
 
-- [kvm-automation](https://github.com/camilin87/kvm-automation)  
-    ```bash
-    git clone --depth 1 https://github.com/camilin87/kvm-automation.git && cd kvm-automation
-    ```
+```bash
+git clone --depth 1 https://github.com/camilin87/kvm-automation.git && cd kvm-automation
+```
 
 ## Create the virtual machine  
 
@@ -30,14 +25,13 @@ This command creates a CoreOS virtual machine named `vm1` in the `~/vms` folder.
 
 ```bash
 ruby vm_task.rb CoreOsVmCreationTask         \
-    --path ~/vms/ --name vm1                 \
+    --path ~/vms/ --name vm1 --dwnld true    \
     --cpu 2 --ram 4096 --hdd 7 --br br0      \
-    --img ~/coreos_production_qemu_image.img \
     --key ~/.ssh/id_rsa.pub
 ```
 
 ### How does it work?  
-[kvm-automation](https://github.com/camilin87/kvm-automation) generates a hard drive image. It then builds a [`cloud-config.yml`](https://coreos.com/os/docs/latest/cloud-config.html) out of the [public RSA key](https://www.tddapps.com/2017/01/15/how-to-use-your-keybase-key-for-ssh/) and the machine name. The tool then uses this information to create a KVM virtual machine that will autostart on system boot.  
+[kvm-automation](https://github.com/camilin87/kvm-automation) generates a hard drive after downloading the [latest Stable CoreOS QEMU Image](https://coreos.com/os/docs/latest/booting-with-qemu.html). It then builds a [`cloud-config.yml`](https://coreos.com/os/docs/latest/cloud-config.html) out of the [public RSA key](https://www.tddapps.com/2017/01/15/how-to-use-your-keybase-key-for-ssh/) and the machine name. The tool then uses this information to create a KVM virtual machine that will autostart on system boot.  
 
 ### [kvm-automation](https://github.com/camilin87/kvm-automation) caveats  
 - Supports only CoreOS and Ubuntu  
