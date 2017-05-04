@@ -1,5 +1,8 @@
 ---
 title: Changing Jobs Effectively
+keywords:
+  - job happiness
+  - work life balance
 ---
 
 There are many factors to consider while changing jobs. Jobs are where we spent the majority of our waking hours. They mostly rule our financial lives. Being our jobs so important, it doesn't seem too crazy to look for the perfect job. Unfortunately, there is no perfect job. After gathering data on many job transitions of family and friends, we have developed a theory on how to change jobs effectively.

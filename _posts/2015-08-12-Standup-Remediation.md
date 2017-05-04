@@ -1,5 +1,9 @@
 ---
 title: Standup Remediation
+keywords:
+  - standup
+  - meeting
+  - agile
 ---
 
 Standups[^standups] are short daily meetings conducted in Agile teams. [^scrum] They are usually conducted first time in the morning. During standups, all team members take turns briefing their peers answering three key questions:

@@ -1,5 +1,9 @@
 ---
 title: "The Deliver Value Fallacy: Waste (Part 1)"
+keywords:
+  - agile
+  - enterprise
+  - deliver value
 ---
 
 

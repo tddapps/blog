@@ -1,5 +1,7 @@
 ---
 title: "2016 Retrospective"
+keywords:
+  - goals
 ---
 
 These are my most dearest professional achievements and setbacks of 2016. Happy new year folks!!

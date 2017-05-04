@@ -1,5 +1,9 @@
 ---
 title: How to use your Keybase key for ssh  
+keywords:
+  - keybase
+  - ssh
+  - security
 ---
 
 Extracting an [RSA](https://en.wikipedia.org/wiki/RSA_(cryptosystem)) key out of [Keybase](https://keybase.io/) is not straightforward for security beginners. These are the steps I took to automate the process.  

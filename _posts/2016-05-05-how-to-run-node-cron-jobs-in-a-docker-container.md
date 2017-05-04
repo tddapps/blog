@@ -1,5 +1,7 @@
 ---
 title: How to run Node cron jobs inside a Docker container
+keywords:
+  - node
 ---
 
 Although there are several tutorials on how to [run cronjobs inside Docker containers](https://www.ekito.fr/people/run-a-cron-job-with-docker/). They mostly focus on very simple tasks that don't need to read environment variables. Moreover, there are [node specific solutions](https://www.npmjs.com/package/node-schedule). I didn't like those either because they rely on the stability on a long running process. The following guide is my solution to the problem after many hours of searching through [StackOverflow](http://stackoverflow.com/) and good old experimentation.

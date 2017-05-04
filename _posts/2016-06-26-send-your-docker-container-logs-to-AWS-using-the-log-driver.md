@@ -1,5 +1,8 @@
 ---
 title: Send your Docker container logs to AWS using the log-driver
+keywords:
+  - aws
+  - cloudwatch
 ---
 
 Docker supports several [logging drivers](https://docs.docker.com/engine/admin/logging/overview/) to forward container logs. These are the steps to configure the [AWS CloudWatch log driver](https://github.com/docker/docker/blob/3effe484e6f572298d0c3490517f57391617aa51/docs/reference/logging/awslogs.md) to ship the [`hello-world` container](https://hub.docker.com/_/hello-world/) logs.

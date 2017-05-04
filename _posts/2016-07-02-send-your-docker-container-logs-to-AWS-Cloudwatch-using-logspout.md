@@ -1,5 +1,8 @@
 ---
 title: Send your Docker container logs to AWS Cloudwatch using logspout
+keywords:
+  - aws
+  - cloudwatch
 ---
 
 As a general rule Docker containers print to the `STDOUT` anything that should be logged. This simple approach is nothing but powerful and extensive. [Logspout](https://github.com/gliderlabs/logspout) is a lightweight container that forwards the logs of other containers running on the same server. It is built in an extensible way with support for multiple log destinations. This guide will show how to configure [Logspout-Cloudwatch](https://github.com/mdsol/logspout-cloudwatch) to forward our logs to [AWS CloudWatch](https://aws.amazon.com/cloudwatch/).[^why_cloudwatch]  

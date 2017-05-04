@@ -1,5 +1,9 @@
 ---
 title: "Book Review: The Ideal Team Player"
+keywords:
+  - book review
+  - the ideam team player
+  - teams
 ---
 
 As with other Lencioni books [The Ideal Team Player](http://amzn.to/1UlWXv4) is hard to put down once you start reading it. It emphasizes the significative advantage teamwork can bring to a company. The book revolves around the "Humble, Hungry, Smart" model. What is it and how ideal team players should follow it.  

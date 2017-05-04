@@ -1,5 +1,11 @@
 ---
 title: Custom Domain on Github Pages
+keywords:
+  - git
+  - github
+  - github pages
+  - cloudflare
+  - ssl
 ---
 
 Hosting a website in [GitHub Pages](https://pages.github.com/) can be very convenient. However, a `github.io` subdomain may not be the best name for a website. In spite of being free, this infrastructure is deeply tied to GitHub Pages. If GitHub decides to discontinue GitHub Pages the website cannot be moved elsewhere because all of the outside links will be pointing to a `github.io` url. A more resilient approach is to use a custom domain. With a custom domain, our hosting provider can be easily replaced while the content can still be accessed from the same urls. The source code [is available on GitHub](https://github.com/codingdogg/codingdog.org).

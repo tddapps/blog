@@ -1,5 +1,9 @@
 ---
 title: Waste Prevention
+keywords:
+  - agile
+  - lean
+  - deliver value
 ---
 
 Waste is the enemy of value. It is usually manifested as building the wrong product. The following are two waste prevention techniques I've learned during my years as an engineer.

@@ -1,5 +1,8 @@
 ---
 title: Ubuntu installation on KVM
+keywords:
+  - ubuntu
+  - kvm
 ---
 
 [Ubuntu](https://coreos.com/) is a very popular Linux distribution *[citation_needed]* and [KVM](https://en.wikipedia.org/wiki/Kernel-based_Virtual_Machine) its default virtualization infrastructure. Unfortunately, creating Ubuntu virtual machines for KVM is not a simple process. [I built a tool to automate parts of this process](https://github.com/camilin87/kvm-automation) and here's how to use it.  

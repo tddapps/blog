@@ -1,5 +1,8 @@
 ---
 title: CoreOS installation on KVM
+keywords:
+  - coreos
+  - kvm
 ---
 
 [CoreOS](https://coreos.com/) is a lightweight Linux distribution designed specifically to run containers. [KVM](https://en.wikipedia.org/wiki/Kernel-based_Virtual_Machine) is the default virtualization infrastructure for [Ubuntu](https://www.ubuntu.com/). Unfortunately, creating a CoreOS virtual machine for KVM is not a simple process. [I built a tool to automate this process](https://github.com/camilin87/kvm-automation) and here's how to use it.  

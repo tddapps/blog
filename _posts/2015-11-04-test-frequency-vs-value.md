@@ -1,5 +1,8 @@
 ---
 title: Test Frequency vs Value
+keywords:
+  - testing
+  - automation
 ---
 
 

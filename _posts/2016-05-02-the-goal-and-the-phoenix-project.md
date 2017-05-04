@@ -1,5 +1,9 @@
 ---
 title: The Goal and The Phoenix Project
+keywords:
+  - book review
+  - the goal
+  - the phoenix project
 ---
 
 These two books are very hard to put down. They both make an emphasis in looking at the big picture and what's relevant for the company as opposed to individual departments.

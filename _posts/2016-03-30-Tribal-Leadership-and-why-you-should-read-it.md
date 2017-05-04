@@ -1,6 +1,9 @@
 ---
 title: Tribal Leadership and why you should read it
 title_only: true
+keywords:
+  - book review
+  - tribal leadership
 ---
 
 First things first. I think the title of the book is misleading. This is not a business administration book. Moreover, it is far from teaching anyone how to be a leader.  

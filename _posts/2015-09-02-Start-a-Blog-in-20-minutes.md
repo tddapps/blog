@@ -1,5 +1,8 @@
 ---
 title: Start a Blog in 20 minutes
+keywords:
+  - blog setup
+  - jekyll
 ---
 
 Creating a blog can be a daunting task. Bloggers need to answer questions such as: How will it look like? Where will new posts be written? Where will it be published? How much will it cost? This guide describes how to start a free blog on GitHub Pages. The source code [is available on GitHub](https://github.com/codingdogg/codingdogg.github.io/).

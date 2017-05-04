@@ -1,5 +1,9 @@
 ---
 title: How to forward your Heroku logs to AWS Cloudwatch for free
+keywords:
+  - heroku
+  - aws
+  - cloudwatch
 ---
 
 [Heroku](https://www.heroku.com/) is a great platform to run apps with little infrastructure involvement. Most of the time, you just push your code and you get a website up and running in seconds. Heroku even supports third party addons for those times when extra functionality is required. However, I could not find any addon to send my application logs to [AWS Cloudwatch](https://aws.amazon.com/cloudwatch/). The only logical solution was to [build my own AWS Cloudwatch log forwarder](/2016/10/09/my-own-aws-cloudwatch-forwarder-as-an-npm-package/).  

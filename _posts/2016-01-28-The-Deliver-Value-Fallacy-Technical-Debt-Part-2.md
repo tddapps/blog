@@ -1,5 +1,9 @@
 ---
 title: "The Deliver Value Fallacy: Technical Debt (Part 2)"
+keywords:
+  - agile
+  - enterprise
+  - technical debt
 ---
 
 

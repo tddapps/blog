@@ -1,5 +1,8 @@
 ---
 title: General POS design considerations
+keywords:
+  - pos
+  - architecture
 ---
 
 

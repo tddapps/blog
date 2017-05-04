@@ -1,5 +1,8 @@
 ---
 title: "Configure AWS Cloudwatch for Log Forwarders"
+keywords:
+  - aws
+  - cloudwatch
 ---
 
 [AWS CloudWatch](https://aws.amazon.com/cloudwatch/) is a monitoring service to collect logs. It can be configured to accept multiple log sources. As with other AWS services Cloudwatch has detailed security and access control support. These are the steps I take to configure any log forwarder to Cloudwatch.

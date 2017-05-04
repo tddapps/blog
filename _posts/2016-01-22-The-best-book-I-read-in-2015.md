@@ -1,5 +1,9 @@
 ---
 title: The best book I read in 2015
+keywords:
+  - book review
+  - lean startup
+  - agile
 ---
 
 [The Lean Startup](http://amzn.to/1KaRSBC) -by Eric Ries- diametrically changed many of the notions I had about how software projects should be carried on.

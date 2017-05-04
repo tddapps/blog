@@ -1,5 +1,9 @@
 ---
 title: Demystifying the Open Source
+keywords:
+  - open source
+  - security
+  - enterprise
 ---
 
 A lot has been said about open source technologies. Many [Fortune 500 businesses run open source software](http://fortune.com/2010/08/16/how-corporate-america-went-open-source/). However, many misconceptions about the open source still lurk around the enterprise world. This is my best attempt to debunk them.

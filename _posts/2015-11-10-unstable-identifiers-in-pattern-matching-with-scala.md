@@ -1,5 +1,8 @@
 ---
 title: Unstable identifiers in Pattern Matching with Scala
+keywords:
+  - scala
+  - clean code
 ---
 
 [Pattern Matching](https://en.m.wikipedia.org/wiki/Pattern_matching) is a defining feature of functional programming. [*citation_needed*] Since Scala is a functional programming language it comes with built-in support for pattern matching. [^pattern_matching] However, Scala novices can find some unexpected behaviors in pattern matching. This article is a brief introduction to the usage of stable identifiers in Scala's pattern matching constructs.
