@@ -2,9 +2,24 @@
 title:       Tdd Apps Blog
 email:       support@tddapps.com
 author:      Tdd Apps
-description: "Ideas about many things"
+description: >
+  Ideas about sofware craftmanship and automation.
+  Things that were hard to discover.
+  Useful tips about some tools.
+  And book reviews.
 baseurl:     ""
 url:         "https://www.tddapps.com"
+
+keywords:
+  - code
+  - software
+  - craftmanship
+  - engineering
+  - tdd
+  - agile
+  - docker
+  - virtualization
+  - logs
 
 # Google analytics
 google_analytics: UA-66099838-1
