@@ -7,24 +7,19 @@ additional-meta: >
 Have you had to buy a pair of shoes without knowing their size in your country.  
 Shoe Sizes Converter helps you convert shoe sizes from multiple regions.  
 
-[![Download on the App Store](/images/shoes/Download_on_the_App_Store_Badge_US-UK_135x40.svg)](https://itunes.apple.com/WebObjects/MZStore.woa/wa/viewSoftware?id=304064947&mt=8)  
-
 <div class="container">
     <div class="row">
         <div class="col col-md-4">
-            <p>
-                <a href="https://itunes.apple.com/WebObjects/MZStore.woa/wa/viewSoftware?id=304064947&mt=8">
-                    <img src="/images/shoes/shoe-sizes-converter-screenshot.png" alt="Shoe Sizes Converter iPhone Screenshot">
-                </a>
-            </p>
-            <p>
-                <a href="https://itunes.apple.com/WebObjects/MZStore.woa/wa/viewSoftware?id=304064947&mt=8">
-                    <img src="/images/shoes/Download_on_the_App_Store_Badge_US-UK_135x40.svg" alt="Download on the App Store" />
-                </a>
-            </p>
+            <a href="https://itunes.apple.com/WebObjects/MZStore.woa/wa/viewSoftware?id=304064947&mt=8">
+                <img src="/images/shoes/shoe-sizes-converter-screenshot.png" alt="Shoe Sizes Converter iPhone Screenshot">
+            </a>
         </div>
 
         <div class="col-6 col-md-8">
+            <a href="https://itunes.apple.com/WebObjects/MZStore.woa/wa/viewSoftware?id=304064947&mt=8">
+                <img src="/images/shoes/Download_on_the_App_Store_Badge_US-UK_135x40.svg" alt="Download on the App Store" />
+            </a>
+
             <table>
                 <thead>
                     <th colspan="2">
@@ -62,6 +57,10 @@ Shoe Sizes Converter helps you convert shoe sizes from multiple regions.
                     <td>Centimeters</td>
                 </tr>
             </table>
+
+            <a href="https://itunes.apple.com/WebObjects/MZStore.woa/wa/viewSoftware?id=304064947&mt=8">
+                <img src="/images/shoes/Download_on_the_App_Store_Badge_US-UK_135x40.svg" alt="Download on the App Store" />
+            </a>
         </div>
     </div>
 </div>
