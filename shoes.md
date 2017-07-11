@@ -1,5 +1,7 @@
 ---
 title: Shoe Sizes Converter
+additional-meta: >
+    <meta name="apple-itunes-app" content="app-id=304064947">
 ---
 
 Have you had to buy a pair of shoes without knowing their size in your country.  
