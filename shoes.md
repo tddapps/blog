@@ -5,6 +5,8 @@ title: Shoe Sizes Converter
 Have you had to buy a pair of shoes without knowing their size in your country.  
 Shoe Sizes Converter helps you convert shoe sizes from multiple regions.  
 
+![Shoe Sizes Converter iPhone Screenshot](/images/shoes/shoe-sizes-converter-screenshot.png)
+
 ## Supported Sizes and Units
 
 | Sizes                   | Units                     |
