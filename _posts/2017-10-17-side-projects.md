@@ -45,4 +45,4 @@ Nobody can prevent an employee from wanting to go somewhere else. Figure out why
 - I've had countless situations where a good night of sleep solved my problem better than an entire afternoon glued to a keyboard. Some context switching can be beneficial sometimes.  
 
 #### I want to know what everybody is doing all the time in a spreadsheet  
-![I can't even](http://i0.kym-cdn.com/entries/icons/original/000/015/557/i_cant_even-fainting.gif)  
+![I can't even](/images/side-projects/i_cant_even-fainting.gif)  
