@@ -25,6 +25,7 @@ Encourage your employees to learn for the sake of learning. You'll reap the bene
 ### Or this guy  
 ![Zuckerberg](/images/side-projects/markzuckerberg.jpg)  
 
+
 ### But what if?  
 
 #### My employees work on their personal projects all the time:  
