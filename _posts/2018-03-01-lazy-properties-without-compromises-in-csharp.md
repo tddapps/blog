@@ -1,5 +1,4 @@
 ---
-draft: true
 title: Lazy properties without compromises in C#
 ---
 
