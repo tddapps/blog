@@ -2,11 +2,11 @@
 title: Lazy properties without compromises in C#
 ---
 
-The Lazy pattern is very helpful and widely adopted. However, most of the times its usage comes with compromises: the code looks ugly, it is not thread-safe, locks everywhere. The book [Functional Programming in Java](/2018/02/27/functional-programming-in-java/) contains a great implementation of the Lazy pattern. This post is my attempt to explain the C# implementation.  
+The [Lazy pattern](https://en.wikipedia.org/wiki/Lazy_initialization) is very helpful and widely adopted. However, most of the times its usage comes with compromises: the code looks ugly, it is not thread-safe, locks everywhere. The book [Functional Programming in Java](/2018/02/27/functional-programming-in-java/) contains a great implementation of the Lazy pattern. This post is my attempt to explain the C# implementation.  
 
 **TL;DR:** [Use my `LazyPropertyHelper` nuget package](https://github.com/camilin87/lazy-property-helper) for lazy properties. Read [Functional Programming in Java](http://amzn.to/2F61g1h).  
 
-These are two attempts to implement the Lazy pattern. Each has its own benefits and drawbacks.  
+These are two common attempts to implement the [Lazy pattern](https://en.wikipedia.org/wiki/Lazy_initialization). Each has its own benefits and drawbacks.  
 
 _All code samples [can be found here](https://github.com/camilin87/ThreadSafeEfficientLazyProperty)._  
 
@@ -137,4 +137,4 @@ The service code gets considerably simplified. Let's break it down:
 
 ## Summary  
 
-The complexities of implementing the Lazy pattern in a thread-safe an efficient manner can be abstracted out into a reusable library.  
+The complexities of implementing the [Lazy pattern](https://en.wikipedia.org/wiki/Lazy_initialization) in a thread-safe an efficient manner can be abstracted out into a reusable library.  
