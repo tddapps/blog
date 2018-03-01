@@ -137,4 +137,4 @@ The service code gets considerably simplified. Let's break it down:
 
 ## Summary  
 
-The complexities of implementing the Lazy pattern in a thread-safe an efficient manner can be abstracted out into a reusable library. [Functional Programming in Java](/2018/02/27/functional-programming-in-java/) is a great book for any platform.  
+The complexities of implementing the Lazy pattern in a thread-safe an efficient manner can be abstracted out into a reusable library.  
