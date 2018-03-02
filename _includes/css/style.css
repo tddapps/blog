@@ -19,6 +19,10 @@ p {
     font-size: 4.5em;
 }
 
+h1 {
+    font-size: 2.5em;
+}
+
 .social-links a, .social-links a:hover, .social-links a:visited {
     color: #555;
     text-decoration: none;
