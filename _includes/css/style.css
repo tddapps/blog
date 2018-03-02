@@ -9,6 +9,10 @@ article p {
     margin-bottom: 1.5em;
 }
 
+.header h1 {
+    font-size: 4.5em;
+}
+
 a.brand, a.brand:hover, a.brand:visited,
 .social-links a, .social-links a:hover, .social-links a:visited,
 .posts h1 a, .posts h1 a:hover, .posts h1 a:visited,
