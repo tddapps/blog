@@ -5,8 +5,9 @@ article table {
     line-height: 1.5;
 }
 
-article p {
-    margin-bottom: 1.5em;
+p {
+    color: #555;
+    margin: 1.5em 0 1.5em;
 }
 
 .header {
