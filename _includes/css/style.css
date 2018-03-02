@@ -9,12 +9,22 @@ article p {
     margin-bottom: 1.5em;
 }
 
+.header {
+    padding-bottom: 1em;
+    padding-top: 1em;
+}
+
 .header h1 {
     font-size: 4.5em;
 }
 
+.social-links a, .social-links a:hover, .social-links a:visited {
+    color: #555;
+    text-decoration: none;
+    padding-top: 1em;
+}
+
 a.brand, a.brand:hover, a.brand:visited,
-.social-links a, .social-links a:hover, .social-links a:visited,
 .posts h1 a, .posts h1 a:hover, .posts h1 a:visited,
 .posts-archive h2 a, .posts-archive h2 a:hover, .posts-archive h2 a:visited {
     color: #333;
