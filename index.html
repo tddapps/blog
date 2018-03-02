@@ -10,18 +10,14 @@ layout: bootstrap
           <h1>
             <a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
           </h1>
-          <small>{{ post.date | date: "%b %-d, %Y" }}</small>
-
           {% if post.title_only != true %}
-            <p>
-              {% if post.summary %}
-                {{ post.summary }}
-              {% else %}
-                {{ post.excerpt }}
-              {% endif %}
-            </p>
+            {% if post.summary %}
+              {{ post.summary }}
+            {% else %}
+              {{ post.excerpt }}
+            {% endif %}
+            <a href="{{ post.url | prepend: site.baseurl }}" class="post-link">Read More...</a>
           {% endif %}
-          <a href="{{ post.url | prepend: site.baseurl }}" class="post-link">Read More...</a>
         </li>
       {% endif %}
     {% endfor %}
