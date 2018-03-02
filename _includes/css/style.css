@@ -55,6 +55,7 @@ ul.posts-archive {
 ul.posts > li,
 ul.posts-archive li {
     list-style: none;
+    padding-bottom: 1.5em;
 }
 
 .footnotes:before {
