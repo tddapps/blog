@@ -47,8 +47,6 @@ layout: bootstrap
   </ul>
 
   <h1>Archive</h1>
-  <hr/>
-
   <ul class="posts-archive">
     {% for post in site.posts offset: detailed_posts_count * 2 limit: max_posts_count %}
       {% if post.draft != true %}
