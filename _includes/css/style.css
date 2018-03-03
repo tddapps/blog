@@ -137,7 +137,17 @@ article tr:nth-child(even) {
 
 #mc_embed_signup {
     background-color: #234e73;
-    padding: 2em 1em 1em 1em;
+
+    left: -50%;
+    margin-right: -50%;
+    padding-right: 50%;
+
+    right: -50%;
+    margin-left: -50%;
+    padding-left: 50%;
+
+    padding-top: 2em;
+    padding-bottom: 0.2em;
 }
 
 #mc_embed_signup h1 {
