@@ -12,11 +12,14 @@ layout: bootstrap
             <a href="{{ post.url | prepend: site.baseurl }}"># {{ post.title }}</a>
           </h1>
           {% if post.title_only != true %}
-            {% if post.summary %}
-              {{ post.summary }}
-            {% else %}
-              {{ post.excerpt }}
-            {% endif %}
+            <p>
+              {% if post.summary %}
+                {{ post.summary | remove: '<p>' | remove: '</p>' }}
+              {% else %}
+                {{ post.excerpt | remove: '<p>' | remove: '</p>' }}
+              {% endif %}
+              <a href="{{ post.url | prepend: site.baseurl }}"> Read More...</a>
+            </p>
           {% endif %}
         </li>
       {% endif %}
@@ -35,11 +38,14 @@ layout: bootstrap
             <a href="{{ post.url | prepend: site.baseurl }}"># {{ post.title }}</a>
           </h1>
           {% if post.title_only != true %}
-            {% if post.summary %}
-              {{ post.summary }}
-            {% else %}
-              {{ post.excerpt }}
-            {% endif %}
+            <p>
+              {% if post.summary %}
+                {{ post.summary | remove: '<p>' | remove: '</p>' }}
+              {% else %}
+                {{ post.excerpt | remove: '<p>' | remove: '</p>' }}
+              {% endif %}
+              <a href="{{ post.url | prepend: site.baseurl }}"> Read More...</a>
+            </p>
           {% endif %}
         </li>
       {% endif %}
