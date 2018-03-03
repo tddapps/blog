@@ -114,3 +114,15 @@ article th {
 article tr:nth-child(even) {
     background: #EEEEEE;
 }
+
+#mc_embed_signup {
+    padding-bottom: 1.5em;
+}
+
+#mc_embed_signup > form {
+    padding: 0 !important;
+}
+
+#mc_embed_signup input.email {
+    width: 35% !important;
+}
