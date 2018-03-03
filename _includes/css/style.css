@@ -4,8 +4,6 @@ body {
 }
 
 .header {
-    padding-bottom: 1em;
-    padding-top: 1em;
     background-color: #234e73;
     color: white;
 }
@@ -31,6 +29,9 @@ p {
 .header h1 {
     font-size: 130%;
     font-weight: lighter;
+    padding-top: 0.8em;
+    padding-bottom: 0.2em;
+    margin: 0;
 }
 
 h1, h2 {
