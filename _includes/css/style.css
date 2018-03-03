@@ -146,7 +146,7 @@ article tr:nth-child(even) {
     margin-left: -50%;
     padding-left: 50%;
 
-    padding-top: 2em;
+    padding-top: 0.2em;
     padding-bottom: 0.2em;
 }
 
@@ -155,7 +155,6 @@ article tr:nth-child(even) {
     color: white;
     text-align: right;
     margin: 0;
-    margin-bottom: 0.5em;
 }
 
 #mc_embed_signup > form {
@@ -166,15 +165,20 @@ article tr:nth-child(even) {
 #mc_embed_signup input.email,
 #mc_embed_signup .button {
     text-align: right;
-    padding-right: 1em;
     padding-top: 0.2em;
     padding-bottom: 0.2em;
     margin-top: 0.5em;
     margin-bottom: 0.5em;
     font-size: 130%;
     width: 35%;
+    min-width: 150px
     height: auto;
     border: none;
+}
+
+#mc_embed_signup input.email {
+    padding-right: 1em;
+    padding-left: 1em;
 }
 
 #mc_embed_signup .button {
@@ -182,6 +186,7 @@ article tr:nth-child(even) {
     color: white;
     padding-top: 0.3em;
     padding-bottom: 0.3em;
+    width: auto;
 }
 
 #mc_embed_signup .button:hover {
