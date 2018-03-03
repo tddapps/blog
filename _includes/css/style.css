@@ -135,19 +135,25 @@ article tr:nth-child(even) {
     background: #EEEEEE;
 }
 
+
+/* newsletter signup form */
+
 #mc_embed_signup {
     background-color: #234e73;
-
-    left: -50%;
-    margin-right: -50%;
-    padding-right: 50%;
-
-    right: -50%;
-    margin-left: -50%;
-    padding-left: 50%;
-
     padding-top: 0.2em;
     padding-bottom: 0.2em;
+}
+
+#mc_embed_signup input.email,
+#mc_embed_signup .button {
+    text-align: right;
+    padding-top: 0.2em;
+    padding-bottom: 0.2em;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+    font-size: 130%;
+    height: auto;
+    border: none;
 }
 
 #mc_embed_signup h1 {
@@ -160,20 +166,6 @@ article tr:nth-child(even) {
 #mc_embed_signup > form {
     padding: 0;
     text-align: right;
-}
-
-#mc_embed_signup input.email,
-#mc_embed_signup .button {
-    text-align: right;
-    padding-top: 0.2em;
-    padding-bottom: 0.2em;
-    margin-top: 0.5em;
-    margin-bottom: 0.5em;
-    font-size: 130%;
-    width: 35%;
-    min-width: 150px
-    height: auto;
-    border: none;
 }
 
 #mc_embed_signup input.email {
@@ -192,4 +184,41 @@ article tr:nth-child(even) {
 #mc_embed_signup .button:hover {
     background-color: #367db9;
     color: white;
+}
+
+@media only screen and (min-width: 1000px) {
+    #mc_embed_signup {
+        left: -50%;
+        margin-right: -50%;
+        padding-right: 50%;
+
+        right: -50%;
+        margin-left: -50%;
+        padding-left: 50%;
+    }
+
+    #mc_embed_signup input.email {
+        width: 35%;
+        min-width: 150px
+    }
+}
+
+@media only screen and (max-width: 1000px) {
+    #mc_embed_signup {
+        padding: 0.5em;
+    }
+
+    #mc_embed_signup input.email {
+        width: 50%;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    #mc_embed_signup {
+        padding: 0.5em;
+    }
+
+    #mc_embed_signup input.email {
+        width: 100%;
+    }
 }
