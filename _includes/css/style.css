@@ -136,30 +136,45 @@ article tr:nth-child(even) {
 }
 
 #mc_embed_signup {
-    padding-bottom: 1.5em;
+    background-color: #234e73;
+    padding: 2em 1em 1em 1em;
+}
+
+#mc_embed_signup h1 {
+    font-weight: lighter;
+    color: white;
+    text-align: right;
+    margin: 0;
+    margin-bottom: 0.5em;
 }
 
 #mc_embed_signup > form {
-    padding: 0 !important;
+    padding: 0;
+    text-align: right;
 }
 
 #mc_embed_signup input.email,
 #mc_embed_signup .button {
-    text-align: left !important;
-    padding-left: 1em !important;
-    padding-top: 0.2em !important;
-    padding-bottom: 0.2em !important;
-    font-size: 130% !important;
-    width: 35% !important;
-    height: auto !important;
+    text-align: right;
+    padding-right: 1em;
+    padding-top: 0.2em;
+    padding-bottom: 0.2em;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+    font-size: 130%;
+    width: 35%;
+    height: auto;
+    border: none;
 }
 
 #mc_embed_signup .button {
-    background-color: #234e73 !important;
-    padding-top: 0.3em !important;
-    padding-bottom: 0.3em !important;
+    background-color: #234e73;
+    color: white;
+    padding-top: 0.3em;
+    padding-bottom: 0.3em;
 }
 
 #mc_embed_signup .button:hover {
-    background-color: #367db9 !important;
+    background-color: #367db9;
+    color: white;
 }
