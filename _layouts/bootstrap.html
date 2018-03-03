@@ -28,25 +28,22 @@
 </head>
 
 <body>
-  <div class="container">
-    <div class="header">
+  <div class="header">
+    <div class="container">
       <h1>
         <a class="brand" href="{{ site.url }}"> 
           {{ site.title }}
         </a>
       </h1>
-
-      <nav class="site-nav">
-        {% include navigation.html %}
-      </nav>
-
-      {% if site.show_social_icons %}
-        {% include bootstrap-social-links.html %}
-      {% endif %}
     </div>
+  </div>
+
+  <div class="container">
+    {% if site.show_social_icons %}
+      {% include bootstrap-social-links.html %}
+    {% endif %}
 
     {{ content }}
-
   </div>
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>

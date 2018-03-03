@@ -1,9 +1,17 @@
 body {
     font-size: 17px;
     line-height: 1.5;
-    border-style: solid;
-    border-width: 5px 0 0 0;
-    border-color: #234e73;
+}
+
+.header {
+    padding-bottom: 1em;
+    padding-top: 1em;
+    background-color: #234e73;
+    color: white;
+}
+
+.header a {
+    color: white;
 }
 
 h1, h2, h3, h4, h5, h6,
@@ -18,11 +26,6 @@ p, ul.posts-archive > li > a {
 p {
     color: #555;
     margin: 1.5em 0 1.5em;
-}
-
-.header {
-    padding-bottom: 1em;
-    padding-top: 1em;
 }
 
 .header h1 {
@@ -41,7 +44,6 @@ h1, h2 {
 }
 
 a.brand, a.brand:hover, a.brand:visited {
-    color: #333;
     text-decoration: none;
 }
 
