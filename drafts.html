@@ -10,7 +10,7 @@ title: Drafts
     {% if post.draft == true %}
       <li>
         <h1>
-          <a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+          <a href="{{ post.url | prepend: site.baseurl }}"># {{ post.title }}</a>
         </h1>
       </li>
     {% endif %}
