@@ -1,6 +1,5 @@
 ---
 title: "Book Review: Agile Web Development with Rails 5.1"
-draft: true
 keywords:
   - book review
   - rails
