@@ -1,6 +1,5 @@
 ---
 title: Seamlessly debug Entity Framework Core SQL commands
-draft: true
 keywords:
   - csharp
   - nuget
