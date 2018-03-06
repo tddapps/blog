@@ -72,7 +72,7 @@ permalink:    pretty
 paginate:     10
 sass:
   compressed: true
-gems:
+plugins:
   - jekyll-coffeescript
   - jekyll-sitemap
   - jekyll-paginate
