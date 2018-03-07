@@ -30,7 +30,7 @@ using DebugEFCore;
 
 public class SampleContext : DbContext
 {
-  private void ConfigureLogging(DbContextOptionsBuilder optionsBuilder)
+  protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
   {
     var debugLoggingEnabled = true;
     optionsBuilder.EnableLogging(debugLoggingEnabled);
