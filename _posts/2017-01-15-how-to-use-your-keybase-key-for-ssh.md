@@ -17,39 +17,36 @@ These RSA keys need to be backed up and shared across different computers. While
 ## Prerequisites  
 
 1. Have a [Keybase](https://keybase.io/) account.  
+2. Have a working [Docker](https://www.docker.com/) installation  
 
-2. Install [Git](https://git-scm.com/book/en/v1/Getting-Started-Installing-Git), [Keybase](https://keybase.io/download), [GnuPg](https://www.gnupg.org/download/index.html) and [MonkeySphere](http://web.monkeysphere.info/download/).  
-*[Homebrew](http://brew.sh/) users can run the following command*  
+## Solution  
 
-        brew install git keybase gpg monkeysphere
-
-## **TL;DR;** Run the following command  
+The following commands generate ssh keys out of the Keybase PGP keys  
 
 ```bash
-git clone https://gist.github.com/957f184047f768e6c5939d54cdea7448.git ./ && sh keybase-to-rsa.sh
-```
+TMP_KEY_STORAGE=~/devroot/keys
+mkdir -p $TMP_KEY_STORAGE
+docker run -it --rm -v $TMP_KEY_STORAGE:/home ubuntu:16.04 /bin/bash
 
-Your public key will be the file `id_rsa.pub` and your private key will be `id_rsa`  
+apt-get update -y
+apt-get install curl monkeysphere -y
+curl -O https://prerelease.keybase.io/keybase_amd64.deb
+dpkg -i keybase_amd64.deb
+apt-get install -f -y
+rm keybase_amd64.deb
 
-## How does it work?  
+groupadd -g 1001 user_data
+useradd --create-home -g user_data -u 1001 user_data
+su user_data
+cd /home/user_data
 
-[This gist](https://gist.github.com/camilin87/957f184047f768e6c5939d54cdea7448) automates the process of exporting your Keybase PGP keys into RSA keys.  
-
-```bash
-#!/bin/bash
-
-echo "Start Export Process"
-
-echo "Log into Keybase..."
 keybase login
 
-echo "Exporting your PGP keys..."
 # Exporting your Keybase public key to keybase.public.key
 keybase pgp export -o keybase.public.key
 # Exporting your Keybase private key to keybase.private.key
-keybase pgp export -s -o keybase.private.key
+keybase pgp export -s --unencrypted -o keybase.private.key
 
-echo "Importing your Keybase keys..."
 # Import your Keybase public key
 gpg -q --import keybase.public.key
 # Import your Keybase private key
@@ -59,20 +56,24 @@ gpg -q --allow-secret-key-import --import keybase.private.key
 # The hash is temporarily saved into hash.key
 gpg --list-keys | grep '^pub\s*.*\/*.\s.*' | grep -oEi '\/(.*)\s' | cut -c 2- | awk '{$1=$1};1' > hash.key
 
-echo "Generating RSA keys..."
+ENC_KEY=`cat hash.key`
+echo $ENC_KEY
+
 # Generate the RSA private key using the hexadecimal hash
 # The private key will be saved in the id_rsa file
-gpg --export-options export-reset-subkey-passwd,export-minimal,no-export-attributes --export-secret-keys --no-armor `cat hash.key` | openpgp2ssh `cat hash.key` > id_rsa
+gpg --export-options export-reset-subkey-passwd,export-minimal,no-export-attributes --export-secret-keys --no-armor $ENC_KEY | openpgp2ssh $ENC_KEY > id_rsa
 # Secure the private RSA key file  
 chmod 400 id_rsa
 # Generate the public RSA key file  
 ssh-keygen -y -f id_rsa > id_rsa.pub
 
-echo "Cleaning up..."
 # Remove all the temporary files  
 rm *.key
 
-echo "Success"
+exit
+exit
+
+chmod 400 $TMP_KEY_STORAGE/user_data/id_rsa
 ```
 
 ### Bonus: Replace the default ssh key  
@@ -82,9 +83,11 @@ echo "Success"
 rm -f ~/.ssh/id_rsa.pub
 rm -f ~/.ssh/id_rsa
 
+mkdir -p ~/.ssh/
+
 # Create symbolic links to the default  
-ln -s id_rsa.pub ~/.ssh/id_rsa.pub
-ln -s id_rsa ~/.ssh/id_rsa
+ln -s $TMP_KEY_STORAGE/user_data/id_rsa.pub ~/.ssh/id_rsa.pub
+ln -s $TMP_KEY_STORAGE/user_data/id_rsa ~/.ssh/id_rsa
 ```
 
 ## Want to know more?  
