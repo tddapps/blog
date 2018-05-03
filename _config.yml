@@ -2,6 +2,7 @@
 title:       Tdd Apps
 email:       support@tddapps.com
 author:      Tdd Apps
+company_name: TDDAPPS LLC
 description: >
   Ideas about sofware craftmanship and automation.
   Things that were hard to discover.
@@ -31,10 +32,6 @@ animated:           false
 show_related_posts: false
 show_post_footers:  true
 show_social_icons:  true
-
-# Disqus post comments
-# (leave blank to disable Disqus)
-disqus_shortname:
 
 # Social icons
 github_username: tddapps
