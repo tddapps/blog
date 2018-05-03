@@ -7,12 +7,18 @@ body {
     line-height: 1.5;
 }
 
-.header {
+.footer {
+    margin-top: 1em;
+    padding-top: 1em;
+    padding-bottom: 1em;
+}
+
+.header, .footer {
     background-color: #234e73;
     color: white;
 }
 
-.header a {
+.header a, .footer a {
     color: white;
 }
 
