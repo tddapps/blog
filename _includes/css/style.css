@@ -27,12 +27,15 @@ h1 > a, h2 > a, h3 > a, h4 > a, h5 > a, h6 > a {
     color: #234e73;
 }
 
-p, ul.posts-archive > li > a {
+p, ul.posts-archive > li > a, article > ul > li {
     font-size: 130%;
 }
 
-p {
+p, article > ul > li {
     color: #555;
+}
+
+p {
     margin: 0 0 1.0em 0;
 }
 
