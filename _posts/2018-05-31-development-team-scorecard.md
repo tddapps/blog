@@ -1,6 +1,5 @@
 ---
 title: Development Team Scorecard
-draft: true
 keywords:
   - clean code
   - job happiness
@@ -18,8 +17,8 @@ Development teams have similarities and differences. This is my scorecard to gau
 
 - What is your source control branching strategy?
 - How do you know what is your team working on?
-    - What needs to be done
-    - What has already been completed
+    - What needs to be done?
+    - What has already been completed?
 - How long does it take you to go from an idea into something your customers can use?
 - How frequently do you do deployments?
 - How many bugs have you had in the last quarter?
