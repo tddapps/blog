@@ -1,5 +1,5 @@
 ---
-title: Development Team Scorecard
+title: Development Team Maturity Evaluation
 keywords:
   - clean code
   - job happiness
@@ -11,9 +11,9 @@ keywords:
   - deliver value
 ---
 
-Development teams have similarities and differences. This is my scorecard to gauge the maturity of a team based on certain parameters: Agility, Code Quality, Operational Integrity. Most of the questions don't have a single correct answer but a spectrum of possible answers. While far from being comprehensive this quick test can be useful when comparing potential employers and clients.  
+Development teams have similarities and differences. These are my questions to gauge the maturity of a team based on certain parameters: Agility, Code Quality, Operational Integrity. Most of the questions don't have a single correct answer but a spectrum of possible answers. While far from being comprehensive this test can be useful when comparing potential employers and clients.  
 
-# Scorecard  
+# Questions  
 
 - What is your source control branching strategy?
 - How do you know what is your team working on?
