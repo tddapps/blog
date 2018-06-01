@@ -26,6 +26,9 @@ A team struggling with their branching strategy is clearly in need of technical 
 Mature teams actively track their work _-generally with an [Issue Tracking software](https://en.wikipedia.org/wiki/Issue_tracking_system)-_.  
 This practice increases productivity. Problems arise when work is not tracked: features are forgotten, employees burn out, chaos reigns.  
 
+## How do you assign new work?  
+Sharing is caring. Agile teams with strong engineering practices share responsibilities across their members. No single engineer is responsible for a single product. Multiple engineers collaborate on the same task. This collaboration reduces silos and increases the [Bus Factor](https://en.wikipedia.org/wiki/Bus_factor).  
+
 ## How long does it take you to go from an idea into something your customers can use?  
 There is not a right answer here. Feature sizes can greatly vary _even_ on the same team.  
 Shorter cycle times indicate good organizational health.  

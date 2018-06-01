@@ -19,6 +19,7 @@ Development teams have similarities and differences. These are my questions to g
 - How do you know what is your team working on?
     - What needs to be done?
     - What has already been completed?
+- How do you assign new work?
 - How long does it take you to go from an idea into something your customers can use?
 - How frequently do you do deployments?
 - How many bugs have you had in the last quarter?
