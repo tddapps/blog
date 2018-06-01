@@ -1,6 +1,5 @@
 ---
 title: Development Team Evaluation Explained
-draft: true
 keywords:
   - clean code
   - job happiness
