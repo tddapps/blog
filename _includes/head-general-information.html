@@ -1,17 +1,6 @@
 <title>{% if page.title %}{{ page.title | strip_html }} &#8211; {% endif %}{{ site.title | strip_html }}</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
-
-{% if page.excerpt %}
-  {% assign var meta_description = page.excerpt | strip_html %}
-{% else %}
-  {% if page.summary %}
-    {% assign var meta_description = page.summary | strip_html %}
-  {% else %}
-    {% assign var meta_description = site.description | strip_html %}
-  {% endif %}
-{% endif %}
-
 <meta name="description" content="{{ meta_description }}">
 <meta name="author" content="{{ site.author }}">
 

@@ -1,0 +1,9 @@
+{% if page.excerpt %}
+  {% assign var meta_description = page.excerpt | strip_html %}
+{% else %}
+  {% if page.summary %}
+    {% assign var meta_description = page.summary | strip_html %}
+  {% else %}
+    {% assign var meta_description = site.description | strip_html %}
+  {% endif %}
+{% endif %}
