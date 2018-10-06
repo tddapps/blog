@@ -27,17 +27,17 @@ Performance and scalability come with a cost. Specially when reading data.
 ### [Queries](https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/Query.html)  
 DynamoDB has no easy way to answer this question:  
 
-> Which products are more expensive than $1000
+> Which products are more expensive than $1000?
 
-**Why**: Queries need an equality comparison on the [`HASH` key](https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/HowItWorks.CoreComponents.html#HowItWorks.CoreComponents.PrimaryKey)  
+**Why?**: Queries need an equality comparison on the [Partition key](https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/HowItWorks.CoreComponents.html#HowItWorks.CoreComponents.PrimaryKey)  
 
 ### [Indexes](https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/SecondaryIndexes.html)  
 Indexes are nothing more than managed table clones with different keys. They cost almost the same as the original table.  
 
 ### [Limits Everywhere](https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/HowItWorks.ProvisionedThroughput.html)  
-- Want to know "Which products are more expensive than $1000". You're gonna need a [Scan](https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/Scan.html) to read every item in the table. This will not only cost you, but it may also take down your service.  
-- Want to run a common bulk operation such as "Delete all accounts from the EU". Be prepared to write code to stagger the deletions or your service may go down.  
-- Want to read all the orders for a customer. Consider limiting how many you read.  
+- Want to know which products are more expensive than $1000? You're gonna need a [Scan](https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/Scan.html) to read every item in the table. This will not only cost you, but it may also take down your service.  
+- Want to run a common bulk operation such as "Delete all accounts from the EU"? Be prepared to write code to stagger the deletions or your service may go down.  
+- Want to read all the orders for a customer? Consider limiting how many you read.  
 - [Proper Key selection](https://aws.amazon.com/blogs/database/choosing-the-right-dynamodb-partition-key/) is fundamental. Or your service may go partially down during high traffic periods.  
 
 ### [Time to Live (TTL)](https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/TTL.html)  
