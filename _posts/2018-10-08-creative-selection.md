@@ -1,5 +1,4 @@
 ---
-draft: true
 title: "Book Review: Creative Selection"
 keywords:
   - book review
@@ -11,14 +10,14 @@ keywords:
 ## A software engineer  
 
 [Ken Kocienda](https://amzn.to/2NuMFN4) accurately depicts what being a software engineer feels like:
-- The pressure to meet deadlines
-- How annoying bugs are
-- How weeks of efforts can get scrapped
-- How valuable feedback can be delivered in suboptimal ways
-- How being a manager is not the logical progression of being an engineer
-- The dread for meetings
-- How programming cannot solve a people problem. But people can always solve programming problems
-- The pride of building a widely used product
+- The pressure to meet deadlines.
+- How annoying bugs are.
+- How weeks of efforts can get scrapped.
+- How valuable feedback can be delivered in suboptimal ways.
+- How being a manager is not the logical progression of being an engineer.
+- The dread for meetings.
+- How programming cannot solve a people problem. But people can always solve programming problems.
+- The pride of building a widely used product.
 
 He does a good job explaining hard engineering problems with simple metaphors.  
 
