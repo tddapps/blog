@@ -1,7 +1,6 @@
 ---
 title: The Heartbeat Pattern  
 excerpt: Restaurant chains rely on thousands of computers to conduct business. Think of every credit card machine in every McDonald's in the world. Any of those computers could stop working without warning. Connectivity outages, power losses and hardware failures are common problems. Knowing when a machine disappears is not easy. Headquarters cannot ping machines through thousands of different private networks. In-store personnel may not notice a lack of connectivity for hours. Failures can even happen when the store is empty with no human around.  
-draft: true
 ---
 
 ## Which computers in a global network are offline?  
