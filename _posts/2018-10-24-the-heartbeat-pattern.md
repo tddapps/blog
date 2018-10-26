@@ -1,18 +1,12 @@
 ---
 title: The Heartbeat Pattern  
-excerpt: Restaurant chains rely on thousands of computers to conduct business. Think of every credit card machine in every McDonalds in the world. Any of those computers can stop working without warning. Connectivity outages, power losses and hardware failures are common problems. Knowing when a machine disappears is not easy. Headquarters cannot ping machines through thousands of different private networks. In-store personnel may not notice a lack of connectivity for hours. Failures can even happen when the store is empty with no human around.  
+excerpt: Restaurant chains rely on thousands of computers to conduct business. Think of every credit card machine in every McDonald's in the world. Any of those computers could stop working without warning. Connectivity outages, power losses and hardware failures are common problems. Knowing when a machine disappears is not easy. Headquarters cannot ping machines through thousands of different private networks. In-store personnel may not notice a lack of connectivity for hours. Failures can even happen when the store is empty with no human around.  
 draft: true
 ---
 
 ## Which computers in a global network are offline?  
 
-Restaurant chains rely on thousands of computers to conduct business. Think of every credit card machine in every McDonalds in the world. Any of those computers can stop working without warning. Connectivity outages, power losses and hardware failures are common problems. Knowing when a machine disappears is not easy. Headquarters cannot ping machines through thousands of different private networks. In-store personnel may not notice a lack of connectivity for hours. Failures can even happen when the store is empty with no human around.  
-
-## How do scientists know black holes exist?  
-
-![Black Hole](/images/heartbeat/black-hole.jpg)  
-
-Black holes are unobservable _-by definition-_. And yet, scientists can know their location. **How?** Monitoring their effects on their surroundings. [^black_holes]  
+Restaurant chains rely on thousands of computers to conduct business. Think of every credit card machine in every McDonald's in the world. Any of those computers could stop working without warning. Connectivity outages, power losses and hardware failures are common problems. Knowing when a machine disappears is not easy. Headquarters cannot ping machines through thousands of different private networks. In-store personnel may not notice a lack of connectivity for hours. Failures can even happen when the store is empty with no human around.  
 
 ## Tracking transactions  
 
@@ -23,12 +17,6 @@ A computer processing sales **is** online. The system receiving those transactio
 > Are computers without recent transactions offline?  
 
 A lack of transactions does not mean there is a problem. Some markets may have low sales periods. Stores in different timezones have different activity hours. Some retailers may process a very small daily volume.  
-
-## Heart ❤️ beats  
-
-![HeartBeat](/images/heartbeat/ekg.png)  
-
-Hearts beat approximately 60 times per minute. A lack of heartbeats indicates a serious health problem. That is why [ICUs](https://en.wikipedia.org/wiki/Intensive_care_unit) watch them closely.  
 
 ## Heartbeat Pattern  
 
