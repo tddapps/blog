@@ -1,6 +1,5 @@
 ---
 title: "Book Review: Clean Architecture"
-draft: true
 keywords:
   - book review
   - SOLID
