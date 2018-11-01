@@ -10,19 +10,19 @@ keywords:
 
 ## The Author  
 
-I have a deep admiration for Uncle Bob. His advice on _[Clean Code](https://www.amazon.com/Clean-Code-Handbook-Software-Craftsmanship/dp/0132350882/ref=as_li_ss_tl?ie=UTF8&qid=1540987558&sr=8-3&keywords=clean+code&dpID=515iEcDr1GL&preST=_SX258_BO1,204,203,200_QL70_&dpSrc=srch&linkCode=sl1&tag=capr04-20&linkId=bd49e88352bf0a04cc67494877a90ed5&language=en_US)_ and the _[Clean Coders Videos](https://cleancoders.com/)_ has significantly advanced my career. Familiar readers of his work will feel like they have already read the book. I would go even further and say it could fit in two thirds of the pages.  
+I have a deep admiration for Robert C. Martin (_Uncle Bob_). His advice on _[Clean Code](https://www.amazon.com/Clean-Code-Handbook-Software-Craftsmanship/dp/0132350882/ref=as_li_ss_tl?ie=UTF8&qid=1540987558&sr=8-3&keywords=clean+code&dpID=515iEcDr1GL&preST=_SX258_BO1,204,203,200_QL70_&dpSrc=srch&linkCode=sl1&tag=capr04-20&linkId=bd49e88352bf0a04cc67494877a90ed5&language=en_US)_ and the _[Clean Coders Videos](https://cleancoders.com/)_ has significantly advanced my career. Familiar readers of his work will feel like they have already read the book. I would go even further and say it could fit in two thirds of the pages.  
 
 ## The Stories  
 
-Uncle Bob wouldn't be himself without his stories of ancient computers and perforated cards. This book is no exception. It even has a dedicated appendix for them. Although some of the metaphors and examples may no longer apply. They certainly help explain the book lessons. And provide invaluable practical examples of what otherwise be a very abstract topic.  
+The author wouldn't be himself without his stories of ancient computers and perforated cards. This book is no exception. It even has a dedicated appendix for them. Although some of the metaphors and examples may no longer apply. They certainly help explain the book lessons. And provide invaluable practical examples of what otherwise be a very abstract topic.  
 
 ## Architecture  
 
-The author challenges the foundational beliefs of many software architects.  
+This book challenges the foundational beliefs of many software architects.  
 
 > The goal of software architecture is to minimize the human resources required to build and maintain the required system  
 
-And yet, his definition of architecture is a great tool to gauge the quality of a project. I particularly liked the explanations around the increased costs of lines of code. The book showcases several architecture quality measurement tools. It also describes testing patterns and their effects on an architecture. e.g. the [Humble Object pattern](https://www.oreilly.com/library/view/clean-architecture-a/9780134494272/ch23.xhtml).    
+And yet, this definition of architecture is a great tool to gauge the quality of a project. I particularly liked the explanations around the increased costs of lines of code. The book showcases several architecture quality measurement tools. It also describes testing patterns and their effects on an architecture. e.g. the [Humble Object pattern](https://www.oreilly.com/library/view/clean-architecture-a/9780134494272/ch23.xhtml).    
 
 ## Details  
 
@@ -32,6 +32,6 @@ I agree with that guideline. I’ve worked on several projects with high couplin
 
 [![Clean Architecture](/images/books/clean-architecture.jpeg)](https://www.amazon.com/Clean-Architecture-Craftsmans-Software-Structure/dp/0134494164/ref=as_li_ss_tl?s=books&ie=UTF8&qid=1540987718&sr=1-1&keywords=clean+architecture&dpID=41BjtnvIUQL&preST=_SX218_BO1,204,203,200_QL40_&dpSrc=srch&linkCode=sl1&tag=capr04-20&linkId=4db91ebc7378d50015ecea3400e2c985&language=en_US)  
 
-## Conclusion  
+## Should you read it?  
 
-[Clean Architecture](https://www.amazon.com/Clean-Architecture-Craftsmans-Software-Structure/dp/0134494164/ref=as_li_ss_tl?s=books&ie=UTF8&qid=1540987718&sr=1-1&keywords=clean+architecture&dpID=41BjtnvIUQL&preST=_SX218_BO1,204,203,200_QL40_&dpSrc=srch&linkCode=sl1&tag=capr04-20&linkId=4db91ebc7378d50015ecea3400e2c985&language=en_US) has good guidelines to design maintainable software. This book can be a good introduction for the [SOLID](https://en.wikipedia.org/wiki/SOLID) principles. At worst it is a history of computer evolution.  
+[Clean Architecture](https://www.amazon.com/Clean-Architecture-Craftsmans-Software-Structure/dp/0134494164/ref=as_li_ss_tl?s=books&ie=UTF8&qid=1540987718&sr=1-1&keywords=clean+architecture&dpID=41BjtnvIUQL&preST=_SX218_BO1,204,203,200_QL40_&dpSrc=srch&linkCode=sl1&tag=capr04-20&linkId=4db91ebc7378d50015ecea3400e2c985&language=en_US) has good guidelines to design maintainable software. This book can be a good introduction for the [SOLID](https://en.wikipedia.org/wiki/SOLID) principles. At worst it is a history of computer evolution. Definitely, worth the read.  
