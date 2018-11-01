@@ -31,9 +31,7 @@ The book stresses the need to decouple architecture from details. It covers how 
 
 I agree with that guideline. I’ve worked on several projects with high coupling. Where a button change required a database schema modification. And yet, I don’t think that guideline should be followed like a rule. The author does not either.  
 
-In one of the stories Uncle Bob mentions how he quit a job. He did so because they wanted to replace his homegrown file-base database for a traditional SQL database. He argued the system worked fine as it was. If he would have followed his own advice, changing the database should have been easy.  
-
-I have inherited homegrown file-based databases. Unless you are a database company, you should not be writing your own database. The maintenance cost of a homegrown database is gigantic. Using a homegrown file-based database in production is very immature.  
+Uncle Bob once quit a job because they wanted to replace his homegrown database. If he would have followed his own advice, changing the database should have been easy. Unless you are a database company, you should not be writing your own database.  
 
 [![Clean Architecture](/images/books/clean-architecture.jpeg)](https://www.amazon.com/Clean-Architecture-Craftsmans-Software-Structure/dp/0134494164/ref=as_li_ss_tl?s=books&ie=UTF8&qid=1540987718&sr=1-1&keywords=clean+architecture&dpID=41BjtnvIUQL&preST=_SX218_BO1,204,203,200_QL40_&dpSrc=srch&linkCode=sl1&tag=capr04-20&linkId=4db91ebc7378d50015ecea3400e2c985&language=en_US)  
 
