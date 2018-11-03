@@ -1,6 +1,5 @@
 ---
 title: "Book Review: TDD by Example"
-draft: true
 keywords:
   - book review
   - TDD
