@@ -1,5 +1,5 @@
 ---
-title: "Serverless Api Part 1: From an idea to Production"
+title: "Serverless Api Part 1: From idea to Production"
 draft: true
 keywords:
   - aws
