@@ -1,6 +1,5 @@
 ---
 title: "Serverless API Part 1: From idea to Production"
-draft: true
 keywords:
   - aws
   - serverless
