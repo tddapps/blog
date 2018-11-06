@@ -8,8 +8,6 @@ layout: null
     <description>{{ site.description | xml_escape }}</description>
     <link>{{ site.url }}{{ site.baseurl }}/</link>
 
-    <icon>{{ site.url }}{{ site.baseurl }}/favicon.ico</icon>
-    <logo>{{ site.url }}{{ site.baseurl }}/apple-icon.png</logo>
     <image>
       <url>{{ site.url }}{{ site.baseurl }}/apple-icon.png</url>
       <title>{{ site.title | xml_escape }}</title>
