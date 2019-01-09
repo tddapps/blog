@@ -85,7 +85,7 @@ Completed successfully
 
 ## Got other errors?  
 
-Repeat the steps if the error persists with other files  
+Repeat the steps if the error persists with other files.  
 
 ## Want to know more?  
 
