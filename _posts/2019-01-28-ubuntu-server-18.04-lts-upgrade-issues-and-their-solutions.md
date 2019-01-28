@@ -25,7 +25,9 @@ do-release-upgrade
 
 The upgrade is relatively smooth. It displays several prompts, and everything works fine until it doesn't.  
 
-## First problem: `/boot` partition is full  
+## Problems during the upgrade  
+
+### `/boot` partition is full  
 
 Some computers that run for years, accumulate old kernels in the `/boot` partition. The upgrade reaches a point where `apt` crashes and nothing can be installed.  
 
@@ -33,7 +35,9 @@ This [Guide to cleanup the `/boot` partition](https://gist.github.com/ipbastola/
 
 **Note**: The steps to remove old kernels may have to be executed multiple times. Because `sudo apt-get -f install` can fill the `/boot` partition again.  
 
-## Second problem: Local DNS configuration disappeared  
+## Problems after the upgrade  
+
+### Local DNS configuration disappeared  
 
 Every upgraded computer lost their local DNS configuration.  
 
@@ -51,7 +55,7 @@ sudo mv /etc/resolv.conf /etc/resolv.conf.bck
 sudo ln -s /run/systemd/resolve/resolv.conf /etc/resolv.conf
 ```
 
-## Third problem: KVM virtual machines failed to start  
+### KVM virtual machines failed to start  
 
 Sample Error: 
 
@@ -78,7 +82,7 @@ virsh edit vm1
 <feature policy='disable' name='hle'/>
 ```
 
-## Fourth problem: Deprecated PostgreSQL package  
+### Deprecated PostgreSQL package  
 
 The upgrade process mentioned the installed PostgreSQL version was deprecated. That I should try running `pg_upgradecluster` and reading `/usr/share/doc/postgresql-common/README.Debian.gz`.  
 
@@ -86,4 +90,4 @@ Since I had a backup of my data I reinstalled PostgreSQL and everything kept wor
 
 ## Bottomline  
 
-Although the upgrade was not free of hiccups, these proved to be relatively easy to solve. Moreover, there was enough documentation readily available.  
+Although the upgrade was not free of hiccups, these proved to be relatively easy to solve. Moreover, there was enough troubleshooting documentation readily available.  
