@@ -12,7 +12,7 @@ keywords:
 
 I run [KVM](https://www.linux-kvm.org/page/Main_Page), [PostgreSQL](https://www.postgresql.org/), [Kubernetes](https://kubernetes.io/) and the [ELK Stack](https://www.elastic.co/elk-stack) on [Ubuntu](https://www.ubuntu.com/) at home. These computers were running [Ubuntu Server 16.04 LTS](http://releases.ubuntu.com/16.04/). These are the solutions to the problems encountered during the upgrade to the [latest LTS version 18.04](http://releases.ubuntu.com/18.04/).  
 
-**Disclaimer**: The solutions to these problems may not be appropriate for you. Follow them at your own risk.  
+**Disclaimer**: These solutions may not be appropriate for you. Follow them at your own risk.  
 
 ## Upgrade Process  
 
@@ -31,9 +31,9 @@ The upgrade is relatively smooth. It displays several prompts, and everything wo
 
 Some computers that run for years, accumulate old kernels in the `/boot` partition. The upgrade reaches a point where `apt` crashes and nothing can be installed.  
 
-This [Guide to cleanup the `/boot` partition](https://gist.github.com/ipbastola/2760cfc28be62a5ee10036851c654600) proved invaluable.  
+This [guide to cleanup the `/boot` partition](https://gist.github.com/ipbastola/2760cfc28be62a5ee10036851c654600) proved invaluable.  
 
-**Note**: The steps to remove old kernels may have to be executed multiple times. Because `sudo apt-get -f install` can fill the `/boot` partition again.  
+**Note**: The process to remove old kernels may have to be executed multiple times. Because `sudo apt-get -f install` can fill the `/boot` partition again.  
 
 ## Problems after the upgrade  
 
@@ -82,12 +82,24 @@ virsh edit vm1
 <feature policy='disable' name='hle'/>
 ```
 
+### Laptop screen does not turn off after long inactivity  
+
+This used to work in the old 16.04 version.  
+
+For the new 18.04 version I took a different approach. These commands make sure [the computer doesn't suspend when the lid is closed](https://itsfoss.com/ubuntu-close-lid-suspend/).  
+
+```bash
+sudo sed -i 's/#HandleLidSwitchDocked=ignore/HandleLidSwitchDocked=ignore/g' /etc/systemd/logind.conf
+sudo sed -i 's/#HandleLidSwitch=suspend/HandleLidSwitch=ignore/g' /etc/systemd/logind.conf
+sudo reboot
+```
+
 ### Deprecated PostgreSQL package  
 
-The upgrade process mentioned the installed PostgreSQL version was deprecated. That I should try running `pg_upgradecluster` and reading `/usr/share/doc/postgresql-common/README.Debian.gz`.  
+The upgrade process mentioned the installed PostgreSQL version was deprecated. And that I should try running `pg_upgradecluster` and reading `/usr/share/doc/postgresql-common/README.Debian.gz`.  
 
 Since I had a backup of my data I reinstalled PostgreSQL and everything kept working just fine.  
 
 ## Bottomline  
 
-Although the upgrade was not free of hiccups, these proved to be relatively easy to solve. Moreover, there was enough troubleshooting documentation readily available.  
+Although the Ubuntu 18.04 upgrade was not free of hiccups, these proved to be relatively easy to solve. Moreover, there was enough troubleshooting documentation readily available.  
