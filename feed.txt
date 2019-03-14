@@ -1,8 +1,5 @@
 ---
 layout: null
 ---
-{% 
-for post in site.posts limit: 50
-    if post.draft != true
-%}{{ post.url | prepend: site.baseurl | prepend: site.url }}
-{% endfor %}
+{% for post in site.posts limit: 50 %}{% if post.draft != true %}
+{{ post.url | prepend: site.baseurl | prepend: site.url }}{% endif %}{% endfor %}
