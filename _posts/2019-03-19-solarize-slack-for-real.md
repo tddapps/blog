@@ -6,7 +6,7 @@ keywords:
   - slack
 ---
 
-These are the instructions I followed to make Slack look like a Solarized app.  
+These are the instructions I followed to make Slack look like a [Solarized](https://ethanschoonover.com/solarized/) app.  
 
 ## Before  
 ![Before](/images/solarize-slack/before.png)  
@@ -27,11 +27,9 @@ Use the following sidebar theme. [Detailed instructions](https://trevmex.com/pos
 
 ## Step 2: Change the Background Colors  
 
-Run this bash command.  
+Add the following block to `/Applications/Slack.app/Contents/Resources/app.asar.unpacked/src/static/ssb-interop.js`  
 
-```bash
-#! /bin/bash
-cat << 'EOF' >> /Applications/Slack.app/Contents/Resources/app.asar.unpacked/src/static/ssb-interop.js
+```js
 document.addEventListener('DOMContentLoaded', function() {
  $.ajax({
    url: 'https://cdn.jsdelivr.net/gh/chattahippie/slack-night-mode@fcafbca8be2a720410c6b3988f280fa09ef8fca0/css/raw/variants/solarized-dark.css',
@@ -40,8 +38,6 @@ document.addEventListener('DOMContentLoaded', function() {
    }
  });
 });
-EOF
-echo If Slack.app is already running, go to it and refresh with CMD-R
 ```
 
 It is a mix from the [original repo](https://github.com/nakedsushi/solarized-slack) and [this fork](https://github.com/chattahippie/solarized-slack).  
