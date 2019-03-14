@@ -9,10 +9,10 @@ keywords:
 These are the instructions I followed to make Slack look like a Solarized app.  
 
 ## Before  
-![Before](images/solarize-slack/before.png)  
+![Before](/images/solarize-slack/before.png)  
 
 ## After  
-![After](images/solarize-slack/after.png)  
+![After](/images/solarize-slack/after.png)  
 
 ## Step 1: Change the Sidebar theme  
 
