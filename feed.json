@@ -2,9 +2,5 @@
 layout: null
 ---
 [
-{% 
-for post in site.posts limit: 50
-    if post.draft != true
-%}"{{ post.url | prepend: site.baseurl | prepend: site.url }}"{% if forloop.last != true %},
-{% endif %}{% endfor %}
-]
+{% for post in site.posts limit: 50 %}{% if post.draft != true %}"{{ post.url | prepend: site.baseurl | prepend: site.url }}"{% if forloop.last != true %},{% endif %}
+{% endif %}{% endfor %}]
