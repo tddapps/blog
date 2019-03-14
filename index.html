@@ -2,6 +2,7 @@
 layout: bootstrap
 ---
   {% assign detailed_posts_count = 3 %}
+  {% assign list_post_offset = 6 %}
   {% assign max_posts_count = 100 %}
 
   <ul class="posts">
@@ -54,7 +55,7 @@ layout: bootstrap
 
   <h1>Archive</h1>
   <ul class="posts-archive">
-    {% for post in site.posts offset: detailed_posts_count * 2 limit: max_posts_count %}
+    {% for post in site.posts offset: list_post_offset limit: max_posts_count %}
       {% if post.draft != true %}
         <li>
             <a href="{{ post.url | prepend: site.baseurl }}"># {{ post.title }}</a>
