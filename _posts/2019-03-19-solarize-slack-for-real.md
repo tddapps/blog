@@ -6,7 +6,9 @@ keywords:
   - slack
 ---
 
-These are the instructions I followed to make Slack look like a [Solarized](https://ethanschoonover.com/solarized/) app.  
+These are the instructions I followed to make Slack look like a [Solarized](https://ethanschoonover.com/solarized/) app. 
+
+**Note**: _The [recent Slack client rewrite](https://slack.engineering/rebuilding-slack-on-the-desktop-308d6fe94ae4) renders these instructions unusable._  
 
 ## Before  
 ![Before](/images/solarize-slack/before.png)  
