@@ -1,5 +1,5 @@
 ---
-title: "Lessons learned building a Raspberry Pi 4 NAS"
+title: "Lessons from building a Raspberry Pi 4 NAS"
 draft: true
 ---
 
