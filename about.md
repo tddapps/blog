@@ -30,4 +30,4 @@ The contents from this website are not affiliated with any employer. Thus my emp
 
 ## Do you speak for your employers or clients  
 
-The opinions from this website do no represent those from my employers or clients. They are solely mine.  
+{{ site.opinions }}

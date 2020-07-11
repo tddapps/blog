@@ -8,6 +8,8 @@ description: >
   Things that were hard to discover.
   Useful tips about some tools.
   And book reviews.
+opinions: >
+  The opinions from this website do no represent those from my employers or clients. They are solely mine.
 baseurl:     ""
 url:         "https://www.tddapps.com"
 
