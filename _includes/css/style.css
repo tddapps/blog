@@ -18,8 +18,14 @@ body {
     color: white;
 }
 
-.header a, .footer a {
+.header a, .footer a, .footer p {
     color: white;
+}
+
+.footer small {
+    color: white;
+    opacity: 75%;
+    font-size: 0.75em;
 }
 
 h1, h2, h3, h4, h5, h6,
