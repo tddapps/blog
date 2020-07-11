@@ -1,6 +1,9 @@
 ---
 title: "Lessons from building a Raspberry Pi 4 NAS"
-draft: true
+keywords:
+  - raspberry pi
+  - linux
+  - ubuntu
 ---
 
 I built a home NAS with a Raspberry Pi 4. It took longer than expected. The end result is not as great as I originally envisioned. These are some bits of hard-earned knowledge to save you time and pain.  
