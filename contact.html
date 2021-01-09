@@ -10,19 +10,17 @@ permalink: /contact/
     }
 </style>
 
-<form action="https://formspree.io/{{ site.email }}" method="POST" role="form">
-
+<form action="https://formspree.io/f/{{ site.email }}" method="POST">
     <div class="form-group">
-        <input type="text" name="email" class="form-control" placeholder="Email Address">
+        <input type="text" name="_replyto" class="form-control" placeholder="Email Address">
     </div>
 
     <div class="form-group">
-        <textarea type="text" name="content" class="form-control" rows="5" placeholder="What would you like to say?"></textarea>
+        <textarea type="text" name="message" class="form-control" rows="5" placeholder="What would you like to say?"></textarea>
     </div>
 
     <input type="hidden" name="_next" value="{{ site.baseurl }}/thanks/" />
     <input type="hidden" name="_subject" value="New submission!" />
-    <input type="text" name="_gotcha" style="display:none" />
     
     <input type="submit" class="btn btn-default" value="Say Hello">
 </form>
